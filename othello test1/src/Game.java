@@ -2,13 +2,15 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.geom.RoundRectangle2D;
+import java.lang.reflect.InvocationTargetException;
+
 import javax.swing.JLayeredPane;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-public class Game extends JFrame {
+public class Game extends JFrame implements Runnable{
 
 	private JLayeredPane contentPane;
 	private static int counter=0;
@@ -19,6 +21,8 @@ public class Game extends JFrame {
 	private gameSetting setting;
 	private int offset;
 	private int topOffset = 80;
+	private WindowManager wm;
+	private SpriteHolder sprite;
 	/** 
 	 * Launch the application.
 	 */
@@ -47,11 +51,11 @@ public class Game extends JFrame {
 		}
 		return (size-margin);
 	}
-	public Game(gameSetting s) 
+	public Game(gameSetting s, WindowManager w) 
 	{
 		this.setting = s;
 		win = new JFrame();
-		EventQueue.invokeLater(new Runnable() {
+		/*EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					win.setVisible(true);
@@ -59,7 +63,9 @@ public class Game extends JFrame {
 					e.printStackTrace();
 				}
 			}
-		});
+		});*/
+
+		//win.setVisible(true);
 		contentPane = new JLayeredPane();
 		counter++;
 		win.setContentPane(contentPane);
@@ -84,16 +90,37 @@ public class Game extends JFrame {
 			this.offset = win.getHeight() - this.cellWidth * this.setting.getSize();
 		}
 		this.offset = this.offset/2;
-		for(int i=0; i<this.setting.getSize(); ++i)
-		{
-			for (int j=0;j<this.setting.getSize() ;++j)
+		this.sprite = new SpriteHolder(cellWidth);
+		Runnable rnbl = new Runnable(){
+			public void run()
 			{
-				if(!this.widthIsLower)
-					board[i][j]=new Cell(this.cellWidth,(i*this.cellWidth)+this.offset-10,j*this.cellWidth+this.topOffset);
-				else
-					board[i][j]=new Cell(this.cellWidth,i*this.cellWidth,(j*this.cellWidth)+this.offset+this.topOffset);
-				contentPane.add(board[i][j], 0);
+				for(int i=0; i<setting.getSize(); ++i)
+				{
+					for (int j=0;j<setting.getSize() ;++j)
+					{
+						if(!widthIsLower)
+							board[i][j]=new Cell(cellWidth,(i*cellWidth)+offset-10,j*cellWidth+topOffset,sprite);
+						else
+							board[i][j]=new Cell(cellWidth,i*cellWidth,(j*cellWidth)+offset+topOffset,sprite);
+						contentPane.add(board[i][j], 0);
+					}
+				}
+				try {
+					win.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				JButton tmp = new JButton();
+				tmp.addActionListener(w);
+				tmp.setActionCommand("HideMD");
+				tmp.doClick();
 			}
-		}
+		};
+		new Thread(rnbl).start();
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
 	}
 }

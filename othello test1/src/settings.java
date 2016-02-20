@@ -51,6 +51,16 @@ public class settings extends JFrame implements window
 	private ImageIcon bck_2 = new ImageIcon(getClass().getResource("data/buttons/6_1.png"));
 	private ImageIcon bck_1 = new ImageIcon(getClass().getResource("data/buttons/6_2.png"));
 	private ImageIcon backLabelIcon = new ImageIcon(getClass().getResource("data/buttons/bck_lbl.png"));
+	private ImageIcon anim = new ImageIcon(getClass().getResource("data/images/loading.gif"));
+	private ImageIcon body = new ImageIcon(getClass().getResource("data/images/loading_message.png"));
+	private JButton button_play;
+	private JButton dec;
+	private JLabel bdy;
+	private JLabel linst;
+	private JLabel circle;
+	private JLabel size_label;
+	private JLabel lfreeze;
+	private JCheckBox freeze;
 	/*private ImageIcon body = new ImageIcon(getClass().getResource("data/images/ai_human.png"));
 	private ImageIcon bck0 = new ImageIcon(getClass().getResource("data/buttons/back.png"));
 	private ImageIcon bck1 = new ImageIcon(getClass().getResource("data/buttons/back3.png"));
@@ -72,6 +82,7 @@ public class settings extends JFrame implements window
 		this.mode = mode;
 		this.set = setting;
 		buildGUI(frame, w);
+		unsetLoading();
 	}
 	
 	public void setFreezing(boolean a)
@@ -82,6 +93,48 @@ public class settings extends JFrame implements window
 		this.f_B.setEnabled(a);
 		this.f_I.setEnabled(a);
 		this.f_stones.setEnabled(a);
+	}
+	public void setLoading()
+	{
+		f_B.setVisible(false);
+		f_I.setVisible(false);
+		f_stones.setVisible(false);
+		max_stones.setVisible(false);
+		max_B.setVisible(false);
+		max_I.setVisible(false);
+		backLabel.setVisible(false);
+		inst.setVisible(false);
+		spinner.setVisible(false);
+		
+		button_play.setVisible(false);
+		dec.setVisible(false);
+		bdy.setVisible(true);
+		linst.setVisible(false);
+		circle.setVisible(true);
+		size_label.setVisible(false);
+		lfreeze.setVisible(false);
+		freeze.setVisible(false);
+	}
+	public void unsetLoading()
+	{
+		f_B.setVisible(true);
+		f_I.setVisible(true);
+		f_stones.setVisible(true);
+		max_stones.setVisible(true);
+		max_B.setVisible(true);
+		max_I.setVisible(true);
+		backLabel.setVisible(true);
+		inst.setVisible(true);
+		spinner.setVisible(true);
+		
+		button_play.setVisible(true);
+		dec.setVisible(true);
+		bdy.setVisible(false);
+		linst.setVisible(true);
+		circle.setVisible(false);
+		size_label.setVisible(true);
+		lfreeze.setVisible(true);
+		freeze.setVisible(true);
 	}
 	public void buildGUI(JFrame form, WindowManager w)
 	{
@@ -97,7 +150,7 @@ public class settings extends JFrame implements window
 		/*JLabel bdy = new JLabel(body);
 		bdy.setBounds(Math.round(form.getWidth()/1.5f), (brand.getIconHeight()/4)*5, body.getIconWidth(), body.getIconHeight());
 		pane.add(bdy,  0);*/
-		JLabel size_label = new JLabel("Size of map: ");
+		size_label = new JLabel("Size of map: ");
 		size_label.setBounds(margin_left,margin_top,size_label.getPreferredSize().width,size_label.getPreferredSize().height);
 		pane.add(size_label, 0);
 		
@@ -114,7 +167,7 @@ public class settings extends JFrame implements window
 		pane.add(spinner, 0);
 		
 		
-		JLabel linst = new JLabel("Num of game instancies: ");
+		linst = new JLabel("Num of game instancies: ");
 		linst.setBounds(margin_left,size_label.getBounds().y+this.margin,linst.getPreferredSize().width,linst.getPreferredSize().height);
 		pane.add(linst, 0);
 		
@@ -126,11 +179,11 @@ public class settings extends JFrame implements window
 		pane.add(inst,0);*/
 		
 		
-		JLabel lfreeze = new JLabel("Freezing pawns: ");
+		lfreeze = new JLabel("Freezing pawns: ");
 		lfreeze.setBounds(margin_left,linst.getBounds().y+this.margin,lfreeze.getPreferredSize().width,lfreeze.getPreferredSize().height);
 		pane.add(lfreeze, 0);
 		
-		JCheckBox freeze = new JCheckBox();
+		freeze = new JCheckBox();
 		freeze.addActionListener( new ActionListener () {
 
 			@Override
@@ -184,7 +237,7 @@ public class settings extends JFrame implements window
 		pane.add(inst,0);
 		setFreezing(false);
 		
-		JButton button_play = new RoundButton(play0);
+		button_play = new RoundButton(play0);
 		button_play.setRolloverIcon(play1);
 		button_play.setPressedIcon(play2);
 		button_play.setBounds(70, form.getHeight()-245, play0.getIconWidth(), play0.getIconHeight());
@@ -192,7 +245,8 @@ public class settings extends JFrame implements window
 		button_play.setContentAreaFilled(false);
 		button_play.setBorder(BorderFactory.createEmptyBorder());
 		button_play.addActionListener(w);
-		button_play.addMouseListener(new MouseAdapter(){
+		button_play.addMouseListener(new MouseAdapter()
+		{
 			@Override
 			public void mouseEntered(MouseEvent e)
 			{
@@ -203,22 +257,12 @@ public class settings extends JFrame implements window
 				set.setSize((int)spinner.getValue());
 				set.setInstancies((int)inst.getValue());
 			}
-			/*@Override
-			public void mouseClicked(MouseEvent e)
-			{
-				set.setGameMode(mode);
-				set.setB_var((int) f_B.getValue());
-				set.setI_var((int) f_I.getValue());
-				set.setStoneFreezing(freeze.isSelected());
-				set.setSize((int)spinner.getValue());
-				set.setInstancies((int)inst.getValue());
-			}*/
 		}
 		);
-		button_play.setActionCommand("GameD");
+		button_play.setActionCommand("LoadingD");
 		pane.add(button_play, 1);
 		
-		JButton dec = new JButton(bck_0);
+		dec = new JButton(bck_0);
 		dec.setRolloverIcon(bck_1);
 		dec.setPressedIcon(bck_2);
 		dec.setBorderPainted(false);
@@ -250,6 +294,14 @@ public class settings extends JFrame implements window
 		backLabel.setBounds(dec.bounds().x+70, dec.bounds().y-40, backLabelIcon.getIconWidth(), backLabelIcon.getIconHeight());
 		backLabel.setVisible(false);
 		pane.add(backLabel, 1);
+		
+		bdy = new JLabel(body);
+		bdy.setBounds(Math.round(form.getWidth()/2.5f)-50, (brand.getIconHeight()/4)*5, body.getIconWidth(), body.getIconHeight());
+		pane.add(bdy,  0);
+		
+		circle = new JLabel(anim);
+		circle.setBounds(25, form.getHeight()-290, anim.getIconWidth(), anim.getIconHeight());
+		pane.add(circle,2);
 	}
 	@Override
 	public void setFrame(JFrame frame) {
