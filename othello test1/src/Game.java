@@ -143,13 +143,11 @@ public class Game extends JFrame implements Runnable{
 				tmp.doClick();
 				///////////////********GAME START*********///////////////
 				int state = 0;
-				while(true)
+				cf.recalculateAndMark(gc.getTeamID());
+				/*while(true)
 				{
-					/*switch(case)
-					{
 					
-					}*/
-				}
+				}*/
 			}
 		};
 		new Thread(rnbl).start();
