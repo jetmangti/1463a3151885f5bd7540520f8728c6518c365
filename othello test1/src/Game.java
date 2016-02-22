@@ -1,6 +1,8 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.geom.RoundRectangle2D;
 import java.lang.reflect.InvocationTargetException;
 
@@ -9,6 +11,9 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import imports.Enum.Calc;
+import imports.Enum.Team;
 
 public class Game extends JFrame implements Runnable{
 
@@ -92,6 +97,8 @@ public class Game extends JFrame implements Runnable{
 		this.offset = this.offset/2;
 		this.sprite = new SpriteHolder(cellWidth);
 		Runnable rnbl = new Runnable(){
+			GameController gc = new GameController();
+			CellFinder cf = new CellFinder(setting.getSize(),board);
 			public void run()
 			{
 				for(int i=0; i<setting.getSize(); ++i)
@@ -99,12 +106,32 @@ public class Game extends JFrame implements Runnable{
 					for (int j=0;j<setting.getSize() ;++j)
 					{
 						if(!widthIsLower)
-							board[i][j]=new Cell(cellWidth,(i*cellWidth)+offset-10,j*cellWidth+topOffset,sprite);
+						{
+							board[i][j]=new Cell(cellWidth,i,j,(i*cellWidth)+offset-10,j*cellWidth+topOffset,sprite);
+						}
 						else
-							board[i][j]=new Cell(cellWidth,i*cellWidth,(j*cellWidth)+offset+topOffset,sprite);
+						{
+							board[i][j]=new Cell(cellWidth,i,j,i*cellWidth,(j*cellWidth)+offset+topOffset,sprite);
+						}
+						Cell temp = board[i][j];
+						board[i][j].addMouseListener(new MouseAdapter() {
+							  @Override
+							  public void mousePressed(MouseEvent e) 
+							  {
+								  if(temp.isEnabled())
+								  {
+									  cf.resetEmpty();
+									  gc.placeStone(temp);
+								  }
+							  }
+						});
 						contentPane.add(board[i][j], 0);
 					}
 				}
+				board[setting.getSize()/2][setting.getSize()/2].setWhite();
+				board[setting.getSize()/2][setting.getSize()/2-1].setBlack();
+				board[setting.getSize()/2-1][setting.getSize()/2-1].setWhite();
+				board[setting.getSize()/2-1][setting.getSize()/2].setBlack();
 				try {
 					win.setVisible(true);
 				} catch (Exception e) {
@@ -114,13 +141,20 @@ public class Game extends JFrame implements Runnable{
 				tmp.addActionListener(w);
 				tmp.setActionCommand("HideMD");
 				tmp.doClick();
+				///////////////********GAME START*********///////////////
+				int state = 0;
+				while(true)
+				{
+					/*switch(case)
+					{
+					
+					}*/
+				}
 			}
 		};
 		new Thread(rnbl).start();
 	}
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		
 	}
 }
