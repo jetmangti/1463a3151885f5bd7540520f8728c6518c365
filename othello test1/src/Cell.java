@@ -14,6 +14,7 @@ public class Cell extends JButton{
 	private ImageIcon ghostStone;
 	private int x;
 	private int y;
+	private int price=0;
 	Team team;
 	//private boolean team; //false = black, true = white
 	
@@ -100,5 +101,13 @@ public class Cell extends JButton{
 	public int getYPos()
 	{
 		return this.y;
+	}
+	public void setPrice(int price)
+	{
+		this.price = price;
+	}
+	public int getPrice()
+	{
+		return this.price;
 	}
 }
