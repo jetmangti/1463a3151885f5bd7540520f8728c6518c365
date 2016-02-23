@@ -334,4 +334,58 @@ public class CellFinder
 			}
 		}
 	}
+	
+	
+	public void turnStones(int x,int y,boolean team)
+	{
+		int reversedDirection, i=0;
+		int currentx = x;
+		int currenty = y;
+		Cell current;
+		
+		
+		for(int direction=0;direction<7;++direction)
+		{
+			i=0;
+			while(true){
+				
+				i++;
+				current=getNextCell(currentx,currenty,direction);
+				currentx = current.getXPos();
+			    currenty = current.getYPos();
+				
+				if(current.getTeam()==Team.EMPTY){
+					currentx = x;
+					currenty = y;
+					break;
+				}
+				else if(current.getTeamBool()==team)
+				{
+					
+					if((direction % 2)==1)
+					{
+						reversedDirection=direction-1;
+					}
+					else
+					{
+						reversedDirection=direction+1;
+					}
+					
+					current=getNextCell(currentx,currenty,reversedDirection);
+					
+					for(i--;i>0;i--){
+						
+						if(i>0)
+							current.swapTeam(!team);
+						
+						current=getNextCell(currentx,currenty,reversedDirection);
+						
+					}
+					break;
+				}
+			}
+		}
+	}
+
+	
 }

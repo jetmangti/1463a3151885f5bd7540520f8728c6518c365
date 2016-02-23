@@ -114,6 +114,7 @@ public class Game extends JFrame implements Runnable{
 							board[i][j]=new Cell(cellWidth,i,j,i*cellWidth,(j*cellWidth)+offset+topOffset,sprite);
 						}
 						Cell temp = board[i][j];
+						
 						board[i][j].addMouseListener(new MouseAdapter() {
 							  @Override
 							  public void mousePressed(MouseEvent e) 
@@ -122,12 +123,16 @@ public class Game extends JFrame implements Runnable{
 								  {
 									  cf.resetEmpty();
 									  gc.placeStone(temp);
+									  cf.recalculateAndMark(gc.getTeamID());
+									  Cell placedStone =(Cell) e.getSource();
+									  cf.turnStones(placedStone.getXPos(),placedStone.getYPos(),gc.getActualPlayer());
 								  }
 							  }
 						});
 						contentPane.add(board[i][j], 0);
 					}
 				}
+				
 				board[setting.getSize()/2][setting.getSize()/2].setWhite();
 				board[setting.getSize()/2][setting.getSize()/2-1].setBlack();
 				board[setting.getSize()/2-1][setting.getSize()/2-1].setWhite();
@@ -137,17 +142,17 @@ public class Game extends JFrame implements Runnable{
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				
 				JButton tmp = new JButton();
 				tmp.addActionListener(w);
 				tmp.setActionCommand("HideMD");
 				tmp.doClick();
+				
 				///////////////********GAME START*********///////////////
+				
 				int state = 0;
 				cf.recalculateAndMark(gc.getTeamID());
-				/*while(true)
-				{
-					
-				}*/
+			
 			}
 		};
 		new Thread(rnbl).start();

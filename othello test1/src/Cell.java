@@ -68,9 +68,30 @@ public class Cell extends JButton{
 		this.setContentAreaFilled(false);
 		this.setEnabled(false);
 	}
+	public void swapTeam(boolean team)
+	{
+		if(team)
+		{
+			this.setBlack();
+		}
+		else
+		{
+			this.setWhite();
+		}
+	}
 	public Team getTeam()
 	{
 		return this.team;
+	}
+	public boolean getTeamBool()
+	{
+		if(this.team==Team.WHITE){
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 	public int getXPos()
 	{

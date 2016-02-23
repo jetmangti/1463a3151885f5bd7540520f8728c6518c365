@@ -1,3 +1,4 @@
+import imports.Enum.Team;
 
 public class GameController 
 {
@@ -32,6 +33,7 @@ public class GameController
 	}
 	public void placeStone(Cell btn)
 	{
+		
 		if(!player)
 		{
 			btn.setBlack();
