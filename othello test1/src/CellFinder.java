@@ -8,6 +8,7 @@ public class CellFinder
 	private Stack<Cell> st = new Stack<Cell>();
 	private int size;
 	private Cell[][] matrix;
+	private int priceCounter = 0;
 	
 	public CellFinder(int size, Cell[][] matrix)
 	{
@@ -16,49 +17,62 @@ public class CellFinder
 	}
 	private Cell getNextCell(int x, int y, int dir)
 	{
-		if(x-1 < 0 || x+1 >= this.size || y-1 < 0 || y+1 >= this.size)
-		{
-			return new Cell(-1,-1,0,0,0,null);
-		}
 		switch(dir)
 		{
 			case 0:
 			{
-				return matrix[x][y-1];
+				if(x>=0 && x<this.size && y-1>=0 && y-1 < this.size)
+					return matrix[x][y-1];
+				break;
 			}
 			case 1:
 			{
-				return matrix[x][y+1];
+				if(x>=0 && x<this.size && y+1>=0 && y+1 < this.size)
+					return matrix[x][y+1];
+				break;
 			}
 			case 2:
 			{
-				return matrix[x+1][y];
+				if(x+1>=0 && x+1<this.size && y>=0 && y < this.size)
+					return matrix[x+1][y];
+				break;
 			}
 			case 3:
 			{
-				return matrix[x-1][y];
+				if(x-1>=0 && x-1<this.size && y>=0 && y < this.size)
+					return matrix[x-1][y];
+				break;
 			}
 			case 4:
 			{
-				return matrix[x-1][y-1];
+				if(x-1>=0 && x-1<this.size && y-1>=0 && y-1 < this.size)
+					return matrix[x-1][y-1];
+				break;
 			}
 			case 5:
 			{
-				return matrix[x+1][y+1];
+				if(x+1>=0 && x+1<this.size && y+1>=0 && y+1 < this.size)
+					return matrix[x+1][y+1];
+				break;
 			}
 			case 6:
 			{
-				return matrix[x+1][y-1];
+				if(x+1>=0 && x+1<this.size && y-1>=0 && y-1 < this.size)
+					return matrix[x+1][y-1];
+				break;
 			}
 			case 7:
 			{
-				return matrix[x-1][y+1];
+				if(x-1>=0 && x-1<this.size && y+1>=0 && y+1 < this.size)
+					return matrix[x-1][y+1];
+				break;
 			}
 			default:
 			{
 				return matrix[x][y];
 			}
 		}
+		return new Cell(-1,-1,0,0,0,null);
 	}
 	private void rayCast(int x, int y, int team)
 	{
@@ -71,7 +85,7 @@ public class CellFinder
 			System.out.println("WHITE");
 		}
 		Cell temp;
-		for(int dir=0; dir < 8; ++dir) 	//0=y_up 1=y_down 2=x_right 3=x_left 4=x_left_y_up 5=x_right_y_down 6=x_right_y_up 7=x_left_y_down
+		for(int dir=0; dir < 8; dir++) 	//0=y_up 1=y_down 2=x_right 3=x_left 4=x_left_y_up 5=x_right_y_down 6=x_right_y_up 7=x_left_y_down
 		{
 			//System.out.println(dir);
 			int state = 0;
@@ -79,6 +93,7 @@ public class CellFinder
 			int tempy = y;
 			boolean fail = false;
 			boolean success = false;
+			this.priceCounter = 0;
 			do
 			{
 				temp = getNextCell(tempx,tempy,dir);
@@ -99,6 +114,7 @@ public class CellFinder
 							if(temp.getTeam() == Team.WHITE)
 							{
 								state = 1; // white continue;
+								this.priceCounter++;
 							}
 							else
 							{
@@ -115,36 +131,33 @@ public class CellFinder
 							}
 							else if(temp.getTeam() == Team.EMPTY)
 							{
-								state = 3;
+								System.out.println("C");
+								this.st.push(temp);
+								temp.setContentAreaFilled(true);
+								success = true;
+								temp.setBackground(Color.green);
+								temp.setEnabled(true);
+								temp.setPrice(this.priceCounter);
+								break;
 							}
 							else
 							{
 								state = 1;
+								this.priceCounter++;
 								break;
 							}
 						}
-						case 3:	//empty - success
-						{
-							System.out.println("C");
-							this.st.push(temp);
-							//temp.setGhost();
-							temp.setContentAreaFilled(true);
-							success = true;
-							temp.setBackground(Color.green);
-							temp.setEnabled(true);
-							//System.out.println(" SUCC");
-							break;
-						}
 						case 4://fail
 						{
-							System.out.println("D");
 							fail = true;
-							//System.out.println(" FAIL");
+							this.priceCounter = 0;
+							//temp.setBackground(Color.RED);
+							//temp.setContentAreaFilled(true);
+							//temp.setEnabled(true);
 							break;
 						}
 						default:
 						{
-							System.out.println("E");
 							break;
 						}
 					}
@@ -156,10 +169,10 @@ public class CellFinder
 					{
 						case 0:
 						{
-							System.out.println("F");
 							if(temp.getTeam() == Team.BLACK)
 							{
 								state = 1; // white continue;
+								this.priceCounter++;
 							}
 							else
 							{
@@ -169,146 +182,62 @@ public class CellFinder
 						}
 						case 1: //white
 						{
-							System.out.println("G");
 							if(temp.getTeam() == Team.WHITE)
 							{
 								state = 4; //black = fail
 							}
 							else if(temp.getTeam() == Team.EMPTY)
 							{
-								state = 3;
+								success = true;
+								temp.setEnabled(true);
+								this.st.push(temp);
+								temp.setContentAreaFilled(true);
+								temp.setBackground(Color.green);
+								temp.setPrice(this.priceCounter);
+								//this.priceCounter = 0;
+								break;
+							}
+							else
+							{
+								state = 1;
+								this.priceCounter++;
+								break;
 							}
 						}
-						case 3:	//empty - success
-						{
-							System.out.println("H");
-							success = true;
-							temp.setEnabled(true);
-							this.st.push(temp);
-							temp.setContentAreaFilled(true);
-							temp.setBackground(Color.green);
-							break;
-						}
+
 						case 4://fail
 						{
-							System.out.println("I");
 							fail = true;
+							this.priceCounter = 0;
+							//temp.setBackground(Color.RED);
+							//temp.setContentAreaFilled(true);
+							//temp.setEnabled(true);
 							break;
 						}
 						default:
 						{
-							System.out.println("J");
 							break;
 						}
 					}
 				}
-				/*if(team == Team.BLACK)
-				{
-					switch(state)
-					{
-						case 0:
-						{
-							System.out.println("A");
-							if(temp.getTeam() == Team.WHITE)
-							{
-								state = 1; // white continue;
-							}
-							else
-							{
-								state = 4; // black = fail
-							}
-							break;
-						}
-						case 1: //white
-						{
-							System.out.println("B");
-							if(temp.getTeam() == Team.BLACK)
-							{
-								state = 4; //black = fail
-							}
-							else if(temp.getTeam() == Team.EMPTY)
-							{
-								state = 3;
-							}
-						}
-						case 3:	//empty - success
-						{
-							System.out.println("C");
-							this.st.push(temp);
-							//temp.setGhost();
-							temp.setContentAreaFilled(true);
-							success = true;
-							//System.out.println(" SUCC");
-							break;
-						}
-						case 4://fail
-						{
-							System.out.println("D");
-							fail = true;
-							//System.out.println(" FAIL");
-							break;
-						}
-						default:
-						{
-							System.out.println("E");
-							break;
-						}
-					}
-				}
-				else
-				{
-					switch(state)
-					{
-						case 0:
-						{
-							System.out.println("F");
-							if(temp.getTeam() == Team.BLACK)
-							{
-								state = 1; // white continue;
-							}
-							else
-							{
-								state = 4; // black = fail
-							}
-							break;
-						}
-						case 1: //white
-						{
-							System.out.println("G");
-							if(temp.getTeam() == Team.WHITE)
-							{
-								state = 4; //black = fail
-							}
-							else if(temp.getTeam() == Team.EMPTY)
-							{
-								state = 3;
-							}
-						}
-						case 3:	//empty - success
-						{
-							System.out.println("H");
-							success = true;
-							this.st.push(temp);
-							temp.setContentAreaFilled(true);
-							break;
-						}
-						case 4://fail
-						{
-							System.out.println("I");
-							fail = true;
-							break;
-						}
-						default:
-						{
-							System.out.println("J");
-							break;
-						}
-					}
-				}*/
 			}
 			while(!fail && !success);		
 		}
 		
+	}
+	public void clearStack()
+	{
+		this.st.removeAllElements();
+	}
+	public Stack<Cell> getCellList()
+	{
+		//resetEmpty();
+		for (Cell cont : st)
+		{
+		    cont.setEnabled(false);
+		    cont.setContentAreaFilled(false);
+		}
+		return this.st;
 	}
 	public void resetEmpty()
 	{
@@ -317,21 +246,19 @@ public class CellFinder
 		    cont.setEnabled(false);
 		    cont.setContentAreaFilled(false);
 		}
+		clearStack();
 	}
 	public void recalculateAndMark(int team)
 	{
-		if(team == Team.BLACK.ordinal())
+		for(int i=0; i < this.size; i++)
 		{
-			System.out.println("EE BLACK");
-		}
-		for(int i=0; i < this.size; ++i)
-		{
-			for(int j=0; j < this.size; ++j)
+			for(int j=0; j < this.size; j++)
 			{
 				if(this.matrix[i][j].team != Team.EMPTY && this.matrix[i][j].team.ordinal() != team){
 					rayCast(i,j,matrix[i][j].team.ordinal());
 				}
 			}
 		}
+		System.out.println("RECALC..");
 	}
 }
