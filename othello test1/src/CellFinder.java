@@ -299,14 +299,17 @@ public class CellFinder
 					}
 					
 					current=getNextCell(currentx,currenty,reversedDirection);
-					
+					currentx = current.getXPos();
+				    currenty = current.getYPos();
+				    
 					for(i--;i>0;i--){
 						
 						if(i>0)
 							current.swapTeam(!team); // change the color of the stone
 						
 						current=getNextCell(currentx,currenty,reversedDirection);
-						
+						currentx = current.getXPos();
+					    currenty = current.getYPos();
 					}
 					break;
 				}
