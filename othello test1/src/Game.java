@@ -124,10 +124,10 @@ public class Game extends JFrame implements Runnable{
 									  cf.resetEmpty();
 									  gc.placeStone(temp);
 									  cf.recalculateAndMark(gc.getTeamID());
-									  Cell placedStone =(Cell) e.getSource();
-									  cf.turnStones(placedStone.getXPos(),placedStone.getYPos(),gc.getActualPlayer());
-								  }
-							  }
+									  Cell placedStone =(Cell) e.getSource(); 											 // gets ID of cell where stone was added
+									  cf.turnStones(placedStone.getXPos(),placedStone.getYPos(),gc.getActualPlayer());   // turns opponents stones and gc.getActualPlayer
+								  }																						 // should swap value of player in Gamecontroller
+							  }																							 // =>change turns
 						});
 						contentPane.add(board[i][j], 0);
 					}

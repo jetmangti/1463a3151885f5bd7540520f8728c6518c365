@@ -271,27 +271,27 @@ public class CellFinder
 		Cell current;
 		
 		
-		for(int direction=0;direction<7;++direction)
+		for(int direction=0;direction<7;++direction)   //checks in all 8 directions from the stone that was placed
 		{
 			i=0;
-			while(true){
+			while(true){			
 				
 				i++;
-				current=getNextCell(currentx,currenty,direction);
+				current=getNextCell(currentx,currenty,direction); // next cell in given direction
 				currentx = current.getXPos();
 			    currenty = current.getYPos();
 				
-				if(current.getTeam()==Team.EMPTY){
-					currentx = x;
+				if(current.getTeam()==Team.EMPTY){  // if the cell is empty, returns to the original
+					currentx = x;        			// position and continues in a different direction
 					currenty = y;
 					break;
 				}
-				else if(current.getTeamBool()==team)
+				else if(current.getTeamBool()==team) // if the next cell checked contains stone of the current player
 				{
 					
-					if((direction % 2)==1)
+					if((direction % 2)==1)			//  return back in opposite direction
 					{
-						reversedDirection=direction-1;
+						reversedDirection=direction-1;		
 					}
 					else
 					{
@@ -303,7 +303,7 @@ public class CellFinder
 					for(i--;i>0;i--){
 						
 						if(i>0)
-							current.swapTeam(!team);
+							current.swapTeam(!team); // change the color of the stone
 						
 						current=getNextCell(currentx,currenty,reversedDirection);
 						
