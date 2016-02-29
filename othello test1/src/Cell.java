@@ -5,6 +5,7 @@ import imports.Enum.Team;
 
 import javax.swing.ImageIcon;
 import java.awt.Image;
+import java.util.Stack;
 
 public class Cell extends JButton{
 	
@@ -12,9 +13,11 @@ public class Cell extends JButton{
 	private ImageIcon whiteStone;
 	private ImageIcon iceStone;
 	private ImageIcon ghostStone;
+	private Stack<Runnable> history = new Stack<Runnable>();
 	private int x;
 	private int y;
 	private int price=0;
+	Team lastTeam;
 	Team team;
 	//private boolean team; //false = black, true = white
 	
@@ -40,16 +43,67 @@ public class Cell extends JButton{
 		this.setEnabled(false);
 		this.team = Team.EMPTY;
 		this.setBounds(posX, posY, size, size);
+		//history.push(new Runnable(){public void run(){setBlank();}});
+	}
+	public void resetHistory()
+	{
+		this.history.removeAllElements();
+	}
+	public void recordStatus()
+	{
+		if(this.team == Team.BLACK)
+			history.push(new Runnable(){public void run(){setBlack();}});
+		else if(this.team == Team.WHITE)
+			history.push(new Runnable(){public void run(){setWhite();}});
+		else
+			history.push(new Runnable(){public void run(){setBlank();}});
 	}
 	public void setWhite()
 	{
+		/*switch(this.team)
+		{
+			case BLACK:
+			{
+				history.push(new Runnable(){public void run(){setBlack();}});
+				break;
+			}
+			case EMPTY:
+			{
+				history.push(new Runnable(){public void run(){setBlank();}});
+				break;
+			}
+			default:
+			{
+				history.push(new Runnable(){public void run(){setWhite();}});
+				break;
+			}
+		}*/
 		this.setIcon(this.whiteStone);
 		this.setDisabledIcon(this.whiteStone);
 		this.team = Team.WHITE;
 		this.setEnabled(false);
+		//history.push(new Runnable(){public void run(){setWhite();}});
 	}
 	public void setBlack()
 	{
+		/*switch(this.team)
+		{
+			case WHITE:
+			{
+				history.push(new Runnable(){public void run(){setWhite();}});
+				break;
+			}
+			case EMPTY:
+			{
+				history.push(new Runnable(){public void run(){setBlank();}});
+				break;
+			}
+			default:
+			{
+				history.push(new Runnable(){public void run(){setBlack();}});
+				break;
+			}
+		}*/
 		this.setIcon(this.blackStone);
 		this.setDisabledIcon(this.blackStone);
 		this.team = Team.BLACK;
@@ -65,9 +119,36 @@ public class Cell extends JButton{
 	}
 	public void setBlank()
 	{
+		/*switch(this.team)
+		{
+			case BLACK:
+			{
+				history.push(new Runnable(){public void run(){setBlack();}});
+				break;
+			}
+			case WHITE:
+			{
+				history.push(new Runnable(){public void run(){setWhite();}});
+				break;
+			}
+			default:
+			{
+				history.push(new Runnable(){public void run(){setBlank();}});
+				break;
+			}
+		}*/
 		this.setIcon(null);
 		this.setContentAreaFilled(false);
 		this.setEnabled(false);
+		//history.push(new Runnable(){public void run(){setBlank();}});
+	}
+	public void undo()
+	{
+		if(!this.history.isEmpty())
+		{
+			this.history.pop().run();
+		}
+		//history.pop();
 	}
 	public void swapTeam(boolean team)
 	{

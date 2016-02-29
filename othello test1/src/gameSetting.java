@@ -7,6 +7,7 @@ public class gameSetting
 	protected int b_var = 0;
 	protected int size = 0;
 	protected int instancies = 1;
+	protected int aiMode = 1; //1-1st ai script, 2- 2nd ai script 
 	
 	public int getGameMode() {
 		return gameMode;
@@ -52,7 +53,10 @@ public class gameSetting
 	public int getSize() {
 		return size;
 	}
-
+	public int getAiMode()
+	{
+		return this.aiMode;
+	}
 	public void setSize(int size) {
 		this.size = size;
 	}

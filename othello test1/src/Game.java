@@ -5,10 +5,12 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.RoundRectangle2D;
 import java.lang.reflect.InvocationTargetException;
+import java.util.Stack;
 
 import javax.swing.JLayeredPane;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
@@ -21,6 +23,7 @@ public class Game extends JFrame implements Runnable{
 	private static int counter=0;
 	private JFrame win;
 	private Cell[][] board;
+	private Cell[][] undoBoard;
 	private int cellWidth=80;
 	private boolean widthIsLower = false;
 	private gameSetting setting;
@@ -56,10 +59,22 @@ public class Game extends JFrame implements Runnable{
 		}
 		return (size-margin);
 	}
+	public void recordAll()
+	{
+		for(int i=0; i<setting.getSize(); i++)
+		{
+			for (int j=0;j<setting.getSize() ;j++)
+			{
+				board[i][j].resetHistory();
+				board[i][j].recordStatus();
+			}
+		}
+	}
 	public Game(gameSetting s, WindowManager w) 
 	{
 		this.setting = s;
 		win = new JFrame();
+		Stack<Runnable> undoStck = new Stack<Runnable>();
 		/*EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -97,10 +112,94 @@ public class Game extends JFrame implements Runnable{
 		this.offset = this.offset/2;
 		this.sprite = new SpriteHolder(cellWidth);
 		Runnable rnbl = new Runnable(){
-			GameController gc = new GameController();
+			GameController gc = new GameController(undoStck);
 			CellFinder cf = new CellFinder(setting.getSize(),board);
+			JLabel blackScore;
+			JLabel whiteScore;
+		//	AIPlay1 ai2 = new AIPlay1(cf,gc, setting.getSize(), 1, board);
+			AIInterface ai;
+			int state = 1;
+			
+			public void toDo(Cell temp, MouseEvent e)
+			{
+				if(state == 1)
+				{
+					//undoStck.push(this);
+					cf.resetEmpty();
+					gc.placeStone(temp);
+					Cell placedStone =(Cell) e.getSource(); 											 // gets ID of cell where stone was added
+					cf.turnStones(placedStone.getXPos(),placedStone.getYPos(),gc.getActualPlayer());   // turns opponents stones and gc.getActualPlayer
+					if(setting.getGameMode() == 0)
+					{
+						cf.setPadsVisibility(false);
+					}
+					cf.recalculateAndMark(gc.getTeamID());
+					if(setting.getGameMode() == 0)
+					{
+						 state = 2;
+						 cf.resetEmpty();
+					}
+					else
+					{
+						state = 1;
+					}
+				}
+				else if(setting.getGameMode() != 1)
+				{
+					state = 2;
+					cf.resetEmpty();
+					Cell aiStone = ai.doJob();
+					cf.turnStones(aiStone.getXPos(),aiStone.getYPos(),gc.getActualPlayer());
+					cf.setPadsVisibility(true);
+					cf.recalculateAndMark(gc.getTeamID());
+					state = 1;
+				}
+				actualizeScore(whiteScore,blackScore);
+			}
+			public void actualizeScore(JLabel whiteLabel, JLabel blackLabel)
+			{
+				int black=0;
+				int white=0;
+				for(int i=0; i<setting.getSize(); i++)
+				{
+					for (int j=0;j<setting.getSize() ;j++)
+					{
+						if(board[i][j].getTeam() == Team.BLACK)
+						{
+							black++;
+						}
+						else if(board[i][j].getTeam() == Team.WHITE)
+						{
+							white++;
+						}
+						board[i][j].recordStatus();
+					}
+				}
+				whiteLabel.setText("White :"+white);
+				blackLabel.setText("Black :"+black);
+				
+			}
 			public void run()
 			{
+				blackScore = new JLabel("Black :2");
+				blackScore.setBounds(100, 20, 100, 20);
+				contentPane.add(blackScore, 1);
+				
+				whiteScore = new JLabel("White :2");
+				whiteScore.setBounds(220, 20, 100, 20);
+				contentPane.add(whiteScore, 1);
+				
+				if(setting.getGameMode()==0)
+				{
+					if(setting.getAiMode()==1)
+					{
+						ai = new AIPlay1(cf,gc, setting.getSize(), 1, board);
+					}
+					else
+					{
+						ai = new AIPlay2(cf,gc, setting.getSize(), 1, board);
+					}
+				}
 				for(int i=0; i<setting.getSize(); ++i)
 				{
 					for (int j=0;j<setting.getSize() ;++j)
@@ -121,23 +220,74 @@ public class Game extends JFrame implements Runnable{
 							  {
 								  if(temp.isEnabled())
 								  {
-									  cf.resetEmpty();
-									  gc.placeStone(temp);
-									  
-									  Cell placedStone =(Cell) e.getSource(); 											 // gets ID of cell where stone was added
-									  cf.turnStones(placedStone.getXPos(),placedStone.getYPos(),gc.getActualPlayer());   // turns opponents stones and gc.getActualPlayer
-									  cf.recalculateAndMark(gc.getTeamID());
-								  }																						 // should swap value of player in Gamecontroller
-							  }																							 // =>change turns
+									 toDo(temp,e);
+									 if(setting.getGameMode()==0)
+									 {
+										EventQueue.invokeLater( new Runnable(){ 
+											public void run()
+											{
+												try {
+													Thread.sleep(750);
+													 toDo(temp,e);
+												} catch (InterruptedException e1) {
+													// TODO Auto-generated catch block
+													e1.printStackTrace();
+												}
+											}
+										});	
+									 }
+								  }	
+							  }																							
 						});
-						contentPane.add(board[i][j], 0);
+						contentPane.add(board[i][j], 1);
 					}
 				}
+				JButton undo = new JButton("Undo");
+				undo.setBounds(20, 20, 50, 20);
+				undo.addMouseListener(new MouseAdapter(){
+					@Override
+					public void mouseClicked(MouseEvent e)
+					{
+						//if(!undoStck.isEmpty())
+						//{
+							//undoStck.pop().run();
+							for(int i=0; i<setting.getSize(); ++i)
+							{
+								for (int j=0;j<setting.getSize() ;++j)
+								{
+									board[i][j].undo();
+									board[i][j].undo();
+								}	
+							}
+							gc.changeTeam();
+							if(setting.getGameMode() == 0)
+							{
+								for(int i=0; i<setting.getSize(); ++i)
+								{
+									for (int j=0;j<setting.getSize() ;++j)
+									{
+										//board[i][j].undo();
+										board[i][j].undo();
+									}	
+								}
+								gc.changeTeam();
+								actualizeScore(whiteScore, blackScore);
+							}
+							//cf.resetEmptyAll();
+							cf.setPadsVisibility(true);
+							cf.hidePads();
+							cf.recalculateAndMark(gc.getTeamID());
+						//}
+					}
+				});
+				contentPane.add(undo, 1);
 				
 				board[setting.getSize()/2][setting.getSize()/2].setWhite();
 				board[setting.getSize()/2][setting.getSize()/2-1].setBlack();
 				board[setting.getSize()/2-1][setting.getSize()/2-1].setWhite();
 				board[setting.getSize()/2-1][setting.getSize()/2].setBlack();
+				undoBoard = board;
+				recordAll();
 				try {
 					win.setVisible(true);
 				} catch (Exception e) {
@@ -151,7 +301,7 @@ public class Game extends JFrame implements Runnable{
 				
 				///////////////********GAME START*********///////////////
 				
-				int state = 0;
+				//int state = 0;
 				cf.recalculateAndMark(gc.getTeamID());
 			
 			}

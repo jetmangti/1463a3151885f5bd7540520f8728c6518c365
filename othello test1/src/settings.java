@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -14,6 +15,7 @@ import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
+import javax.swing.JRadioButton;
 import javax.swing.JSpinner;
 import javax.swing.JTextField;
 import javax.swing.SpinnerListModel;
@@ -42,6 +44,8 @@ public class settings extends JFrame implements window
 	private boolean stat = false;
 	private JSpinner inst;
 	private JSpinner spinner;
+	private JRadioButton mode1;
+	private JRadioButton mode2;
 	private int mode;
 	
 	private ImageIcon play0 = new ImageIcon(getClass().getResource("data/buttons/p_1.png"));
@@ -194,6 +198,26 @@ public class settings extends JFrame implements window
 		
 		}
 		);
+		if(this.mode==0)
+		{
+		JLabel lAiMode = new JLabel("AI MODE");
+		lAiMode.setBounds(size_label.getBounds().x,size_label.getBounds().y-30,lAiMode.getPreferredSize().width,lAiMode.getPreferredSize().height);
+		pane.add(lAiMode, 0);
+		ButtonGroup group = new ButtonGroup();
+		mode1 = new JRadioButton("AI Mode: 1");
+		mode2 = new JRadioButton("AI Mode: 2");
+		mode1.setContentAreaFilled(false);
+		mode2.setContentAreaFilled(false);
+		mode1.setBounds(lAiMode.getBounds().x + lAiMode.getPreferredSize().width+spacing/2,lAiMode.getBounds().y, mode1.getPreferredSize().width, mode1.getPreferredSize().height);
+		mode2.setBounds(mode1.getBounds().x+mode1.getPreferredSize().width,  mode1.getBounds().y,  mode2.getPreferredSize().width,  mode2.getPreferredSize().height);
+		group.add(mode1);
+		group.add(mode2);
+		mode1.setSelected(true);
+
+		pane.add(mode1, 0);
+		pane.add(mode2, 0);
+		}
+		
 		freeze.setSelected(false);
 		freeze.setContentAreaFilled(false);
 		freeze.setBounds(lfreeze.getBounds().x+spacing, lfreeze.getBounds().y, freeze.getPreferredSize().width, freeze.getPreferredSize().height);
@@ -256,6 +280,17 @@ public class settings extends JFrame implements window
 				set.setStoneFreezing(freeze.isSelected());
 				set.setSize((int)spinner.getValue());
 				set.setInstancies((int)inst.getValue());
+				if(mode==0)
+				{
+					if(mode1.isSelected())
+					{
+						set.aiMode=1;
+					}
+					else
+					{
+						set.aiMode=2;
+					}
+				}
 			}
 		}
 		);

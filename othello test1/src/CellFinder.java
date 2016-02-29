@@ -6,9 +6,11 @@ public class CellFinder
 {
 	
 	private Stack<Cell> st = new Stack<Cell>();
+	private Stack<Cell> lastState = new Stack<Cell>();
 	private int size;
 	private Cell[][] matrix;
 	private int priceCounter = 0;
+	private boolean visibility = true;
 	
 	public CellFinder(int size, Cell[][] matrix)
 	{
@@ -76,15 +78,8 @@ public class CellFinder
 	}
 	private void rayCast(int x, int y, int team)
 	{
-		if(team == Team.BLACK.ordinal())
-		{
-			System.out.println("BLACK");
-		}
-		else
-		{
-			System.out.println("WHITE");
-		}
 		Cell temp;
+		this.lastState = (Stack<Cell>) this.st.clone();
 		for(int dir=0; dir < 8; dir++) 	//0=y_up 1=y_down 2=x_right 3=x_left 4=x_left_y_up 5=x_right_y_down 6=x_right_y_up 7=x_left_y_down
 		{
 			//System.out.println(dir);
@@ -110,7 +105,7 @@ public class CellFinder
 					{
 						case 0:
 						{
-							System.out.println("A");
+							//System.out.println("A");
 							if(temp.getTeam() == Team.WHITE)
 							{
 								state = 1; // white continue;
@@ -124,19 +119,22 @@ public class CellFinder
 						}
 						case 1: //white
 						{
-							System.out.println("B");
+							//System.out.println("B");
 							if(temp.getTeam() == Team.BLACK)
 							{
 								state = 4; //black = fail
 							}
 							else if(temp.getTeam() == Team.EMPTY)
 							{
-								System.out.println("C");
+								//System.out.println("C");
 								this.st.push(temp);
 								temp.setContentAreaFilled(true);
 								success = true;
-								temp.setBackground(Color.green);
-								temp.setEnabled(true);
+								if(this.visibility)
+								{
+									temp.setBackground(Color.green);
+									temp.setEnabled(true);
+								}
 								temp.setPrice(this.priceCounter);
 								break;
 							}
@@ -164,7 +162,7 @@ public class CellFinder
 				}
 				else
 				{
-					System.out.println("WHITE");
+					//System.out.println("WHITE");
 					switch(state)
 					{
 						case 0:
@@ -189,10 +187,13 @@ public class CellFinder
 							else if(temp.getTeam() == Team.EMPTY)
 							{
 								success = true;
-								temp.setEnabled(true);
 								this.st.push(temp);
 								temp.setContentAreaFilled(true);
-								temp.setBackground(Color.green);
+								if(this.visibility)
+								{
+									temp.setBackground(Color.green);
+									temp.setEnabled(true);
+								}
 								temp.setPrice(this.priceCounter);
 								//this.priceCounter = 0;
 								break;
@@ -248,6 +249,33 @@ public class CellFinder
 		}
 		clearStack();
 	}
+	public void hidePads()
+	{
+		for(Cell cont : st)
+		{
+			//cont.setEnabled(false);
+			cont.setContentAreaFilled(false);
+			//cont.setPrice(0);
+			//cont.setBlank();
+		}
+	}
+	public void resetEmptyAll()
+	{
+		for(Cell cont : lastState)
+		{
+			cont.setBlank();
+		}
+		for(int i=0; i<this.size; i++)
+		{
+			for(int j=0; j<this.size; j++)
+			{
+				matrix[i][j].setEnabled(false);
+				matrix[i][j].setContentAreaFilled(false);
+				//matrix[i][j].undo();
+				clearStack();
+			}
+		}
+	}
 	public void recalculateAndMark(int team)
 	{
 		for(int i=0; i < this.size; i++)
@@ -262,6 +290,10 @@ public class CellFinder
 		System.out.println("RECALC..");
 	}
 	
+	public void setPadsVisibility(boolean vis)
+	{
+		this.visibility = vis;
+	}
 	
 	public void turnStones(int x,int y,boolean team)
 	{
@@ -271,7 +303,7 @@ public class CellFinder
 		Cell current;
 		
 		
-		for(int direction=0;direction<7;++direction)   //checks in all 8 directions from the stone that was placed
+		for(int direction=0;direction<8;++direction)   //checks in all 8 directions from the stone that was placed
 		{
 			i=0;
 			while(true){			
@@ -304,12 +336,12 @@ public class CellFinder
 				    
 					for(i--;i>0;i--){
 						
-						if(i>0)
-							current.swapTeam(!team); // change the color of the stone
-						
+						//if(i>0)
+						current.swapTeam(!team); // change the color of the stone
 						current=getNextCell(currentx,currenty,reversedDirection);
 						currentx = current.getXPos();
 					    currenty = current.getYPos();
+						
 					}
 					break;
 				}
