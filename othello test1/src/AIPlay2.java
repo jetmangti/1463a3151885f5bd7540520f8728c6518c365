@@ -12,7 +12,7 @@ public class AIPlay2 implements AIInterface
 	private GameController gc;
 	public AIPlay2(CellFinder cf,GameController gc, int size, int team, Cell[][] matrix)
 	{
-		System.out.println("AI MODE: 2");
+		System.out.println("AI MODE: 2z");
 		this.gc = gc;
 		this.cf = cf;
 		this.team = team;

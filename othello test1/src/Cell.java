@@ -140,6 +140,7 @@ public class Cell extends JButton{
 		this.setIcon(null);
 		this.setContentAreaFilled(false);
 		this.setEnabled(false);
+		this.team = Team.EMPTY;
 		//history.push(new Runnable(){public void run(){setBlank();}});
 	}
 	public void undo()

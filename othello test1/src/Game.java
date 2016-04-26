@@ -28,9 +28,11 @@ public class Game extends JFrame implements Runnable{
 	private boolean widthIsLower = false;
 	private gameSetting setting;
 	private int offset;
+	private int clickk;
 	private int topOffset = 80;
 	private WindowManager wm;
 	private SpriteHolder sprite;
+	private boolean undoEnabled = false;
 	/** 
 	 * Launch the application.
 	 */
@@ -65,7 +67,7 @@ public class Game extends JFrame implements Runnable{
 		{
 			for (int j=0;j<setting.getSize() ;j++)
 			{
-				board[i][j].resetHistory();
+				//board[i][j].resetHistory();
 				board[i][j].recordStatus();
 			}
 		}
@@ -86,6 +88,7 @@ public class Game extends JFrame implements Runnable{
 		});*/
 
 		//win.setVisible(true);
+		this.clickk=0;
 		contentPane = new JLayeredPane();
 		counter++;
 		win.setContentPane(contentPane);
@@ -119,9 +122,11 @@ public class Game extends JFrame implements Runnable{
 		//	AIPlay1 ai2 = new AIPlay1(cf,gc, setting.getSize(), 1, board);
 			AIInterface ai;
 			int state = 1;
-			
+			JButton undo = new JButton("Undo");
 			public void toDo(Cell temp, MouseEvent e)
 			{
+				recordAll();
+				clickk++;
 				if(state == 1)
 				{
 					//undoStck.push(this);
@@ -172,7 +177,7 @@ public class Game extends JFrame implements Runnable{
 						{
 							white++;
 						}
-						board[i][j].recordStatus();
+						//board[i][j].recordStatus();
 					}
 				}
 				whiteLabel.setText("White :"+white);
@@ -242,7 +247,6 @@ public class Game extends JFrame implements Runnable{
 						contentPane.add(board[i][j], 1);
 					}
 				}
-				JButton undo = new JButton("Undo");
 				undo.setBounds(20, 20, 50, 20);
 				undo.addMouseListener(new MouseAdapter(){
 					@Override
@@ -250,18 +254,21 @@ public class Game extends JFrame implements Runnable{
 					{
 						//if(!undoStck.isEmpty())
 						//{
+							if(clickk > 0){
+								clickk--;
 							//undoStck.pop().run();
 							for(int i=0; i<setting.getSize(); ++i)
 							{
 								for (int j=0;j<setting.getSize() ;++j)
 								{
 									board[i][j].undo();
-									board[i][j].undo();
+									//board[i][j].undo();
 								}	
 							}
 							gc.changeTeam();
 							if(setting.getGameMode() == 0)
 							{
+								System.out.println("GER");
 								for(int i=0; i<setting.getSize(); ++i)
 								{
 									for (int j=0;j<setting.getSize() ;++j)
@@ -271,15 +278,19 @@ public class Game extends JFrame implements Runnable{
 									}	
 								}
 								gc.changeTeam();
-								actualizeScore(whiteScore, blackScore);
+								/*cf.recalculateAndMark(gc.getTeamID());
+									 state = 2;
+									 cf.resetEmpty();
+								gc.changeTeam();*/
 							}
-							//cf.resetEmptyAll();
 							cf.setPadsVisibility(true);
 							cf.hidePads();
 							cf.recalculateAndMark(gc.getTeamID());
-						//}
+							//cf.resetEmptyAll();
+							actualizeScore(whiteScore, blackScore);
+							//}
 					}
-				});
+				}});
 				contentPane.add(undo, 1);
 				
 				board[setting.getSize()/2][setting.getSize()/2].setWhite();
@@ -287,7 +298,7 @@ public class Game extends JFrame implements Runnable{
 				board[setting.getSize()/2-1][setting.getSize()/2-1].setWhite();
 				board[setting.getSize()/2-1][setting.getSize()/2].setBlack();
 				undoBoard = board;
-				recordAll();
+				//recordAll();
 				try {
 					win.setVisible(true);
 				} catch (Exception e) {
