@@ -5,9 +5,12 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.RoundRectangle2D;
 import java.lang.reflect.InvocationTargetException;
+import java.util.Random;
 import java.util.Stack;
 
 import javax.swing.JLayeredPane;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -32,7 +35,16 @@ public class Game extends JFrame implements Runnable{
 	private int topOffset = 80;
 	private WindowManager wm;
 	private SpriteHolder sprite;
+	private ImageIcon img = new ImageIcon(getClass().getResource("data/images/header.png"));
+	private ImageIcon btn1_0 = new ImageIcon(getClass().getResource("data/buttons/undo.png"));
+	private ImageIcon btn1_1 = new ImageIcon(getClass().getResource("data/buttons/undo2.png"));
+	private ImageIcon btn1_2 = new ImageIcon(getClass().getResource("data/buttons/undo3.png"));
+	private ImageIcon btn2_0 = new ImageIcon(getClass().getResource("data/buttons/save.png"));
+	private ImageIcon btn2_1 = new ImageIcon(getClass().getResource("data/buttons/save2.png"));
+	private ImageIcon btn2_2 = new ImageIcon(getClass().getResource("data/buttons/save3.png"));
 	private boolean undoEnabled = false;
+	private int bRem = 0;
+	private int wRem = 0;
 	/** 
 	 * Launch the application.
 	 */
@@ -93,9 +105,9 @@ public class Game extends JFrame implements Runnable{
 		counter++;
 		win.setContentPane(contentPane);
 		win.setForeground(Color.WHITE);
-		win.setBackground(Color.WHITE);
+		win.setBackground(Color.getHSBColor(0, 0, 0.84f));
 		win.setTitle("Othello");
-		win.setResizable(true);
+		win.setResizable(false);
 		win.setBounds(0, 0,1024, 720);//622 388
 		win.setLocationRelativeTo(null);
 		win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -114,15 +126,22 @@ public class Game extends JFrame implements Runnable{
 		}
 		this.offset = this.offset/2;
 		this.sprite = new SpriteHolder(cellWidth);
+		this.bRem = ((s.getSize()*s.getSize())/2)-2;
+		this.wRem = ((s.getSize()*s.getSize())/2)-2;
 		Runnable rnbl = new Runnable(){
 			GameController gc = new GameController(undoStck);
 			CellFinder cf = new CellFinder(setting.getSize(),board);
 			JLabel blackScore;
 			JLabel whiteScore;
+			JLabel blackRemaining;
+			JLabel whiteRemaining;
 		//	AIPlay1 ai2 = new AIPlay1(cf,gc, setting.getSize(), 1, board);
 			AIInterface ai;
 			int state = 1;
-			JButton undo = new JButton("Undo");
+			JButton undo = new JButton(btn1_0);
+			JButton save = new JButton(btn2_0);
+			JLabel header = new JLabel(img);
+			
 			public void toDo(Cell temp, MouseEvent e)
 			{
 				recordAll();
@@ -148,6 +167,14 @@ public class Game extends JFrame implements Runnable{
 					{
 						state = 1;
 					}
+					if(gc.getTeamID()==0)
+					{
+						bRem--;
+					}
+					else
+					{
+						wRem--;
+					}
 				}
 				else if(setting.getGameMode() != 1)
 				{
@@ -156,6 +183,7 @@ public class Game extends JFrame implements Runnable{
 					Cell aiStone = ai.doJob();
 					cf.turnStones(aiStone.getXPos(),aiStone.getYPos(),gc.getActualPlayer());
 					cf.setPadsVisibility(true);
+					bRem--;
 					cf.recalculateAndMark(gc.getTeamID());
 					state = 1;
 				}
@@ -180,19 +208,41 @@ public class Game extends JFrame implements Runnable{
 						//board[i][j].recordStatus();
 					}
 				}
-				whiteLabel.setText("White :"+white);
-				blackLabel.setText("Black :"+black);
+				whiteLabel.setText("White Score:"+white);
+				blackLabel.setText("Black Score:"+black);
+				whiteRemaining.setText("White Stones Remaining:"+wRem);
+				blackRemaining.setText("Black Stones Remaining:"+bRem);
 				
 			}
 			public void run()
 			{
-				blackScore = new JLabel("Black :2");
-				blackScore.setBounds(100, 20, 100, 20);
+				undo.setPressedIcon(btn1_2);
+				undo.setRolloverIcon(btn1_1);
+				save.setPressedIcon(btn2_2);
+				save.setRolloverIcon(btn2_1);
+				undo.setBorder(BorderFactory.createEmptyBorder());
+				save.setBorder(BorderFactory.createEmptyBorder());
+				header.setBounds(0, 0, img.getIconWidth(), img.getIconHeight()-15);
+				contentPane.add(header,0);
+				blackScore = new JLabel("Black Score:2");
+				blackScore.setForeground(Color.getHSBColor(0.05f,1.0f,1.0f));
+				blackScore.setBounds(10, 80, 150, 20);
 				contentPane.add(blackScore, 1);
 				
-				whiteScore = new JLabel("White :2");
-				whiteScore.setBounds(220, 20, 100, 20);
+				whiteScore = new JLabel("White Score:2");
+				whiteScore.setForeground(Color.getHSBColor(0.05f,1.0f,1.0f));
+				whiteScore.setBounds(10, 100, 150, 20);
 				contentPane.add(whiteScore, 1);
+				
+				blackRemaining = new JLabel("Black Stones Remaining:"+(((s.getSize()*s.getSize())/2)-2));
+				blackRemaining.setForeground(Color.getHSBColor(0.05f,1.0f,1.0f));
+				blackRemaining.setBounds(10, 140, 250, 20);
+				contentPane.add(blackRemaining, 1);
+				
+				whiteRemaining = new JLabel("White Stones Remaining:"+(((s.getSize()*s.getSize())/2)-2));
+				whiteRemaining.setForeground(Color.getHSBColor(0.05f,1.0f,1.0f));
+				whiteRemaining.setBounds(10, 160, 250, 20);
+				contentPane.add(whiteRemaining, 1);
 				
 				if(setting.getGameMode()==0)
 				{
@@ -218,7 +268,6 @@ public class Game extends JFrame implements Runnable{
 							board[i][j]=new Cell(cellWidth,i,j,i*cellWidth,(j*cellWidth)+offset+topOffset,sprite);
 						}
 						Cell temp = board[i][j];
-						
 						board[i][j].addMouseListener(new MouseAdapter() {
 							  @Override
 							  public void mousePressed(MouseEvent e) 
@@ -247,7 +296,45 @@ public class Game extends JFrame implements Runnable{
 						contentPane.add(board[i][j], 1);
 					}
 				}
-				undo.setBounds(20, 20, 50, 20);
+				if(s.stoneFreezing)
+				{
+					Runnable freezer = new Runnable(){
+						public void run()
+						{
+							System.out.println("Freezer running");
+							while(true){
+							Random rand = new Random();
+							int x = rand.nextInt(s.size-1);
+							int y = rand.nextInt(s.size-1);
+							int timeToSleep = rand.nextInt(s.getB_var())+s.getI_var();
+							System.out.println("Treating ["+x+":"+y+"]");
+							if(board[x][y].getTeam() != Team.EMPTY && !board[x][y].getFreezed())
+							{
+								System.out.println("FREEZING....");
+								board[x][y].setFreezed();
+								cf.resetEmpty();
+								cf.recalculateAndMark(gc.getTeamID());
+							}
+							try {
+								Thread.sleep(timeToSleep*1000);
+							} catch (InterruptedException e) {
+								e.printStackTrace();
+							}
+							if(board[x][y].getTeam() != Team.EMPTY && board[x][y].getFreezed())
+							{
+								System.out.println("UNFREEZING....");
+								board[x][y].unsetFreezed();
+								cf.resetEmpty();
+								cf.recalculateAndMark(gc.getTeamID());
+							}}
+						}
+				};
+					for(int i=0; i<s.getMaxFreezed(); i++)
+					{
+						new Thread(freezer).start();
+					}
+				}
+				undo.setBounds(810, 300, 200, 50);
 				undo.addMouseListener(new MouseAdapter(){
 					@Override
 					public void mouseClicked(MouseEvent e)
@@ -265,9 +352,25 @@ public class Game extends JFrame implements Runnable{
 									//board[i][j].undo();
 								}	
 							}
+							if(gc.getTeamID()==0)
+							{
+								bRem++;
+							}
+							else
+							{
+								wRem++;
+							}
 							gc.changeTeam();
 							if(setting.getGameMode() == 0)
 							{
+								if(gc.getTeamID()==0)
+								{
+									bRem++;
+								}
+								else
+								{
+									wRem++;
+								}
 								System.out.println("GER");
 								for(int i=0; i<setting.getSize(); ++i)
 								{
@@ -292,6 +395,17 @@ public class Game extends JFrame implements Runnable{
 					}
 				}});
 				contentPane.add(undo, 1);
+				
+				save.setBounds(810, 360 , 200, 50);
+				save.addMouseListener(new MouseAdapter(){
+					@Override
+					public void mouseClicked(MouseEvent e)
+					{
+						
+					}
+				});
+				contentPane.add(save, 1);
+				
 				
 				board[setting.getSize()/2][setting.getSize()/2].setWhite();
 				board[setting.getSize()/2][setting.getSize()/2-1].setBlack();
