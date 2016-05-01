@@ -11,6 +11,7 @@ public class CellFinder
 	private Cell[][] matrix;
 	private int priceCounter = 0;
 	private boolean visibility = true;
+	private int counter=0;
 	
 	public CellFinder(int size, Cell[][] matrix)
 	{
@@ -136,6 +137,7 @@ public class CellFinder
 									temp.setEnabled(true);
 								}
 								temp.setPrice(this.priceCounter);
+								this.counter++;
 								break;
 							}
 							else
@@ -196,6 +198,7 @@ public class CellFinder
 								}
 								temp.setPrice(this.priceCounter);
 								//this.priceCounter = 0;
+								this.counter++;
 								break;
 							}
 							else
@@ -261,6 +264,7 @@ public class CellFinder
 	}
 	public void resetEmptyAll()
 	{
+		this.counter=0;
 		for(Cell cont : lastState)
 		{
 			cont.setBlank();
@@ -276,8 +280,9 @@ public class CellFinder
 			}
 		}
 	}
-	public void recalculateAndMark(int team)
+	public int recalculateAndMark(int team)
 	{
+		this.counter=0;
 		for(int i=0; i < this.size; i++)
 		{
 			for(int j=0; j < this.size; j++)
@@ -288,6 +293,7 @@ public class CellFinder
 			}
 		}
 		System.out.println("RECALC..");
+		return this.counter;
 	}
 	
 	public void setPadsVisibility(boolean vis)

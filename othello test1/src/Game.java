@@ -35,6 +35,8 @@ public class Game extends JFrame implements Runnable{
 	private int topOffset = 80;
 	private WindowManager wm;
 	private SpriteHolder sprite;
+	private int black=0;
+	private int white=0;
 	private ImageIcon img = new ImageIcon(getClass().getResource("data/images/header.png"));
 	private ImageIcon btn1_0 = new ImageIcon(getClass().getResource("data/buttons/undo.png"));
 	private ImageIcon btn1_1 = new ImageIcon(getClass().getResource("data/buttons/undo2.png"));
@@ -57,6 +59,18 @@ public class Game extends JFrame implements Runnable{
 		else 
 		{
 			return b;
+		}
+	}
+	private void doMarker(GameController gc, CellFinder cf)
+	{
+		if(cf.recalculateAndMark(gc.getTeamID())==0)
+		{
+			if(this.wm == null)
+			{
+				System.out.println("WM NULL");
+			}
+			this.wm.endGame(gc.getTeamID(), this.black, this.white);
+			this.win.dispose();
 		}
 	}
 	private int computeCellSize(int margin)
@@ -86,6 +100,7 @@ public class Game extends JFrame implements Runnable{
 	}
 	public Game(gameSetting s, WindowManager w) 
 	{
+		this.wm = w;
 		this.setting = s;
 		win = new JFrame();
 		Stack<Runnable> undoStck = new Stack<Runnable>();
@@ -157,7 +172,7 @@ public class Game extends JFrame implements Runnable{
 					{
 						cf.setPadsVisibility(false);
 					}
-					cf.recalculateAndMark(gc.getTeamID());
+					doMarker(gc,cf);
 					if(setting.getGameMode() == 0)
 					{
 						 state = 2;
@@ -181,18 +196,23 @@ public class Game extends JFrame implements Runnable{
 					state = 2;
 					cf.resetEmpty();
 					Cell aiStone = ai.doJob();
+					if(aiStone==null)
+					{
+						wm.endGame(gc.getTeamID(), black, white);
+						win.dispose();
+					}
 					cf.turnStones(aiStone.getXPos(),aiStone.getYPos(),gc.getActualPlayer());
 					cf.setPadsVisibility(true);
 					bRem--;
-					cf.recalculateAndMark(gc.getTeamID());
+					doMarker(gc,cf);
 					state = 1;
 				}
 				actualizeScore(whiteScore,blackScore);
 			}
 			public void actualizeScore(JLabel whiteLabel, JLabel blackLabel)
 			{
-				int black=0;
-				int white=0;
+				white=0;
+				black=0;
 				for(int i=0; i<setting.getSize(); i++)
 				{
 					for (int j=0;j<setting.getSize() ;j++)
@@ -313,7 +333,7 @@ public class Game extends JFrame implements Runnable{
 								System.out.println("FREEZING....");
 								board[x][y].setFreezed();
 								cf.resetEmpty();
-								cf.recalculateAndMark(gc.getTeamID());
+								doMarker(gc,cf);
 							}
 							try {
 								Thread.sleep(timeToSleep*1000);
@@ -325,7 +345,7 @@ public class Game extends JFrame implements Runnable{
 								System.out.println("UNFREEZING....");
 								board[x][y].unsetFreezed();
 								cf.resetEmpty();
-								cf.recalculateAndMark(gc.getTeamID());
+								doMarker(gc,cf);
 							}}
 						}
 				};
@@ -388,7 +408,7 @@ public class Game extends JFrame implements Runnable{
 							}
 							cf.setPadsVisibility(true);
 							cf.hidePads();
-							cf.recalculateAndMark(gc.getTeamID());
+							doMarker(gc,cf);
 							//cf.resetEmptyAll();
 							actualizeScore(whiteScore, blackScore);
 							//}
@@ -427,7 +447,7 @@ public class Game extends JFrame implements Runnable{
 				///////////////********GAME START*********///////////////
 				
 				//int state = 0;
-				cf.recalculateAndMark(gc.getTeamID());
+				doMarker(gc,cf);
 			
 			}
 		};

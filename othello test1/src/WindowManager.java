@@ -8,6 +8,7 @@ public class WindowManager implements ActionListener
 {
 	private Menu main;
 	private Credits credit;
+	private Stats stat;
 	private NewGame ngame;
 	private JFrame frame;
 	private settings set;
@@ -35,6 +36,15 @@ public class WindowManager implements ActionListener
 	public gameSetting getSettings()
 	{
 		return this.setting;
+	}
+	public void endGame(int teamId, int bStat, int wStat)
+	{
+		this.frame.setVisible(true);
+		this.frame.getContentPane().removeAll();
+		this.stat = new Stats(this.frame,this,teamId,bStat,wStat);
+		this.stat.setFrame(this.frame);
+		this.frame.getContentPane().revalidate();
+		this.frame.getContentPane().repaint();
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) 
