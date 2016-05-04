@@ -38,14 +38,14 @@
             </java.beans.PropertyChangeSupport>
           </changeSupport>
           <font class="javax.swing.plaf.FontUIResource">
-            <size class="null"/>
-            <tracking class="null"/>
-            <transform class="null"/>
-            <weight class="float">2.0</weight>
-            <superscript class="null"/>
-            <family class="string">Dialog</family>
             <posture class="null"/>
+            <superscript class="null"/>
+            <transform class="null"/>
             <width class="null"/>
+            <weight class="float">2.0</weight>
+            <size class="null"/>
+            <family class="string">Dialog</family>
+            <tracking class="null"/>
           </font>
           <foreground class="sun.swing.PrintColorUIResource" resolves-to="javax.swing.plaf.ColorUIResource">
             <value>-13421773</value>
@@ -11443,13 +11443,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -22888,13 +22892,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -23061,13 +23069,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -23234,13 +23246,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -23407,13 +23423,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -23580,13 +23600,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -23753,13 +23777,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -23926,13 +23954,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -24101,13 +24133,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -24274,13 +24310,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -24322,1565 +24362,6 @@
           <width>75</width>
           <x>277</x>
           <y>230</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
-          <changeSupport serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="Cell" reference="../../../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </changeSupport>
-          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
-          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
-          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-        </default>
-        <null/>
-        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
-        <null/>
-        <null/>
-      </java.awt.Component>
-      <java.awt.Container>
-        <default>
-          <ncomponents>0</ncomponents>
-          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
-          <focusCycleRoot>false</focusCycleRoot>
-          <containerSerializedDataVersion>1</containerSerializedDataVersion>
-          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
-        </default>
-        <null/>
-        <null/>
-      </java.awt.Container>
-      <javax.swing.JComponent>
-        <default>
-          <alignmentX>0.0</alignmentX>
-          <alignmentY>0.5</alignmentY>
-          <autoscrolls>false</autoscrolls>
-          <flags>16793888</flags>
-          <isAlignmentXSet>true</isAlignmentXSet>
-          <isAlignmentYSet>true</isAlignmentYSet>
-          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
-          <actionMap serialization="custom">
-            <javax.swing.ActionMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.ActionMap>
-          </actionMap>
-          <focusInputMap serialization="custom">
-            <javax.swing.InputMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.InputMap>
-          </focusInputMap>
-          <listenerList serialization="custom">
-            <javax.swing.event.EventListenerList>
-              <default/>
-              <null/>
-            </javax.swing.event.EventListenerList>
-          </listenerList>
-        </default>
-        <int>0</int>
-      </javax.swing.JComponent>
-      <javax.swing.AbstractButton>
-        <default>
-          <borderPaintedSet>false</borderPaintedSet>
-          <contentAreaFilled>false</contentAreaFilled>
-          <contentAreaFilledSet>true</contentAreaFilledSet>
-          <defaultCapable>true</defaultCapable>
-          <hideActionText>false</hideActionText>
-          <horizontalAlignment>0</horizontalAlignment>
-          <horizontalTextPosition>11</horizontalTextPosition>
-          <iconTextGap>4</iconTextGap>
-          <iconTextGapSet>false</iconTextGapSet>
-          <mnemonic>0</mnemonic>
-          <mnemonicIndex>-1</mnemonicIndex>
-          <multiClickThreshhold>0</multiClickThreshhold>
-          <paintBorder>true</paintBorder>
-          <paintFocus>true</paintFocus>
-          <rolloverEnabled>true</rolloverEnabled>
-          <rolloverEnabledSet>false</rolloverEnabledSet>
-          <setLayout>false</setLayout>
-          <verticalAlignment>0</verticalAlignment>
-          <verticalTextPosition>0</verticalTextPosition>
-          <actionListener class="javax.swing.AbstractButton$Handler">
-            <outer-class class="Cell" reference="../../../.."/>
-          </actionListener>
-          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <handler reference="../actionListener"/>
-          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <model class="javax.swing.DefaultButtonModel">
-            <stateMask>0</stateMask>
-            <mnemonic>0</mnemonic>
-            <listenerList serialization="custom">
-              <javax.swing.event.EventListenerList>
-                <default/>
-                <string>javax.swing.event.ChangeListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ActionListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ItemListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <null/>
-              </javax.swing.event.EventListenerList>
-            </listenerList>
-            <menuItem>false</menuItem>
-          </model>
-          <text></text>
-        </default>
-      </javax.swing.AbstractButton>
-      <javax.swing.JButton>
-        <default/>
-      </javax.swing.JButton>
-      <Cell>
-        <default>
-          <price>0</price>
-          <x>1</x>
-          <y>2</y>
-          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
-          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
-          <history serialization="custom">
-            <unserializable-parents/>
-            <vector>
-              <default>
-                <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
-                <elementData>
-                  <Cell_-3>
-                    <outer-class reference="../../../../../../../.."/>
-                  </Cell_-3>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                </elementData>
-              </default>
-            </vector>
-          </history>
-          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
-          <team>EMPTY</team>
-          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
-        </default>
-      </Cell>
-    </Cell>
-    <Cell serialization="custom">
-      <java.awt.Component>
-        <default>
-          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
-          <boundsOp>3</boundsOp>
-          <componentSerializedDataVersion>4</componentSerializedDataVersion>
-          <enabled>false</enabled>
-          <eventMask>4104</eventMask>
-          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
-          <focusable>true</focusable>
-          <height>75</height>
-          <ignoreRepaint>false</ignoreRepaint>
-          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
-          <isPacked>false</isPacked>
-          <maxSizeSet>false</maxSizeSet>
-          <minSizeSet>false</minSizeSet>
-          <nameExplicitlySet>false</nameExplicitlySet>
-          <newEventsOnly>true</newEventsOnly>
-          <prefSizeSet>false</prefSizeSet>
-          <valid>false</valid>
-          <visible>true</visible>
-          <width>75</width>
-          <x>277</x>
-          <y>305</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
-          <changeSupport serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="Cell" reference="../../../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </changeSupport>
-          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
-          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
-          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-        </default>
-        <null/>
-        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
-        <null/>
-        <null/>
-      </java.awt.Component>
-      <java.awt.Container>
-        <default>
-          <ncomponents>0</ncomponents>
-          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
-          <focusCycleRoot>false</focusCycleRoot>
-          <containerSerializedDataVersion>1</containerSerializedDataVersion>
-          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
-        </default>
-        <null/>
-        <null/>
-      </java.awt.Container>
-      <javax.swing.JComponent>
-        <default>
-          <alignmentX>0.0</alignmentX>
-          <alignmentY>0.5</alignmentY>
-          <autoscrolls>false</autoscrolls>
-          <flags>16793888</flags>
-          <isAlignmentXSet>true</isAlignmentXSet>
-          <isAlignmentYSet>true</isAlignmentYSet>
-          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
-          <actionMap serialization="custom">
-            <javax.swing.ActionMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.ActionMap>
-          </actionMap>
-          <focusInputMap serialization="custom">
-            <javax.swing.InputMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.InputMap>
-          </focusInputMap>
-          <listenerList serialization="custom">
-            <javax.swing.event.EventListenerList>
-              <default/>
-              <null/>
-            </javax.swing.event.EventListenerList>
-          </listenerList>
-        </default>
-        <int>0</int>
-      </javax.swing.JComponent>
-      <javax.swing.AbstractButton>
-        <default>
-          <borderPaintedSet>false</borderPaintedSet>
-          <contentAreaFilled>false</contentAreaFilled>
-          <contentAreaFilledSet>true</contentAreaFilledSet>
-          <defaultCapable>true</defaultCapable>
-          <hideActionText>false</hideActionText>
-          <horizontalAlignment>0</horizontalAlignment>
-          <horizontalTextPosition>11</horizontalTextPosition>
-          <iconTextGap>4</iconTextGap>
-          <iconTextGapSet>false</iconTextGapSet>
-          <mnemonic>0</mnemonic>
-          <mnemonicIndex>-1</mnemonicIndex>
-          <multiClickThreshhold>0</multiClickThreshhold>
-          <paintBorder>true</paintBorder>
-          <paintFocus>true</paintFocus>
-          <rolloverEnabled>true</rolloverEnabled>
-          <rolloverEnabledSet>false</rolloverEnabledSet>
-          <setLayout>false</setLayout>
-          <verticalAlignment>0</verticalAlignment>
-          <verticalTextPosition>0</verticalTextPosition>
-          <actionListener class="javax.swing.AbstractButton$Handler">
-            <outer-class class="Cell" reference="../../../.."/>
-          </actionListener>
-          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <handler reference="../actionListener"/>
-          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <model class="javax.swing.DefaultButtonModel">
-            <stateMask>0</stateMask>
-            <mnemonic>0</mnemonic>
-            <listenerList serialization="custom">
-              <javax.swing.event.EventListenerList>
-                <default/>
-                <string>javax.swing.event.ChangeListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ActionListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ItemListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <null/>
-              </javax.swing.event.EventListenerList>
-            </listenerList>
-            <menuItem>false</menuItem>
-          </model>
-          <text></text>
-        </default>
-      </javax.swing.AbstractButton>
-      <javax.swing.JButton>
-        <default/>
-      </javax.swing.JButton>
-      <Cell>
-        <default>
-          <price>0</price>
-          <x>1</x>
-          <y>3</y>
-          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
-          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
-          <history serialization="custom">
-            <unserializable-parents/>
-            <vector>
-              <default>
-                <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
-                <elementData>
-                  <Cell_-3>
-                    <outer-class reference="../../../../../../../.."/>
-                  </Cell_-3>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                </elementData>
-              </default>
-            </vector>
-          </history>
-          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
-          <team>EMPTY</team>
-          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
-        </default>
-      </Cell>
-    </Cell>
-    <Cell serialization="custom">
-      <java.awt.Component>
-        <default>
-          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
-          <boundsOp>3</boundsOp>
-          <componentSerializedDataVersion>4</componentSerializedDataVersion>
-          <enabled>false</enabled>
-          <eventMask>4104</eventMask>
-          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
-          <focusable>true</focusable>
-          <height>75</height>
-          <ignoreRepaint>false</ignoreRepaint>
-          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
-          <isPacked>false</isPacked>
-          <maxSizeSet>false</maxSizeSet>
-          <minSizeSet>false</minSizeSet>
-          <nameExplicitlySet>false</nameExplicitlySet>
-          <newEventsOnly>true</newEventsOnly>
-          <prefSizeSet>false</prefSizeSet>
-          <valid>false</valid>
-          <visible>true</visible>
-          <width>75</width>
-          <x>277</x>
-          <y>380</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
-          <changeSupport serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="Cell" reference="../../../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </changeSupport>
-          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
-          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
-          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-        </default>
-        <null/>
-        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
-        <null/>
-        <null/>
-      </java.awt.Component>
-      <java.awt.Container>
-        <default>
-          <ncomponents>0</ncomponents>
-          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
-          <focusCycleRoot>false</focusCycleRoot>
-          <containerSerializedDataVersion>1</containerSerializedDataVersion>
-          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
-        </default>
-        <null/>
-        <null/>
-      </java.awt.Container>
-      <javax.swing.JComponent>
-        <default>
-          <alignmentX>0.0</alignmentX>
-          <alignmentY>0.5</alignmentY>
-          <autoscrolls>false</autoscrolls>
-          <flags>16793888</flags>
-          <isAlignmentXSet>true</isAlignmentXSet>
-          <isAlignmentYSet>true</isAlignmentYSet>
-          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
-          <actionMap serialization="custom">
-            <javax.swing.ActionMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.ActionMap>
-          </actionMap>
-          <focusInputMap serialization="custom">
-            <javax.swing.InputMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.InputMap>
-          </focusInputMap>
-          <listenerList serialization="custom">
-            <javax.swing.event.EventListenerList>
-              <default/>
-              <null/>
-            </javax.swing.event.EventListenerList>
-          </listenerList>
-        </default>
-        <int>0</int>
-      </javax.swing.JComponent>
-      <javax.swing.AbstractButton>
-        <default>
-          <borderPaintedSet>false</borderPaintedSet>
-          <contentAreaFilled>false</contentAreaFilled>
-          <contentAreaFilledSet>true</contentAreaFilledSet>
-          <defaultCapable>true</defaultCapable>
-          <hideActionText>false</hideActionText>
-          <horizontalAlignment>0</horizontalAlignment>
-          <horizontalTextPosition>11</horizontalTextPosition>
-          <iconTextGap>4</iconTextGap>
-          <iconTextGapSet>false</iconTextGapSet>
-          <mnemonic>0</mnemonic>
-          <mnemonicIndex>-1</mnemonicIndex>
-          <multiClickThreshhold>0</multiClickThreshhold>
-          <paintBorder>true</paintBorder>
-          <paintFocus>true</paintFocus>
-          <rolloverEnabled>true</rolloverEnabled>
-          <rolloverEnabledSet>false</rolloverEnabledSet>
-          <setLayout>false</setLayout>
-          <verticalAlignment>0</verticalAlignment>
-          <verticalTextPosition>0</verticalTextPosition>
-          <actionListener class="javax.swing.AbstractButton$Handler">
-            <outer-class class="Cell" reference="../../../.."/>
-          </actionListener>
-          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <handler reference="../actionListener"/>
-          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <model class="javax.swing.DefaultButtonModel">
-            <stateMask>0</stateMask>
-            <mnemonic>0</mnemonic>
-            <listenerList serialization="custom">
-              <javax.swing.event.EventListenerList>
-                <default/>
-                <string>javax.swing.event.ChangeListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ActionListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ItemListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <null/>
-              </javax.swing.event.EventListenerList>
-            </listenerList>
-            <menuItem>false</menuItem>
-          </model>
-          <text></text>
-        </default>
-      </javax.swing.AbstractButton>
-      <javax.swing.JButton>
-        <default/>
-      </javax.swing.JButton>
-      <Cell>
-        <default>
-          <price>0</price>
-          <x>1</x>
-          <y>4</y>
-          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
-          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
-          <history serialization="custom">
-            <unserializable-parents/>
-            <vector>
-              <default>
-                <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
-                <elementData>
-                  <Cell_-3>
-                    <outer-class reference="../../../../../../../.."/>
-                  </Cell_-3>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                </elementData>
-              </default>
-            </vector>
-          </history>
-          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
-          <team>EMPTY</team>
-          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
-        </default>
-      </Cell>
-    </Cell>
-    <Cell serialization="custom">
-      <java.awt.Component>
-        <default>
-          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
-          <boundsOp>3</boundsOp>
-          <componentSerializedDataVersion>4</componentSerializedDataVersion>
-          <enabled>false</enabled>
-          <eventMask>4104</eventMask>
-          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
-          <focusable>true</focusable>
-          <height>75</height>
-          <ignoreRepaint>false</ignoreRepaint>
-          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
-          <isPacked>false</isPacked>
-          <maxSizeSet>false</maxSizeSet>
-          <minSizeSet>false</minSizeSet>
-          <nameExplicitlySet>false</nameExplicitlySet>
-          <newEventsOnly>true</newEventsOnly>
-          <prefSizeSet>false</prefSizeSet>
-          <valid>false</valid>
-          <visible>true</visible>
-          <width>75</width>
-          <x>277</x>
-          <y>455</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
-          <changeSupport serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="Cell" reference="../../../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </changeSupport>
-          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
-          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
-          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-        </default>
-        <null/>
-        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
-        <null/>
-        <null/>
-      </java.awt.Component>
-      <java.awt.Container>
-        <default>
-          <ncomponents>0</ncomponents>
-          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
-          <focusCycleRoot>false</focusCycleRoot>
-          <containerSerializedDataVersion>1</containerSerializedDataVersion>
-          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
-        </default>
-        <null/>
-        <null/>
-      </java.awt.Container>
-      <javax.swing.JComponent>
-        <default>
-          <alignmentX>0.0</alignmentX>
-          <alignmentY>0.5</alignmentY>
-          <autoscrolls>false</autoscrolls>
-          <flags>16793888</flags>
-          <isAlignmentXSet>true</isAlignmentXSet>
-          <isAlignmentYSet>true</isAlignmentYSet>
-          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
-          <actionMap serialization="custom">
-            <javax.swing.ActionMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.ActionMap>
-          </actionMap>
-          <focusInputMap serialization="custom">
-            <javax.swing.InputMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.InputMap>
-          </focusInputMap>
-          <listenerList serialization="custom">
-            <javax.swing.event.EventListenerList>
-              <default/>
-              <null/>
-            </javax.swing.event.EventListenerList>
-          </listenerList>
-        </default>
-        <int>0</int>
-      </javax.swing.JComponent>
-      <javax.swing.AbstractButton>
-        <default>
-          <borderPaintedSet>false</borderPaintedSet>
-          <contentAreaFilled>false</contentAreaFilled>
-          <contentAreaFilledSet>true</contentAreaFilledSet>
-          <defaultCapable>true</defaultCapable>
-          <hideActionText>false</hideActionText>
-          <horizontalAlignment>0</horizontalAlignment>
-          <horizontalTextPosition>11</horizontalTextPosition>
-          <iconTextGap>4</iconTextGap>
-          <iconTextGapSet>false</iconTextGapSet>
-          <mnemonic>0</mnemonic>
-          <mnemonicIndex>-1</mnemonicIndex>
-          <multiClickThreshhold>0</multiClickThreshhold>
-          <paintBorder>true</paintBorder>
-          <paintFocus>true</paintFocus>
-          <rolloverEnabled>true</rolloverEnabled>
-          <rolloverEnabledSet>false</rolloverEnabledSet>
-          <setLayout>false</setLayout>
-          <verticalAlignment>0</verticalAlignment>
-          <verticalTextPosition>0</verticalTextPosition>
-          <actionListener class="javax.swing.AbstractButton$Handler">
-            <outer-class class="Cell" reference="../../../.."/>
-          </actionListener>
-          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <handler reference="../actionListener"/>
-          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <model class="javax.swing.DefaultButtonModel">
-            <stateMask>0</stateMask>
-            <mnemonic>0</mnemonic>
-            <listenerList serialization="custom">
-              <javax.swing.event.EventListenerList>
-                <default/>
-                <string>javax.swing.event.ChangeListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ActionListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ItemListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <null/>
-              </javax.swing.event.EventListenerList>
-            </listenerList>
-            <menuItem>false</menuItem>
-          </model>
-          <text></text>
-        </default>
-      </javax.swing.AbstractButton>
-      <javax.swing.JButton>
-        <default/>
-      </javax.swing.JButton>
-      <Cell>
-        <default>
-          <price>0</price>
-          <x>1</x>
-          <y>5</y>
-          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
-          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
-          <history serialization="custom">
-            <unserializable-parents/>
-            <vector>
-              <default>
-                <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
-                <elementData>
-                  <Cell_-3>
-                    <outer-class reference="../../../../../../../.."/>
-                  </Cell_-3>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                </elementData>
-              </default>
-            </vector>
-          </history>
-          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
-          <team>EMPTY</team>
-          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
-        </default>
-      </Cell>
-    </Cell>
-    <Cell serialization="custom">
-      <java.awt.Component>
-        <default>
-          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
-          <boundsOp>3</boundsOp>
-          <componentSerializedDataVersion>4</componentSerializedDataVersion>
-          <enabled>false</enabled>
-          <eventMask>4104</eventMask>
-          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
-          <focusable>true</focusable>
-          <height>75</height>
-          <ignoreRepaint>false</ignoreRepaint>
-          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
-          <isPacked>false</isPacked>
-          <maxSizeSet>false</maxSizeSet>
-          <minSizeSet>false</minSizeSet>
-          <nameExplicitlySet>false</nameExplicitlySet>
-          <newEventsOnly>true</newEventsOnly>
-          <prefSizeSet>false</prefSizeSet>
-          <valid>false</valid>
-          <visible>true</visible>
-          <width>75</width>
-          <x>277</x>
-          <y>530</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
-          <changeSupport serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="Cell" reference="../../../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </changeSupport>
-          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
-          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
-          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-        </default>
-        <null/>
-        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
-        <null/>
-        <null/>
-      </java.awt.Component>
-      <java.awt.Container>
-        <default>
-          <ncomponents>0</ncomponents>
-          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
-          <focusCycleRoot>false</focusCycleRoot>
-          <containerSerializedDataVersion>1</containerSerializedDataVersion>
-          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
-        </default>
-        <null/>
-        <null/>
-      </java.awt.Container>
-      <javax.swing.JComponent>
-        <default>
-          <alignmentX>0.0</alignmentX>
-          <alignmentY>0.5</alignmentY>
-          <autoscrolls>false</autoscrolls>
-          <flags>16793888</flags>
-          <isAlignmentXSet>true</isAlignmentXSet>
-          <isAlignmentYSet>true</isAlignmentYSet>
-          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
-          <actionMap serialization="custom">
-            <javax.swing.ActionMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.ActionMap>
-          </actionMap>
-          <focusInputMap serialization="custom">
-            <javax.swing.InputMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.InputMap>
-          </focusInputMap>
-          <listenerList serialization="custom">
-            <javax.swing.event.EventListenerList>
-              <default/>
-              <null/>
-            </javax.swing.event.EventListenerList>
-          </listenerList>
-        </default>
-        <int>0</int>
-      </javax.swing.JComponent>
-      <javax.swing.AbstractButton>
-        <default>
-          <borderPaintedSet>false</borderPaintedSet>
-          <contentAreaFilled>false</contentAreaFilled>
-          <contentAreaFilledSet>true</contentAreaFilledSet>
-          <defaultCapable>true</defaultCapable>
-          <hideActionText>false</hideActionText>
-          <horizontalAlignment>0</horizontalAlignment>
-          <horizontalTextPosition>11</horizontalTextPosition>
-          <iconTextGap>4</iconTextGap>
-          <iconTextGapSet>false</iconTextGapSet>
-          <mnemonic>0</mnemonic>
-          <mnemonicIndex>-1</mnemonicIndex>
-          <multiClickThreshhold>0</multiClickThreshhold>
-          <paintBorder>true</paintBorder>
-          <paintFocus>true</paintFocus>
-          <rolloverEnabled>true</rolloverEnabled>
-          <rolloverEnabledSet>false</rolloverEnabledSet>
-          <setLayout>false</setLayout>
-          <verticalAlignment>0</verticalAlignment>
-          <verticalTextPosition>0</verticalTextPosition>
-          <actionListener class="javax.swing.AbstractButton$Handler">
-            <outer-class class="Cell" reference="../../../.."/>
-          </actionListener>
-          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <handler reference="../actionListener"/>
-          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <model class="javax.swing.DefaultButtonModel">
-            <stateMask>0</stateMask>
-            <mnemonic>0</mnemonic>
-            <listenerList serialization="custom">
-              <javax.swing.event.EventListenerList>
-                <default/>
-                <string>javax.swing.event.ChangeListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ActionListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ItemListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <null/>
-              </javax.swing.event.EventListenerList>
-            </listenerList>
-            <menuItem>false</menuItem>
-          </model>
-          <text></text>
-        </default>
-      </javax.swing.AbstractButton>
-      <javax.swing.JButton>
-        <default/>
-      </javax.swing.JButton>
-      <Cell>
-        <default>
-          <price>0</price>
-          <x>1</x>
-          <y>6</y>
-          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
-          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
-          <history serialization="custom">
-            <unserializable-parents/>
-            <vector>
-              <default>
-                <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
-                <elementData>
-                  <Cell_-3>
-                    <outer-class reference="../../../../../../../.."/>
-                  </Cell_-3>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                </elementData>
-              </default>
-            </vector>
-          </history>
-          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
-          <team>EMPTY</team>
-          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
-        </default>
-      </Cell>
-    </Cell>
-    <Cell serialization="custom">
-      <java.awt.Component>
-        <default>
-          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
-          <boundsOp>3</boundsOp>
-          <componentSerializedDataVersion>4</componentSerializedDataVersion>
-          <enabled>false</enabled>
-          <eventMask>4104</eventMask>
-          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
-          <focusable>true</focusable>
-          <height>75</height>
-          <ignoreRepaint>false</ignoreRepaint>
-          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
-          <isPacked>false</isPacked>
-          <maxSizeSet>false</maxSizeSet>
-          <minSizeSet>false</minSizeSet>
-          <nameExplicitlySet>false</nameExplicitlySet>
-          <newEventsOnly>true</newEventsOnly>
-          <prefSizeSet>false</prefSizeSet>
-          <valid>false</valid>
-          <visible>true</visible>
-          <width>75</width>
-          <x>277</x>
-          <y>605</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
-          <changeSupport serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="Cell" reference="../../../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </changeSupport>
-          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
-          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
-          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-        </default>
-        <null/>
-        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
-        <null/>
-        <null/>
-      </java.awt.Component>
-      <java.awt.Container>
-        <default>
-          <ncomponents>0</ncomponents>
-          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
-          <focusCycleRoot>false</focusCycleRoot>
-          <containerSerializedDataVersion>1</containerSerializedDataVersion>
-          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
-        </default>
-        <null/>
-        <null/>
-      </java.awt.Container>
-      <javax.swing.JComponent>
-        <default>
-          <alignmentX>0.0</alignmentX>
-          <alignmentY>0.5</alignmentY>
-          <autoscrolls>false</autoscrolls>
-          <flags>16793888</flags>
-          <isAlignmentXSet>true</isAlignmentXSet>
-          <isAlignmentYSet>true</isAlignmentYSet>
-          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
-          <actionMap serialization="custom">
-            <javax.swing.ActionMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.ActionMap>
-          </actionMap>
-          <focusInputMap serialization="custom">
-            <javax.swing.InputMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.InputMap>
-          </focusInputMap>
-          <listenerList serialization="custom">
-            <javax.swing.event.EventListenerList>
-              <default/>
-              <null/>
-            </javax.swing.event.EventListenerList>
-          </listenerList>
-        </default>
-        <int>0</int>
-      </javax.swing.JComponent>
-      <javax.swing.AbstractButton>
-        <default>
-          <borderPaintedSet>false</borderPaintedSet>
-          <contentAreaFilled>false</contentAreaFilled>
-          <contentAreaFilledSet>true</contentAreaFilledSet>
-          <defaultCapable>true</defaultCapable>
-          <hideActionText>false</hideActionText>
-          <horizontalAlignment>0</horizontalAlignment>
-          <horizontalTextPosition>11</horizontalTextPosition>
-          <iconTextGap>4</iconTextGap>
-          <iconTextGapSet>false</iconTextGapSet>
-          <mnemonic>0</mnemonic>
-          <mnemonicIndex>-1</mnemonicIndex>
-          <multiClickThreshhold>0</multiClickThreshhold>
-          <paintBorder>true</paintBorder>
-          <paintFocus>true</paintFocus>
-          <rolloverEnabled>true</rolloverEnabled>
-          <rolloverEnabledSet>false</rolloverEnabledSet>
-          <setLayout>false</setLayout>
-          <verticalAlignment>0</verticalAlignment>
-          <verticalTextPosition>0</verticalTextPosition>
-          <actionListener class="javax.swing.AbstractButton$Handler">
-            <outer-class class="Cell" reference="../../../.."/>
-          </actionListener>
-          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <handler reference="../actionListener"/>
-          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <model class="javax.swing.DefaultButtonModel">
-            <stateMask>0</stateMask>
-            <mnemonic>0</mnemonic>
-            <listenerList serialization="custom">
-              <javax.swing.event.EventListenerList>
-                <default/>
-                <string>javax.swing.event.ChangeListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ActionListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ItemListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <null/>
-              </javax.swing.event.EventListenerList>
-            </listenerList>
-            <menuItem>false</menuItem>
-          </model>
-          <text></text>
-        </default>
-      </javax.swing.AbstractButton>
-      <javax.swing.JButton>
-        <default/>
-      </javax.swing.JButton>
-      <Cell>
-        <default>
-          <price>0</price>
-          <x>1</x>
-          <y>7</y>
-          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
-          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
-          <history serialization="custom">
-            <unserializable-parents/>
-            <vector>
-              <default>
-                <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
-                <elementData>
-                  <Cell_-3>
-                    <outer-class reference="../../../../../../../.."/>
-                  </Cell_-3>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                </elementData>
-              </default>
-            </vector>
-          </history>
-          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
-          <team>EMPTY</team>
-          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
-        </default>
-      </Cell>
-    </Cell>
-  </Cell-array>
-  <Cell-array>
-    <Cell serialization="custom">
-      <java.awt.Component>
-        <default>
-          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
-          <boundsOp>3</boundsOp>
-          <componentSerializedDataVersion>4</componentSerializedDataVersion>
-          <enabled>false</enabled>
-          <eventMask>4104</eventMask>
-          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
-          <focusable>true</focusable>
-          <height>75</height>
-          <ignoreRepaint>false</ignoreRepaint>
-          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
-          <isPacked>false</isPacked>
-          <maxSizeSet>false</maxSizeSet>
-          <minSizeSet>false</minSizeSet>
-          <nameExplicitlySet>false</nameExplicitlySet>
-          <newEventsOnly>true</newEventsOnly>
-          <prefSizeSet>false</prefSizeSet>
-          <valid>false</valid>
-          <visible>true</visible>
-          <width>75</width>
-          <x>352</x>
-          <y>80</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
-          <changeSupport serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="Cell" reference="../../../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </changeSupport>
-          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
-          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
-          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-        </default>
-        <null/>
-        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
-        <null/>
-        <null/>
-      </java.awt.Component>
-      <java.awt.Container>
-        <default>
-          <ncomponents>0</ncomponents>
-          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
-          <focusCycleRoot>false</focusCycleRoot>
-          <containerSerializedDataVersion>1</containerSerializedDataVersion>
-          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
-        </default>
-        <null/>
-        <null/>
-      </java.awt.Container>
-      <javax.swing.JComponent>
-        <default>
-          <alignmentX>0.0</alignmentX>
-          <alignmentY>0.5</alignmentY>
-          <autoscrolls>false</autoscrolls>
-          <flags>16793888</flags>
-          <isAlignmentXSet>true</isAlignmentXSet>
-          <isAlignmentYSet>true</isAlignmentYSet>
-          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
-          <actionMap serialization="custom">
-            <javax.swing.ActionMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.ActionMap>
-          </actionMap>
-          <focusInputMap serialization="custom">
-            <javax.swing.InputMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.InputMap>
-          </focusInputMap>
-          <listenerList serialization="custom">
-            <javax.swing.event.EventListenerList>
-              <default/>
-              <null/>
-            </javax.swing.event.EventListenerList>
-          </listenerList>
-        </default>
-        <int>0</int>
-      </javax.swing.JComponent>
-      <javax.swing.AbstractButton>
-        <default>
-          <borderPaintedSet>false</borderPaintedSet>
-          <contentAreaFilled>false</contentAreaFilled>
-          <contentAreaFilledSet>true</contentAreaFilledSet>
-          <defaultCapable>true</defaultCapable>
-          <hideActionText>false</hideActionText>
-          <horizontalAlignment>0</horizontalAlignment>
-          <horizontalTextPosition>11</horizontalTextPosition>
-          <iconTextGap>4</iconTextGap>
-          <iconTextGapSet>false</iconTextGapSet>
-          <mnemonic>0</mnemonic>
-          <mnemonicIndex>-1</mnemonicIndex>
-          <multiClickThreshhold>0</multiClickThreshhold>
-          <paintBorder>true</paintBorder>
-          <paintFocus>true</paintFocus>
-          <rolloverEnabled>true</rolloverEnabled>
-          <rolloverEnabledSet>false</rolloverEnabledSet>
-          <setLayout>false</setLayout>
-          <verticalAlignment>0</verticalAlignment>
-          <verticalTextPosition>0</verticalTextPosition>
-          <actionListener class="javax.swing.AbstractButton$Handler">
-            <outer-class class="Cell" reference="../../../.."/>
-          </actionListener>
-          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <handler reference="../actionListener"/>
-          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <model class="javax.swing.DefaultButtonModel">
-            <stateMask>0</stateMask>
-            <mnemonic>0</mnemonic>
-            <listenerList serialization="custom">
-              <javax.swing.event.EventListenerList>
-                <default/>
-                <string>javax.swing.event.ChangeListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ActionListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ItemListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <null/>
-              </javax.swing.event.EventListenerList>
-            </listenerList>
-            <menuItem>false</menuItem>
-          </model>
-          <text></text>
-        </default>
-      </javax.swing.AbstractButton>
-      <javax.swing.JButton>
-        <default/>
-      </javax.swing.JButton>
-      <Cell>
-        <default>
-          <price>0</price>
-          <x>2</x>
-          <y>0</y>
-          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
-          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
-          <history serialization="custom">
-            <unserializable-parents/>
-            <vector>
-              <default>
-                <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
-                <elementData>
-                  <Cell_-3>
-                    <outer-class reference="../../../../../../../.."/>
-                  </Cell_-3>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                </elementData>
-              </default>
-            </vector>
-          </history>
-          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
-          <team>EMPTY</team>
-          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
-        </default>
-      </Cell>
-    </Cell>
-    <Cell serialization="custom">
-      <java.awt.Component>
-        <default>
-          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
-          <boundsOp>3</boundsOp>
-          <componentSerializedDataVersion>4</componentSerializedDataVersion>
-          <enabled>false</enabled>
-          <eventMask>4104</eventMask>
-          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
-          <focusable>true</focusable>
-          <height>75</height>
-          <ignoreRepaint>false</ignoreRepaint>
-          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
-          <isPacked>false</isPacked>
-          <maxSizeSet>false</maxSizeSet>
-          <minSizeSet>false</minSizeSet>
-          <nameExplicitlySet>false</nameExplicitlySet>
-          <newEventsOnly>true</newEventsOnly>
-          <prefSizeSet>false</prefSizeSet>
-          <valid>false</valid>
-          <visible>true</visible>
-          <width>75</width>
-          <x>352</x>
-          <y>155</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
-          <changeSupport serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="Cell" reference="../../../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </changeSupport>
-          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
-          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
-          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-        </default>
-        <null/>
-        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
-        <null/>
-        <null/>
-      </java.awt.Component>
-      <java.awt.Container>
-        <default>
-          <ncomponents>0</ncomponents>
-          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
-          <focusCycleRoot>false</focusCycleRoot>
-          <containerSerializedDataVersion>1</containerSerializedDataVersion>
-          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
-        </default>
-        <null/>
-        <null/>
-      </java.awt.Container>
-      <javax.swing.JComponent>
-        <default>
-          <alignmentX>0.0</alignmentX>
-          <alignmentY>0.5</alignmentY>
-          <autoscrolls>false</autoscrolls>
-          <flags>16793888</flags>
-          <isAlignmentXSet>true</isAlignmentXSet>
-          <isAlignmentYSet>true</isAlignmentYSet>
-          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
-          <actionMap serialization="custom">
-            <javax.swing.ActionMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.ActionMap>
-          </actionMap>
-          <focusInputMap serialization="custom">
-            <javax.swing.InputMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.InputMap>
-          </focusInputMap>
-          <listenerList serialization="custom">
-            <javax.swing.event.EventListenerList>
-              <default/>
-              <null/>
-            </javax.swing.event.EventListenerList>
-          </listenerList>
-        </default>
-        <int>0</int>
-      </javax.swing.JComponent>
-      <javax.swing.AbstractButton>
-        <default>
-          <borderPaintedSet>false</borderPaintedSet>
-          <contentAreaFilled>false</contentAreaFilled>
-          <contentAreaFilledSet>true</contentAreaFilledSet>
-          <defaultCapable>true</defaultCapable>
-          <hideActionText>false</hideActionText>
-          <horizontalAlignment>0</horizontalAlignment>
-          <horizontalTextPosition>11</horizontalTextPosition>
-          <iconTextGap>4</iconTextGap>
-          <iconTextGapSet>false</iconTextGapSet>
-          <mnemonic>0</mnemonic>
-          <mnemonicIndex>-1</mnemonicIndex>
-          <multiClickThreshhold>0</multiClickThreshhold>
-          <paintBorder>true</paintBorder>
-          <paintFocus>true</paintFocus>
-          <rolloverEnabled>true</rolloverEnabled>
-          <rolloverEnabledSet>false</rolloverEnabledSet>
-          <setLayout>false</setLayout>
-          <verticalAlignment>0</verticalAlignment>
-          <verticalTextPosition>0</verticalTextPosition>
-          <actionListener class="javax.swing.AbstractButton$Handler">
-            <outer-class class="Cell" reference="../../../.."/>
-          </actionListener>
-          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <handler reference="../actionListener"/>
-          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <model class="javax.swing.DefaultButtonModel">
-            <stateMask>0</stateMask>
-            <mnemonic>0</mnemonic>
-            <listenerList serialization="custom">
-              <javax.swing.event.EventListenerList>
-                <default/>
-                <string>javax.swing.event.ChangeListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ActionListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ItemListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <null/>
-              </javax.swing.event.EventListenerList>
-            </listenerList>
-            <menuItem>false</menuItem>
-          </model>
-          <text></text>
-        </default>
-      </javax.swing.AbstractButton>
-      <javax.swing.JButton>
-        <default/>
-      </javax.swing.JButton>
-      <Cell>
-        <default>
-          <price>0</price>
-          <x>2</x>
-          <y>1</y>
-          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
-          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
-          <history serialization="custom">
-            <unserializable-parents/>
-            <vector>
-              <default>
-                <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
-                <elementData>
-                  <Cell_-3>
-                    <outer-class reference="../../../../../../../.."/>
-                  </Cell_-3>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                </elementData>
-              </default>
-            </vector>
-          </history>
-          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
-          <team>EMPTY</team>
-          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
-        </default>
-      </Cell>
-    </Cell>
-    <Cell serialization="custom">
-      <java.awt.Component>
-        <default>
-          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
-          <boundsOp>3</boundsOp>
-          <componentSerializedDataVersion>4</componentSerializedDataVersion>
-          <enabled>false</enabled>
-          <eventMask>4104</eventMask>
-          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
-          <focusable>true</focusable>
-          <height>75</height>
-          <ignoreRepaint>false</ignoreRepaint>
-          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
-          <isPacked>false</isPacked>
-          <maxSizeSet>false</maxSizeSet>
-          <minSizeSet>false</minSizeSet>
-          <nameExplicitlySet>false</nameExplicitlySet>
-          <newEventsOnly>true</newEventsOnly>
-          <prefSizeSet>false</prefSizeSet>
-          <valid>false</valid>
-          <visible>true</visible>
-          <width>75</width>
-          <x>352</x>
-          <y>230</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
-          <changeSupport serialization="custom">
-            <java.beans.PropertyChangeSupport>
-              <default>
-                <source class="Cell" reference="../../../../../.."/>
-                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
-              </default>
-              <null/>
-            </java.beans.PropertyChangeSupport>
-          </changeSupport>
-          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
-          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
-          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
-        </default>
-        <null/>
-        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
-        <null/>
-        <null/>
-      </java.awt.Component>
-      <java.awt.Container>
-        <default>
-          <ncomponents>0</ncomponents>
-          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
-          <focusCycleRoot>false</focusCycleRoot>
-          <containerSerializedDataVersion>1</containerSerializedDataVersion>
-          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
-        </default>
-        <null/>
-        <null/>
-      </java.awt.Container>
-      <javax.swing.JComponent>
-        <default>
-          <alignmentX>0.0</alignmentX>
-          <alignmentY>0.5</alignmentY>
-          <autoscrolls>false</autoscrolls>
-          <flags>16793888</flags>
-          <isAlignmentXSet>true</isAlignmentXSet>
-          <isAlignmentYSet>true</isAlignmentYSet>
-          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
-          <actionMap serialization="custom">
-            <javax.swing.ActionMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.ActionMap>
-          </actionMap>
-          <focusInputMap serialization="custom">
-            <javax.swing.InputMap>
-              <default/>
-              <int>0</int>
-            </javax.swing.InputMap>
-          </focusInputMap>
-          <listenerList serialization="custom">
-            <javax.swing.event.EventListenerList>
-              <default/>
-              <null/>
-            </javax.swing.event.EventListenerList>
-          </listenerList>
-        </default>
-        <int>0</int>
-      </javax.swing.JComponent>
-      <javax.swing.AbstractButton>
-        <default>
-          <borderPaintedSet>false</borderPaintedSet>
-          <contentAreaFilled>false</contentAreaFilled>
-          <contentAreaFilledSet>true</contentAreaFilledSet>
-          <defaultCapable>true</defaultCapable>
-          <hideActionText>false</hideActionText>
-          <horizontalAlignment>0</horizontalAlignment>
-          <horizontalTextPosition>11</horizontalTextPosition>
-          <iconTextGap>4</iconTextGap>
-          <iconTextGapSet>false</iconTextGapSet>
-          <mnemonic>0</mnemonic>
-          <mnemonicIndex>-1</mnemonicIndex>
-          <multiClickThreshhold>0</multiClickThreshhold>
-          <paintBorder>true</paintBorder>
-          <paintFocus>true</paintFocus>
-          <rolloverEnabled>true</rolloverEnabled>
-          <rolloverEnabledSet>false</rolloverEnabledSet>
-          <setLayout>false</setLayout>
-          <verticalAlignment>0</verticalAlignment>
-          <verticalTextPosition>0</verticalTextPosition>
-          <actionListener class="javax.swing.AbstractButton$Handler">
-            <outer-class class="Cell" reference="../../../.."/>
-          </actionListener>
-          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <handler reference="../actionListener"/>
-          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
-          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
-          <model class="javax.swing.DefaultButtonModel">
-            <stateMask>0</stateMask>
-            <mnemonic>0</mnemonic>
-            <listenerList serialization="custom">
-              <javax.swing.event.EventListenerList>
-                <default/>
-                <string>javax.swing.event.ChangeListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ActionListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <string>java.awt.event.ItemListener</string>
-                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
-                <null/>
-              </javax.swing.event.EventListenerList>
-            </listenerList>
-            <menuItem>false</menuItem>
-          </model>
-          <text></text>
-        </default>
-      </javax.swing.AbstractButton>
-      <javax.swing.JButton>
-        <default/>
-      </javax.swing.JButton>
-      <Cell>
-        <default>
-          <price>0</price>
-          <x>2</x>
-          <y>2</y>
-          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
-          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
-          <history serialization="custom">
-            <unserializable-parents/>
-            <vector>
-              <default>
-                <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
-                <elementData>
-                  <Cell_-3>
-                    <outer-class reference="../../../../../../../.."/>
-                  </Cell_-3>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                  <null/>
-                </elementData>
-              </default>
-            </vector>
-          </history>
-          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
-          <team>EMPTY</team>
-          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
-        </default>
-      </Cell>
-    </Cell>
-    <Cell serialization="custom">
-      <java.awt.Component>
-        <default>
-          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
-          <boundsOp>3</boundsOp>
-          <componentSerializedDataVersion>4</componentSerializedDataVersion>
-          <enabled>true</enabled>
-          <eventMask>4104</eventMask>
-          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
-          <focusable>true</focusable>
-          <height>75</height>
-          <ignoreRepaint>false</ignoreRepaint>
-          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
-          <isPacked>false</isPacked>
-          <maxSizeSet>false</maxSizeSet>
-          <minSizeSet>false</minSizeSet>
-          <nameExplicitlySet>false</nameExplicitlySet>
-          <newEventsOnly>true</newEventsOnly>
-          <prefSizeSet>false</prefSizeSet>
-          <valid>false</valid>
-          <visible>true</visible>
-          <width>75</width>
-          <x>352</x>
-          <y>305</y>
           <background>
             <red>0</red>
             <green>255</green>
@@ -25922,6 +24403,183 @@
           <alignmentX>0.0</alignmentX>
           <alignmentY>0.5</alignmentY>
           <autoscrolls>false</autoscrolls>
+          <flags>16793888</flags>
+          <isAlignmentXSet>true</isAlignmentXSet>
+          <isAlignmentYSet>true</isAlignmentYSet>
+          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+          <actionMap serialization="custom">
+            <javax.swing.ActionMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.ActionMap>
+          </actionMap>
+          <focusInputMap serialization="custom">
+            <javax.swing.InputMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.InputMap>
+          </focusInputMap>
+          <listenerList serialization="custom">
+            <javax.swing.event.EventListenerList>
+              <default/>
+              <null/>
+            </javax.swing.event.EventListenerList>
+          </listenerList>
+        </default>
+        <int>0</int>
+      </javax.swing.JComponent>
+      <javax.swing.AbstractButton>
+        <default>
+          <borderPaintedSet>false</borderPaintedSet>
+          <contentAreaFilled>false</contentAreaFilled>
+          <contentAreaFilledSet>true</contentAreaFilledSet>
+          <defaultCapable>true</defaultCapable>
+          <hideActionText>false</hideActionText>
+          <horizontalAlignment>0</horizontalAlignment>
+          <horizontalTextPosition>11</horizontalTextPosition>
+          <iconTextGap>4</iconTextGap>
+          <iconTextGapSet>false</iconTextGapSet>
+          <mnemonic>0</mnemonic>
+          <mnemonicIndex>-1</mnemonicIndex>
+          <multiClickThreshhold>0</multiClickThreshhold>
+          <paintBorder>true</paintBorder>
+          <paintFocus>true</paintFocus>
+          <rolloverEnabled>true</rolloverEnabled>
+          <rolloverEnabledSet>false</rolloverEnabledSet>
+          <setLayout>false</setLayout>
+          <verticalAlignment>0</verticalAlignment>
+          <verticalTextPosition>0</verticalTextPosition>
+          <actionListener class="javax.swing.AbstractButton$Handler">
+            <outer-class class="Cell" reference="../../../.."/>
+          </actionListener>
+          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <handler reference="../actionListener"/>
+          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <model class="javax.swing.DefaultButtonModel">
+            <stateMask>0</stateMask>
+            <mnemonic>0</mnemonic>
+            <listenerList serialization="custom">
+              <javax.swing.event.EventListenerList>
+                <default/>
+                <string>javax.swing.event.ChangeListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ActionListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ItemListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <null/>
+              </javax.swing.event.EventListenerList>
+            </listenerList>
+            <menuItem>false</menuItem>
+          </model>
+          <text></text>
+        </default>
+      </javax.swing.AbstractButton>
+      <javax.swing.JButton>
+        <default/>
+      </javax.swing.JButton>
+      <Cell>
+        <default>
+          <price>1</price>
+          <x>1</x>
+          <y>2</y>
+          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
+          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
+          <history serialization="custom">
+            <unserializable-parents/>
+            <vector>
+              <default>
+                <capacityIncrement>0</capacityIncrement>
+                <elementCount>3</elementCount>
+                <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                </elementData>
+              </default>
+            </vector>
+          </history>
+          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
+          <team>EMPTY</team>
+          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+        </default>
+      </Cell>
+    </Cell>
+    <Cell serialization="custom">
+      <java.awt.Component>
+        <default>
+          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+          <boundsOp>3</boundsOp>
+          <componentSerializedDataVersion>4</componentSerializedDataVersion>
+          <enabled>true</enabled>
+          <eventMask>4104</eventMask>
+          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+          <focusable>true</focusable>
+          <height>75</height>
+          <ignoreRepaint>false</ignoreRepaint>
+          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+          <isPacked>false</isPacked>
+          <maxSizeSet>false</maxSizeSet>
+          <minSizeSet>false</minSizeSet>
+          <nameExplicitlySet>false</nameExplicitlySet>
+          <newEventsOnly>true</newEventsOnly>
+          <prefSizeSet>false</prefSizeSet>
+          <valid>false</valid>
+          <visible>true</visible>
+          <width>75</width>
+          <x>277</x>
+          <y>305</y>
+          <background reference="../../../../Cell[3]/java.awt.Component/default/background"/>
+          <changeSupport serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="Cell" reference="../../../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </changeSupport>
+          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
+          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
+          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+        </default>
+        <null/>
+        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
+        <null/>
+        <null/>
+      </java.awt.Component>
+      <java.awt.Container>
+        <default>
+          <ncomponents>0</ncomponents>
+          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
+          <focusCycleRoot>false</focusCycleRoot>
+          <containerSerializedDataVersion>1</containerSerializedDataVersion>
+          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+        </default>
+        <null/>
+        <null/>
+      </java.awt.Container>
+      <javax.swing.JComponent>
+        <default>
+          <alignmentX>0.0</alignmentX>
+          <alignmentY>0.5</alignmentY>
+          <autoscrolls>false</autoscrolls>
           <flags>16793896</flags>
           <isAlignmentXSet>true</isAlignmentXSet>
           <isAlignmentYSet>true</isAlignmentYSet>
@@ -26001,8 +24659,8 @@
       </javax.swing.JButton>
       <Cell>
         <default>
-          <price>1</price>
-          <x>2</x>
+          <price>2</price>
+          <x>1</x>
           <y>3</y>
           <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
           <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
@@ -26011,13 +24669,1081 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
                   <null/>
                   <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                </elementData>
+              </default>
+            </vector>
+          </history>
+          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
+          <team>EMPTY</team>
+          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+        </default>
+      </Cell>
+    </Cell>
+    <Cell serialization="custom">
+      <java.awt.Component>
+        <default>
+          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+          <boundsOp>3</boundsOp>
+          <componentSerializedDataVersion>4</componentSerializedDataVersion>
+          <enabled>false</enabled>
+          <eventMask>4104</eventMask>
+          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+          <focusable>true</focusable>
+          <height>75</height>
+          <ignoreRepaint>false</ignoreRepaint>
+          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+          <isPacked>false</isPacked>
+          <maxSizeSet>false</maxSizeSet>
+          <minSizeSet>false</minSizeSet>
+          <nameExplicitlySet>false</nameExplicitlySet>
+          <newEventsOnly>true</newEventsOnly>
+          <prefSizeSet>false</prefSizeSet>
+          <valid>false</valid>
+          <visible>true</visible>
+          <width>75</width>
+          <x>277</x>
+          <y>380</y>
+          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
+          <changeSupport serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="Cell" reference="../../../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </changeSupport>
+          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
+          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
+          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+        </default>
+        <null/>
+        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
+        <null/>
+        <null/>
+      </java.awt.Component>
+      <java.awt.Container>
+        <default>
+          <ncomponents>0</ncomponents>
+          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
+          <focusCycleRoot>false</focusCycleRoot>
+          <containerSerializedDataVersion>1</containerSerializedDataVersion>
+          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+        </default>
+        <null/>
+        <null/>
+      </java.awt.Container>
+      <javax.swing.JComponent>
+        <default>
+          <alignmentX>0.0</alignmentX>
+          <alignmentY>0.5</alignmentY>
+          <autoscrolls>false</autoscrolls>
+          <flags>16793888</flags>
+          <isAlignmentXSet>true</isAlignmentXSet>
+          <isAlignmentYSet>true</isAlignmentYSet>
+          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+          <actionMap serialization="custom">
+            <javax.swing.ActionMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.ActionMap>
+          </actionMap>
+          <focusInputMap serialization="custom">
+            <javax.swing.InputMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.InputMap>
+          </focusInputMap>
+          <listenerList serialization="custom">
+            <javax.swing.event.EventListenerList>
+              <default/>
+              <null/>
+            </javax.swing.event.EventListenerList>
+          </listenerList>
+        </default>
+        <int>0</int>
+      </javax.swing.JComponent>
+      <javax.swing.AbstractButton>
+        <default>
+          <borderPaintedSet>false</borderPaintedSet>
+          <contentAreaFilled>false</contentAreaFilled>
+          <contentAreaFilledSet>true</contentAreaFilledSet>
+          <defaultCapable>true</defaultCapable>
+          <hideActionText>false</hideActionText>
+          <horizontalAlignment>0</horizontalAlignment>
+          <horizontalTextPosition>11</horizontalTextPosition>
+          <iconTextGap>4</iconTextGap>
+          <iconTextGapSet>false</iconTextGapSet>
+          <mnemonic>0</mnemonic>
+          <mnemonicIndex>-1</mnemonicIndex>
+          <multiClickThreshhold>0</multiClickThreshhold>
+          <paintBorder>true</paintBorder>
+          <paintFocus>true</paintFocus>
+          <rolloverEnabled>true</rolloverEnabled>
+          <rolloverEnabledSet>false</rolloverEnabledSet>
+          <setLayout>false</setLayout>
+          <verticalAlignment>0</verticalAlignment>
+          <verticalTextPosition>0</verticalTextPosition>
+          <actionListener class="javax.swing.AbstractButton$Handler">
+            <outer-class class="Cell" reference="../../../.."/>
+          </actionListener>
+          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <handler reference="../actionListener"/>
+          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <model class="javax.swing.DefaultButtonModel">
+            <stateMask>0</stateMask>
+            <mnemonic>0</mnemonic>
+            <listenerList serialization="custom">
+              <javax.swing.event.EventListenerList>
+                <default/>
+                <string>javax.swing.event.ChangeListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ActionListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ItemListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <null/>
+              </javax.swing.event.EventListenerList>
+            </listenerList>
+            <menuItem>false</menuItem>
+          </model>
+          <text></text>
+        </default>
+      </javax.swing.AbstractButton>
+      <javax.swing.JButton>
+        <default/>
+      </javax.swing.JButton>
+      <Cell>
+        <default>
+          <price>0</price>
+          <x>1</x>
+          <y>4</y>
+          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
+          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
+          <history serialization="custom">
+            <unserializable-parents/>
+            <vector>
+              <default>
+                <capacityIncrement>0</capacityIncrement>
+                <elementCount>3</elementCount>
+                <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                </elementData>
+              </default>
+            </vector>
+          </history>
+          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
+          <team>EMPTY</team>
+          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+        </default>
+      </Cell>
+    </Cell>
+    <Cell serialization="custom">
+      <java.awt.Component>
+        <default>
+          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+          <boundsOp>3</boundsOp>
+          <componentSerializedDataVersion>4</componentSerializedDataVersion>
+          <enabled>false</enabled>
+          <eventMask>4104</eventMask>
+          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+          <focusable>true</focusable>
+          <height>75</height>
+          <ignoreRepaint>false</ignoreRepaint>
+          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+          <isPacked>false</isPacked>
+          <maxSizeSet>false</maxSizeSet>
+          <minSizeSet>false</minSizeSet>
+          <nameExplicitlySet>false</nameExplicitlySet>
+          <newEventsOnly>true</newEventsOnly>
+          <prefSizeSet>false</prefSizeSet>
+          <valid>false</valid>
+          <visible>true</visible>
+          <width>75</width>
+          <x>277</x>
+          <y>455</y>
+          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
+          <changeSupport serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="Cell" reference="../../../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </changeSupport>
+          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
+          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
+          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+        </default>
+        <null/>
+        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
+        <null/>
+        <null/>
+      </java.awt.Component>
+      <java.awt.Container>
+        <default>
+          <ncomponents>0</ncomponents>
+          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
+          <focusCycleRoot>false</focusCycleRoot>
+          <containerSerializedDataVersion>1</containerSerializedDataVersion>
+          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+        </default>
+        <null/>
+        <null/>
+      </java.awt.Container>
+      <javax.swing.JComponent>
+        <default>
+          <alignmentX>0.0</alignmentX>
+          <alignmentY>0.5</alignmentY>
+          <autoscrolls>false</autoscrolls>
+          <flags>16793888</flags>
+          <isAlignmentXSet>true</isAlignmentXSet>
+          <isAlignmentYSet>true</isAlignmentYSet>
+          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+          <actionMap serialization="custom">
+            <javax.swing.ActionMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.ActionMap>
+          </actionMap>
+          <focusInputMap serialization="custom">
+            <javax.swing.InputMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.InputMap>
+          </focusInputMap>
+          <listenerList serialization="custom">
+            <javax.swing.event.EventListenerList>
+              <default/>
+              <null/>
+            </javax.swing.event.EventListenerList>
+          </listenerList>
+        </default>
+        <int>0</int>
+      </javax.swing.JComponent>
+      <javax.swing.AbstractButton>
+        <default>
+          <borderPaintedSet>false</borderPaintedSet>
+          <contentAreaFilled>false</contentAreaFilled>
+          <contentAreaFilledSet>true</contentAreaFilledSet>
+          <defaultCapable>true</defaultCapable>
+          <hideActionText>false</hideActionText>
+          <horizontalAlignment>0</horizontalAlignment>
+          <horizontalTextPosition>11</horizontalTextPosition>
+          <iconTextGap>4</iconTextGap>
+          <iconTextGapSet>false</iconTextGapSet>
+          <mnemonic>0</mnemonic>
+          <mnemonicIndex>-1</mnemonicIndex>
+          <multiClickThreshhold>0</multiClickThreshhold>
+          <paintBorder>true</paintBorder>
+          <paintFocus>true</paintFocus>
+          <rolloverEnabled>true</rolloverEnabled>
+          <rolloverEnabledSet>false</rolloverEnabledSet>
+          <setLayout>false</setLayout>
+          <verticalAlignment>0</verticalAlignment>
+          <verticalTextPosition>0</verticalTextPosition>
+          <actionListener class="javax.swing.AbstractButton$Handler">
+            <outer-class class="Cell" reference="../../../.."/>
+          </actionListener>
+          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <handler reference="../actionListener"/>
+          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <model class="javax.swing.DefaultButtonModel">
+            <stateMask>0</stateMask>
+            <mnemonic>0</mnemonic>
+            <listenerList serialization="custom">
+              <javax.swing.event.EventListenerList>
+                <default/>
+                <string>javax.swing.event.ChangeListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ActionListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ItemListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <null/>
+              </javax.swing.event.EventListenerList>
+            </listenerList>
+            <menuItem>false</menuItem>
+          </model>
+          <text></text>
+        </default>
+      </javax.swing.AbstractButton>
+      <javax.swing.JButton>
+        <default/>
+      </javax.swing.JButton>
+      <Cell>
+        <default>
+          <price>0</price>
+          <x>1</x>
+          <y>5</y>
+          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
+          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
+          <history serialization="custom">
+            <unserializable-parents/>
+            <vector>
+              <default>
+                <capacityIncrement>0</capacityIncrement>
+                <elementCount>3</elementCount>
+                <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                </elementData>
+              </default>
+            </vector>
+          </history>
+          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
+          <team>EMPTY</team>
+          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+        </default>
+      </Cell>
+    </Cell>
+    <Cell serialization="custom">
+      <java.awt.Component>
+        <default>
+          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+          <boundsOp>3</boundsOp>
+          <componentSerializedDataVersion>4</componentSerializedDataVersion>
+          <enabled>false</enabled>
+          <eventMask>4104</eventMask>
+          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+          <focusable>true</focusable>
+          <height>75</height>
+          <ignoreRepaint>false</ignoreRepaint>
+          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+          <isPacked>false</isPacked>
+          <maxSizeSet>false</maxSizeSet>
+          <minSizeSet>false</minSizeSet>
+          <nameExplicitlySet>false</nameExplicitlySet>
+          <newEventsOnly>true</newEventsOnly>
+          <prefSizeSet>false</prefSizeSet>
+          <valid>false</valid>
+          <visible>true</visible>
+          <width>75</width>
+          <x>277</x>
+          <y>530</y>
+          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
+          <changeSupport serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="Cell" reference="../../../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </changeSupport>
+          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
+          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
+          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+        </default>
+        <null/>
+        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
+        <null/>
+        <null/>
+      </java.awt.Component>
+      <java.awt.Container>
+        <default>
+          <ncomponents>0</ncomponents>
+          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
+          <focusCycleRoot>false</focusCycleRoot>
+          <containerSerializedDataVersion>1</containerSerializedDataVersion>
+          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+        </default>
+        <null/>
+        <null/>
+      </java.awt.Container>
+      <javax.swing.JComponent>
+        <default>
+          <alignmentX>0.0</alignmentX>
+          <alignmentY>0.5</alignmentY>
+          <autoscrolls>false</autoscrolls>
+          <flags>16793888</flags>
+          <isAlignmentXSet>true</isAlignmentXSet>
+          <isAlignmentYSet>true</isAlignmentYSet>
+          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+          <actionMap serialization="custom">
+            <javax.swing.ActionMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.ActionMap>
+          </actionMap>
+          <focusInputMap serialization="custom">
+            <javax.swing.InputMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.InputMap>
+          </focusInputMap>
+          <listenerList serialization="custom">
+            <javax.swing.event.EventListenerList>
+              <default/>
+              <null/>
+            </javax.swing.event.EventListenerList>
+          </listenerList>
+        </default>
+        <int>0</int>
+      </javax.swing.JComponent>
+      <javax.swing.AbstractButton>
+        <default>
+          <borderPaintedSet>false</borderPaintedSet>
+          <contentAreaFilled>false</contentAreaFilled>
+          <contentAreaFilledSet>true</contentAreaFilledSet>
+          <defaultCapable>true</defaultCapable>
+          <hideActionText>false</hideActionText>
+          <horizontalAlignment>0</horizontalAlignment>
+          <horizontalTextPosition>11</horizontalTextPosition>
+          <iconTextGap>4</iconTextGap>
+          <iconTextGapSet>false</iconTextGapSet>
+          <mnemonic>0</mnemonic>
+          <mnemonicIndex>-1</mnemonicIndex>
+          <multiClickThreshhold>0</multiClickThreshhold>
+          <paintBorder>true</paintBorder>
+          <paintFocus>true</paintFocus>
+          <rolloverEnabled>true</rolloverEnabled>
+          <rolloverEnabledSet>false</rolloverEnabledSet>
+          <setLayout>false</setLayout>
+          <verticalAlignment>0</verticalAlignment>
+          <verticalTextPosition>0</verticalTextPosition>
+          <actionListener class="javax.swing.AbstractButton$Handler">
+            <outer-class class="Cell" reference="../../../.."/>
+          </actionListener>
+          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <handler reference="../actionListener"/>
+          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <model class="javax.swing.DefaultButtonModel">
+            <stateMask>0</stateMask>
+            <mnemonic>0</mnemonic>
+            <listenerList serialization="custom">
+              <javax.swing.event.EventListenerList>
+                <default/>
+                <string>javax.swing.event.ChangeListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ActionListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ItemListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <null/>
+              </javax.swing.event.EventListenerList>
+            </listenerList>
+            <menuItem>false</menuItem>
+          </model>
+          <text></text>
+        </default>
+      </javax.swing.AbstractButton>
+      <javax.swing.JButton>
+        <default/>
+      </javax.swing.JButton>
+      <Cell>
+        <default>
+          <price>0</price>
+          <x>1</x>
+          <y>6</y>
+          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
+          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
+          <history serialization="custom">
+            <unserializable-parents/>
+            <vector>
+              <default>
+                <capacityIncrement>0</capacityIncrement>
+                <elementCount>3</elementCount>
+                <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                </elementData>
+              </default>
+            </vector>
+          </history>
+          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
+          <team>EMPTY</team>
+          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+        </default>
+      </Cell>
+    </Cell>
+    <Cell serialization="custom">
+      <java.awt.Component>
+        <default>
+          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+          <boundsOp>3</boundsOp>
+          <componentSerializedDataVersion>4</componentSerializedDataVersion>
+          <enabled>false</enabled>
+          <eventMask>4104</eventMask>
+          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+          <focusable>true</focusable>
+          <height>75</height>
+          <ignoreRepaint>false</ignoreRepaint>
+          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+          <isPacked>false</isPacked>
+          <maxSizeSet>false</maxSizeSet>
+          <minSizeSet>false</minSizeSet>
+          <nameExplicitlySet>false</nameExplicitlySet>
+          <newEventsOnly>true</newEventsOnly>
+          <prefSizeSet>false</prefSizeSet>
+          <valid>false</valid>
+          <visible>true</visible>
+          <width>75</width>
+          <x>277</x>
+          <y>605</y>
+          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
+          <changeSupport serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="Cell" reference="../../../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </changeSupport>
+          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
+          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
+          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+        </default>
+        <null/>
+        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
+        <null/>
+        <null/>
+      </java.awt.Component>
+      <java.awt.Container>
+        <default>
+          <ncomponents>0</ncomponents>
+          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
+          <focusCycleRoot>false</focusCycleRoot>
+          <containerSerializedDataVersion>1</containerSerializedDataVersion>
+          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+        </default>
+        <null/>
+        <null/>
+      </java.awt.Container>
+      <javax.swing.JComponent>
+        <default>
+          <alignmentX>0.0</alignmentX>
+          <alignmentY>0.5</alignmentY>
+          <autoscrolls>false</autoscrolls>
+          <flags>16793888</flags>
+          <isAlignmentXSet>true</isAlignmentXSet>
+          <isAlignmentYSet>true</isAlignmentYSet>
+          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+          <actionMap serialization="custom">
+            <javax.swing.ActionMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.ActionMap>
+          </actionMap>
+          <focusInputMap serialization="custom">
+            <javax.swing.InputMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.InputMap>
+          </focusInputMap>
+          <listenerList serialization="custom">
+            <javax.swing.event.EventListenerList>
+              <default/>
+              <null/>
+            </javax.swing.event.EventListenerList>
+          </listenerList>
+        </default>
+        <int>0</int>
+      </javax.swing.JComponent>
+      <javax.swing.AbstractButton>
+        <default>
+          <borderPaintedSet>false</borderPaintedSet>
+          <contentAreaFilled>false</contentAreaFilled>
+          <contentAreaFilledSet>true</contentAreaFilledSet>
+          <defaultCapable>true</defaultCapable>
+          <hideActionText>false</hideActionText>
+          <horizontalAlignment>0</horizontalAlignment>
+          <horizontalTextPosition>11</horizontalTextPosition>
+          <iconTextGap>4</iconTextGap>
+          <iconTextGapSet>false</iconTextGapSet>
+          <mnemonic>0</mnemonic>
+          <mnemonicIndex>-1</mnemonicIndex>
+          <multiClickThreshhold>0</multiClickThreshhold>
+          <paintBorder>true</paintBorder>
+          <paintFocus>true</paintFocus>
+          <rolloverEnabled>true</rolloverEnabled>
+          <rolloverEnabledSet>false</rolloverEnabledSet>
+          <setLayout>false</setLayout>
+          <verticalAlignment>0</verticalAlignment>
+          <verticalTextPosition>0</verticalTextPosition>
+          <actionListener class="javax.swing.AbstractButton$Handler">
+            <outer-class class="Cell" reference="../../../.."/>
+          </actionListener>
+          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <handler reference="../actionListener"/>
+          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <model class="javax.swing.DefaultButtonModel">
+            <stateMask>0</stateMask>
+            <mnemonic>0</mnemonic>
+            <listenerList serialization="custom">
+              <javax.swing.event.EventListenerList>
+                <default/>
+                <string>javax.swing.event.ChangeListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ActionListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ItemListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <null/>
+              </javax.swing.event.EventListenerList>
+            </listenerList>
+            <menuItem>false</menuItem>
+          </model>
+          <text></text>
+        </default>
+      </javax.swing.AbstractButton>
+      <javax.swing.JButton>
+        <default/>
+      </javax.swing.JButton>
+      <Cell>
+        <default>
+          <price>0</price>
+          <x>1</x>
+          <y>7</y>
+          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
+          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
+          <history serialization="custom">
+            <unserializable-parents/>
+            <vector>
+              <default>
+                <capacityIncrement>0</capacityIncrement>
+                <elementCount>3</elementCount>
+                <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                </elementData>
+              </default>
+            </vector>
+          </history>
+          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
+          <team>EMPTY</team>
+          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+        </default>
+      </Cell>
+    </Cell>
+  </Cell-array>
+  <Cell-array>
+    <Cell serialization="custom">
+      <java.awt.Component>
+        <default>
+          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+          <boundsOp>3</boundsOp>
+          <componentSerializedDataVersion>4</componentSerializedDataVersion>
+          <enabled>false</enabled>
+          <eventMask>4104</eventMask>
+          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+          <focusable>true</focusable>
+          <height>75</height>
+          <ignoreRepaint>false</ignoreRepaint>
+          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+          <isPacked>false</isPacked>
+          <maxSizeSet>false</maxSizeSet>
+          <minSizeSet>false</minSizeSet>
+          <nameExplicitlySet>false</nameExplicitlySet>
+          <newEventsOnly>true</newEventsOnly>
+          <prefSizeSet>false</prefSizeSet>
+          <valid>false</valid>
+          <visible>true</visible>
+          <width>75</width>
+          <x>352</x>
+          <y>80</y>
+          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
+          <changeSupport serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="Cell" reference="../../../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </changeSupport>
+          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
+          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
+          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+        </default>
+        <null/>
+        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
+        <null/>
+        <null/>
+      </java.awt.Component>
+      <java.awt.Container>
+        <default>
+          <ncomponents>0</ncomponents>
+          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
+          <focusCycleRoot>false</focusCycleRoot>
+          <containerSerializedDataVersion>1</containerSerializedDataVersion>
+          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+        </default>
+        <null/>
+        <null/>
+      </java.awt.Container>
+      <javax.swing.JComponent>
+        <default>
+          <alignmentX>0.0</alignmentX>
+          <alignmentY>0.5</alignmentY>
+          <autoscrolls>false</autoscrolls>
+          <flags>16793888</flags>
+          <isAlignmentXSet>true</isAlignmentXSet>
+          <isAlignmentYSet>true</isAlignmentYSet>
+          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+          <actionMap serialization="custom">
+            <javax.swing.ActionMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.ActionMap>
+          </actionMap>
+          <focusInputMap serialization="custom">
+            <javax.swing.InputMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.InputMap>
+          </focusInputMap>
+          <listenerList serialization="custom">
+            <javax.swing.event.EventListenerList>
+              <default/>
+              <null/>
+            </javax.swing.event.EventListenerList>
+          </listenerList>
+        </default>
+        <int>0</int>
+      </javax.swing.JComponent>
+      <javax.swing.AbstractButton>
+        <default>
+          <borderPaintedSet>false</borderPaintedSet>
+          <contentAreaFilled>false</contentAreaFilled>
+          <contentAreaFilledSet>true</contentAreaFilledSet>
+          <defaultCapable>true</defaultCapable>
+          <hideActionText>false</hideActionText>
+          <horizontalAlignment>0</horizontalAlignment>
+          <horizontalTextPosition>11</horizontalTextPosition>
+          <iconTextGap>4</iconTextGap>
+          <iconTextGapSet>false</iconTextGapSet>
+          <mnemonic>0</mnemonic>
+          <mnemonicIndex>-1</mnemonicIndex>
+          <multiClickThreshhold>0</multiClickThreshhold>
+          <paintBorder>true</paintBorder>
+          <paintFocus>true</paintFocus>
+          <rolloverEnabled>true</rolloverEnabled>
+          <rolloverEnabledSet>false</rolloverEnabledSet>
+          <setLayout>false</setLayout>
+          <verticalAlignment>0</verticalAlignment>
+          <verticalTextPosition>0</verticalTextPosition>
+          <actionListener class="javax.swing.AbstractButton$Handler">
+            <outer-class class="Cell" reference="../../../.."/>
+          </actionListener>
+          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <handler reference="../actionListener"/>
+          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <model class="javax.swing.DefaultButtonModel">
+            <stateMask>0</stateMask>
+            <mnemonic>0</mnemonic>
+            <listenerList serialization="custom">
+              <javax.swing.event.EventListenerList>
+                <default/>
+                <string>javax.swing.event.ChangeListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ActionListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ItemListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <null/>
+              </javax.swing.event.EventListenerList>
+            </listenerList>
+            <menuItem>false</menuItem>
+          </model>
+          <text></text>
+        </default>
+      </javax.swing.AbstractButton>
+      <javax.swing.JButton>
+        <default/>
+      </javax.swing.JButton>
+      <Cell>
+        <default>
+          <price>0</price>
+          <x>2</x>
+          <y>0</y>
+          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
+          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
+          <history serialization="custom">
+            <unserializable-parents/>
+            <vector>
+              <default>
+                <capacityIncrement>0</capacityIncrement>
+                <elementCount>3</elementCount>
+                <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                </elementData>
+              </default>
+            </vector>
+          </history>
+          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
+          <team>EMPTY</team>
+          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+        </default>
+      </Cell>
+    </Cell>
+    <Cell serialization="custom">
+      <java.awt.Component>
+        <default>
+          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+          <boundsOp>3</boundsOp>
+          <componentSerializedDataVersion>4</componentSerializedDataVersion>
+          <enabled>false</enabled>
+          <eventMask>4104</eventMask>
+          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+          <focusable>true</focusable>
+          <height>75</height>
+          <ignoreRepaint>false</ignoreRepaint>
+          <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+          <isPacked>false</isPacked>
+          <maxSizeSet>false</maxSizeSet>
+          <minSizeSet>false</minSizeSet>
+          <nameExplicitlySet>false</nameExplicitlySet>
+          <newEventsOnly>true</newEventsOnly>
+          <prefSizeSet>false</prefSizeSet>
+          <valid>false</valid>
+          <visible>true</visible>
+          <width>75</width>
+          <x>352</x>
+          <y>155</y>
+          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
+          <changeSupport serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="Cell" reference="../../../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </changeSupport>
+          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
+          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
+          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+        </default>
+        <null/>
+        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
+        <null/>
+        <null/>
+      </java.awt.Component>
+      <java.awt.Container>
+        <default>
+          <ncomponents>0</ncomponents>
+          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
+          <focusCycleRoot>false</focusCycleRoot>
+          <containerSerializedDataVersion>1</containerSerializedDataVersion>
+          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+        </default>
+        <null/>
+        <null/>
+      </java.awt.Container>
+      <javax.swing.JComponent>
+        <default>
+          <alignmentX>0.0</alignmentX>
+          <alignmentY>0.5</alignmentY>
+          <autoscrolls>false</autoscrolls>
+          <flags>16793888</flags>
+          <isAlignmentXSet>true</isAlignmentXSet>
+          <isAlignmentYSet>true</isAlignmentYSet>
+          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+          <actionMap serialization="custom">
+            <javax.swing.ActionMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.ActionMap>
+          </actionMap>
+          <focusInputMap serialization="custom">
+            <javax.swing.InputMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.InputMap>
+          </focusInputMap>
+          <listenerList serialization="custom">
+            <javax.swing.event.EventListenerList>
+              <default/>
+              <null/>
+            </javax.swing.event.EventListenerList>
+          </listenerList>
+        </default>
+        <int>0</int>
+      </javax.swing.JComponent>
+      <javax.swing.AbstractButton>
+        <default>
+          <borderPaintedSet>false</borderPaintedSet>
+          <contentAreaFilled>false</contentAreaFilled>
+          <contentAreaFilledSet>true</contentAreaFilledSet>
+          <defaultCapable>true</defaultCapable>
+          <hideActionText>false</hideActionText>
+          <horizontalAlignment>0</horizontalAlignment>
+          <horizontalTextPosition>11</horizontalTextPosition>
+          <iconTextGap>4</iconTextGap>
+          <iconTextGapSet>false</iconTextGapSet>
+          <mnemonic>0</mnemonic>
+          <mnemonicIndex>-1</mnemonicIndex>
+          <multiClickThreshhold>0</multiClickThreshhold>
+          <paintBorder>true</paintBorder>
+          <paintFocus>true</paintFocus>
+          <rolloverEnabled>true</rolloverEnabled>
+          <rolloverEnabledSet>false</rolloverEnabledSet>
+          <setLayout>false</setLayout>
+          <verticalAlignment>0</verticalAlignment>
+          <verticalTextPosition>0</verticalTextPosition>
+          <actionListener class="javax.swing.AbstractButton$Handler">
+            <outer-class class="Cell" reference="../../../.."/>
+          </actionListener>
+          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <handler reference="../actionListener"/>
+          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <model class="javax.swing.DefaultButtonModel">
+            <stateMask>0</stateMask>
+            <mnemonic>0</mnemonic>
+            <listenerList serialization="custom">
+              <javax.swing.event.EventListenerList>
+                <default/>
+                <string>javax.swing.event.ChangeListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ActionListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ItemListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <null/>
+              </javax.swing.event.EventListenerList>
+            </listenerList>
+            <menuItem>false</menuItem>
+          </model>
+          <text></text>
+        </default>
+      </javax.swing.AbstractButton>
+      <javax.swing.JButton>
+        <default/>
+      </javax.swing.JButton>
+      <Cell>
+        <default>
+          <price>0</price>
+          <x>2</x>
+          <y>1</y>
+          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
+          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
+          <history serialization="custom">
+            <unserializable-parents/>
+            <vector>
+              <default>
+                <capacityIncrement>0</capacityIncrement>
+                <elementCount>3</elementCount>
+                <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -26058,8 +25784,366 @@
           <visible>true</visible>
           <width>75</width>
           <x>352</x>
+          <y>230</y>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
+          <changeSupport serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="Cell" reference="../../../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </changeSupport>
+          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
+          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
+          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+        </default>
+        <null/>
+        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
+        <null/>
+        <null/>
+      </java.awt.Component>
+      <java.awt.Container>
+        <default>
+          <ncomponents>0</ncomponents>
+          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
+          <focusCycleRoot>false</focusCycleRoot>
+          <containerSerializedDataVersion>1</containerSerializedDataVersion>
+          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+        </default>
+        <null/>
+        <null/>
+      </java.awt.Container>
+      <javax.swing.JComponent>
+        <default>
+          <alignmentX>0.0</alignmentX>
+          <alignmentY>0.5</alignmentY>
+          <autoscrolls>false</autoscrolls>
+          <flags>16793888</flags>
+          <isAlignmentXSet>true</isAlignmentXSet>
+          <isAlignmentYSet>true</isAlignmentYSet>
+          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+          <actionMap serialization="custom">
+            <javax.swing.ActionMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.ActionMap>
+          </actionMap>
+          <focusInputMap serialization="custom">
+            <javax.swing.InputMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.InputMap>
+          </focusInputMap>
+          <listenerList serialization="custom">
+            <javax.swing.event.EventListenerList>
+              <default/>
+              <null/>
+            </javax.swing.event.EventListenerList>
+          </listenerList>
+        </default>
+        <int>0</int>
+      </javax.swing.JComponent>
+      <javax.swing.AbstractButton>
+        <default>
+          <borderPaintedSet>false</borderPaintedSet>
+          <contentAreaFilled>false</contentAreaFilled>
+          <contentAreaFilledSet>true</contentAreaFilledSet>
+          <defaultCapable>true</defaultCapable>
+          <hideActionText>false</hideActionText>
+          <horizontalAlignment>0</horizontalAlignment>
+          <horizontalTextPosition>11</horizontalTextPosition>
+          <iconTextGap>4</iconTextGap>
+          <iconTextGapSet>false</iconTextGapSet>
+          <mnemonic>0</mnemonic>
+          <mnemonicIndex>-1</mnemonicIndex>
+          <multiClickThreshhold>0</multiClickThreshhold>
+          <paintBorder>true</paintBorder>
+          <paintFocus>true</paintFocus>
+          <rolloverEnabled>true</rolloverEnabled>
+          <rolloverEnabledSet>false</rolloverEnabledSet>
+          <setLayout>false</setLayout>
+          <verticalAlignment>0</verticalAlignment>
+          <verticalTextPosition>0</verticalTextPosition>
+          <actionListener class="javax.swing.AbstractButton$Handler">
+            <outer-class class="Cell" reference="../../../.."/>
+          </actionListener>
+          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <defaultIcon class="javax.swing.ImageIcon" reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <disabledIcon class="javax.swing.ImageIcon" reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+          <handler reference="../actionListener"/>
+          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <model class="javax.swing.DefaultButtonModel">
+            <stateMask>0</stateMask>
+            <mnemonic>0</mnemonic>
+            <listenerList serialization="custom">
+              <javax.swing.event.EventListenerList>
+                <default/>
+                <string>javax.swing.event.ChangeListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ActionListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ItemListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <null/>
+              </javax.swing.event.EventListenerList>
+            </listenerList>
+            <menuItem>false</menuItem>
+          </model>
+          <text></text>
+        </default>
+      </javax.swing.AbstractButton>
+      <javax.swing.JButton>
+        <default/>
+      </javax.swing.JButton>
+      <Cell>
+        <default>
+          <price>1</price>
+          <x>2</x>
+          <y>2</y>
+          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
+          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
+          <history serialization="custom">
+            <unserializable-parents/>
+            <vector>
+              <default>
+                <capacityIncrement>0</capacityIncrement>
+                <elementCount>3</elementCount>
+                <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                </elementData>
+              </default>
+            </vector>
+          </history>
+          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
+          <team>WHITE</team>
+          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+        </default>
+      </Cell>
+    </Cell>
+    <Cell serialization="custom">
+      <java.awt.Component>
+        <default>
+          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+          <boundsOp>3</boundsOp>
+          <componentSerializedDataVersion>4</componentSerializedDataVersion>
+          <enabled>false</enabled>
+          <eventMask>4104</eventMask>
+          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+          <focusable>true</focusable>
+          <height>75</height>
+          <ignoreRepaint>false</ignoreRepaint>
+          <isFocusTraversableOverridden>1</isFocusTraversableOverridden>
+          <isPacked>false</isPacked>
+          <maxSizeSet>false</maxSizeSet>
+          <minSizeSet>false</minSizeSet>
+          <nameExplicitlySet>false</nameExplicitlySet>
+          <newEventsOnly>true</newEventsOnly>
+          <prefSizeSet>false</prefSizeSet>
+          <valid>false</valid>
+          <visible>true</visible>
+          <width>75</width>
+          <x>352</x>
+          <y>305</y>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
+          <changeSupport serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="Cell" reference="../../../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </changeSupport>
+          <font class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+          <foreground class="sun.swing.PrintColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/foreground"/>
+          <locale reference="../../../../../Cell-array/Cell/java.awt.Component/default/locale"/>
+          <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/font"/>
+        </default>
+        <null/>
+        <java.awt.ComponentOrientation reference="../../../../Cell-array/Cell/java.awt.Component/java.awt.ComponentOrientation"/>
+        <null/>
+        <null/>
+      </java.awt.Component>
+      <java.awt.Container>
+        <default>
+          <ncomponents>0</ncomponents>
+          <component reference="../../../../../Cell-array/Cell/java.awt.Container/default/component"/>
+          <focusCycleRoot>false</focusCycleRoot>
+          <containerSerializedDataVersion>1</containerSerializedDataVersion>
+          <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+        </default>
+        <null/>
+        <null/>
+      </java.awt.Container>
+      <javax.swing.JComponent>
+        <default>
+          <alignmentX>0.0</alignmentX>
+          <alignmentY>0.5</alignmentY>
+          <autoscrolls>false</autoscrolls>
+          <flags>16793888</flags>
+          <isAlignmentXSet>true</isAlignmentXSet>
+          <isAlignmentYSet>true</isAlignmentYSet>
+          <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+          <actionMap serialization="custom">
+            <javax.swing.ActionMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.ActionMap>
+          </actionMap>
+          <focusInputMap serialization="custom">
+            <javax.swing.InputMap>
+              <default/>
+              <int>0</int>
+            </javax.swing.InputMap>
+          </focusInputMap>
+          <listenerList serialization="custom">
+            <javax.swing.event.EventListenerList>
+              <default/>
+              <null/>
+            </javax.swing.event.EventListenerList>
+          </listenerList>
+        </default>
+        <int>0</int>
+      </javax.swing.JComponent>
+      <javax.swing.AbstractButton>
+        <default>
+          <borderPaintedSet>false</borderPaintedSet>
+          <contentAreaFilled>false</contentAreaFilled>
+          <contentAreaFilledSet>true</contentAreaFilledSet>
+          <defaultCapable>true</defaultCapable>
+          <hideActionText>false</hideActionText>
+          <horizontalAlignment>0</horizontalAlignment>
+          <horizontalTextPosition>11</horizontalTextPosition>
+          <iconTextGap>4</iconTextGap>
+          <iconTextGapSet>false</iconTextGapSet>
+          <mnemonic>0</mnemonic>
+          <mnemonicIndex>-1</mnemonicIndex>
+          <multiClickThreshhold>0</multiClickThreshhold>
+          <paintBorder>true</paintBorder>
+          <paintFocus>true</paintFocus>
+          <rolloverEnabled>true</rolloverEnabled>
+          <rolloverEnabledSet>false</rolloverEnabledSet>
+          <setLayout>false</setLayout>
+          <verticalAlignment>0</verticalAlignment>
+          <verticalTextPosition>0</verticalTextPosition>
+          <actionListener class="javax.swing.AbstractButton$Handler">
+            <outer-class class="Cell" reference="../../../.."/>
+          </actionListener>
+          <changeListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <defaultIcon class="javax.swing.ImageIcon" reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+          <defaultMargin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <disabledIcon class="javax.swing.ImageIcon" reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+          <handler reference="../actionListener"/>
+          <itemListener class="javax.swing.AbstractButton$Handler" reference="../actionListener"/>
+          <margin class="javax.swing.plaf.InsetsUIResource" reference="../../../../../Cell-array/Cell/javax.swing.AbstractButton/default/defaultMargin"/>
+          <model class="javax.swing.DefaultButtonModel">
+            <stateMask>0</stateMask>
+            <mnemonic>0</mnemonic>
+            <listenerList serialization="custom">
+              <javax.swing.event.EventListenerList>
+                <default/>
+                <string>javax.swing.event.ChangeListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ActionListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <string>java.awt.event.ItemListener</string>
+                <javax.swing.AbstractButton_-Handler reference="../../../../actionListener"/>
+                <null/>
+              </javax.swing.event.EventListenerList>
+            </listenerList>
+            <menuItem>false</menuItem>
+          </model>
+          <text></text>
+        </default>
+      </javax.swing.AbstractButton>
+      <javax.swing.JButton>
+        <default/>
+      </javax.swing.JButton>
+      <Cell>
+        <default>
+          <price>1</price>
+          <x>2</x>
+          <y>3</y>
+          <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
+          <ghostStone reference="../../../../../Cell-array/Cell/Cell/default/ghostStone"/>
+          <history serialization="custom">
+            <unserializable-parents/>
+            <vector>
+              <default>
+                <capacityIncrement>0</capacityIncrement>
+                <elementCount>3</elementCount>
+                <elementData>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-1>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-1>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                  <null/>
+                </elementData>
+              </default>
+            </vector>
+          </history>
+          <iceStone reference="../../../../../Cell-array/Cell/Cell/default/iceStone"/>
+          <team>WHITE</team>
+          <whiteStone reference="../../../../../Cell-array/Cell/Cell/default/whiteStone"/>
+        </default>
+      </Cell>
+    </Cell>
+    <Cell serialization="custom">
+      <java.awt.Component>
+        <default>
+          <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+          <boundsOp>3</boundsOp>
+          <componentSerializedDataVersion>4</componentSerializedDataVersion>
+          <enabled>false</enabled>
+          <eventMask>4104</eventMask>
+          <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+          <focusable>true</focusable>
+          <height>75</height>
+          <ignoreRepaint>false</ignoreRepaint>
+          <isFocusTraversableOverridden>1</isFocusTraversableOverridden>
+          <isPacked>false</isPacked>
+          <maxSizeSet>false</maxSizeSet>
+          <minSizeSet>false</minSizeSet>
+          <nameExplicitlySet>false</nameExplicitlySet>
+          <newEventsOnly>true</newEventsOnly>
+          <prefSizeSet>false</prefSizeSet>
+          <valid>false</valid>
+          <visible>true</visible>
+          <width>75</width>
+          <x>352</x>
           <y>380</y>
-          <background reference="../../../../Cell[4]/java.awt.Component/default/background"/>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
           <changeSupport serialization="custom">
             <java.beans.PropertyChangeSupport>
               <default>
@@ -26186,13 +26270,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-2>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-2>
+                  <Cell_-2>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-2>
                   <null/>
                   <null/>
                   <null/>
@@ -26234,7 +26322,7 @@
           <width>75</width>
           <x>352</x>
           <y>455</y>
-          <background reference="../../../../Cell[4]/java.awt.Component/default/background"/>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
           <changeSupport serialization="custom">
             <java.beans.PropertyChangeSupport>
               <default>
@@ -26359,13 +26447,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -26532,13 +26624,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -26705,13 +26801,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -26880,13 +26980,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -27053,13 +27157,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -27101,7 +27209,7 @@
           <width>75</width>
           <x>427</x>
           <y>230</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
           <changeSupport serialization="custom">
             <java.beans.PropertyChangeSupport>
               <default>
@@ -27216,7 +27324,7 @@
       </javax.swing.JButton>
       <Cell>
         <default>
-          <price>0</price>
+          <price>1</price>
           <x>3</x>
           <y>2</y>
           <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
@@ -27226,13 +27334,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -27401,13 +27513,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-2>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-2>
-                  <null/>
-                  <null/>
+                  <Cell_-2>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-2>
+                  <Cell_-1>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-1>
                   <null/>
                   <null/>
                   <null/>
@@ -27576,13 +27692,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-1>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-1>
-                  <null/>
-                  <null/>
+                  <Cell_-2>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-2>
+                  <Cell_-2>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-2>
                   <null/>
                   <null/>
                   <null/>
@@ -27624,7 +27744,7 @@
           <width>75</width>
           <x>427</x>
           <y>455</y>
-          <background reference="../../../../../Cell-array[3]/Cell[4]/java.awt.Component/default/background"/>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
           <changeSupport serialization="custom">
             <java.beans.PropertyChangeSupport>
               <default>
@@ -27749,13 +27869,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -27922,13 +28046,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -28095,13 +28223,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -28270,13 +28402,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -28443,13 +28579,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -28491,7 +28631,7 @@
           <width>75</width>
           <x>502</x>
           <y>230</y>
-          <background reference="../../../../../Cell-array[3]/Cell[4]/java.awt.Component/default/background"/>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
           <changeSupport serialization="custom">
             <java.beans.PropertyChangeSupport>
               <default>
@@ -28616,13 +28756,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -28791,13 +28935,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-1>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-1>
-                  <null/>
-                  <null/>
+                  <Cell_-1>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-1>
+                  <Cell_-1>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-1>
                   <null/>
                   <null/>
                   <null/>
@@ -28966,13 +29114,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-2>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-2>
-                  <null/>
-                  <null/>
+                  <Cell_-2>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-2>
+                  <Cell_-2>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-2>
                   <null/>
                   <null/>
                   <null/>
@@ -29014,7 +29166,7 @@
           <width>75</width>
           <x>502</x>
           <y>455</y>
-          <background reference="../../../../../Cell-array[3]/Cell[4]/java.awt.Component/default/background"/>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
           <changeSupport serialization="custom">
             <java.beans.PropertyChangeSupport>
               <default>
@@ -29139,13 +29291,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -29312,13 +29468,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -29485,13 +29645,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -29660,13 +29824,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -29833,13 +30001,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -29881,7 +30053,7 @@
           <width>75</width>
           <x>577</x>
           <y>230</y>
-          <background class="javax.swing.plaf.ColorUIResource" reference="../../../../../Cell-array/Cell/java.awt.Component/default/background"/>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
           <changeSupport serialization="custom">
             <java.beans.PropertyChangeSupport>
               <default>
@@ -29996,7 +30168,7 @@
       </javax.swing.JButton>
       <Cell>
         <default>
-          <price>0</price>
+          <price>1</price>
           <x>5</x>
           <y>2</y>
           <blackStone reference="../../../../../Cell-array/Cell/Cell/default/blackStone"/>
@@ -30006,13 +30178,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -30054,7 +30230,7 @@
           <width>75</width>
           <x>577</x>
           <y>305</y>
-          <background reference="../../../../../Cell-array[3]/Cell[4]/java.awt.Component/default/background"/>
+          <background reference="../../../../../Cell-array[2]/Cell[3]/java.awt.Component/default/background"/>
           <changeSupport serialization="custom">
             <java.beans.PropertyChangeSupport>
               <default>
@@ -30179,13 +30355,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -30352,13 +30532,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -30525,13 +30709,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -30698,13 +30886,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -30871,13 +31063,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -31046,13 +31242,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -31219,13 +31419,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -31392,13 +31596,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -31565,13 +31773,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -31738,13 +31950,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -31911,13 +32127,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -32084,13 +32304,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -32257,13 +32481,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -32432,13 +32660,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -32605,13 +32837,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -32778,13 +33014,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -32951,13 +33191,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -33124,13 +33368,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -33297,13 +33545,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -33470,13 +33722,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>
@@ -33643,13 +33899,17 @@
             <vector>
               <default>
                 <capacityIncrement>0</capacityIncrement>
-                <elementCount>1</elementCount>
+                <elementCount>3</elementCount>
                 <elementData>
                   <Cell_-3>
                     <outer-class reference="../../../../../../../.."/>
                   </Cell_-3>
-                  <null/>
-                  <null/>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
+                  <Cell_-3>
+                    <outer-class reference="../../../../../../../.."/>
+                  </Cell_-3>
                   <null/>
                   <null/>
                   <null/>

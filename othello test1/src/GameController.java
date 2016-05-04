@@ -17,6 +17,18 @@ public class GameController
 		this.scoreBlack = 2;
 		this.scoreWhite = 2;
 	}
+	public GameController(Stack<Runnable> undo,int player)
+	{
+		this.undo = undo;
+		if(player== 0){
+			this.player = true;
+		}
+		else{
+			this.player = false;
+		}
+		this.scoreBlack = 2;
+		this.scoreWhite = 2;
+	}
 	public boolean getActualPlayer()
 	{
 		boolean player;
@@ -34,6 +46,10 @@ public class GameController
 		{
 			return 1;
 		}
+	}
+	public boolean getPlayer()
+	{
+		return this.player;
 	}
 	public void changeTeam()
 	{

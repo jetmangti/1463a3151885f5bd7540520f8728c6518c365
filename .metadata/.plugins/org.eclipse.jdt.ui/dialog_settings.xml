@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="JavaSE-1.8" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
-	<item value="C:\Users\Adam\Desktop\Eclipse\1463a3151885f5bd7540520f8728c6518c365\othello test1\xstream-1.4.9\lib\xstream" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Users\Adam\Desktop\Eclipse\othello test1\xstream-1.4.9\lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="filter_imports;" key="filters_last_used"/>
 	<item value="C:\Users\Adam\Desktop\Eclipse\ija" key="org.eclipse.jdt.ui.last.external.project"/>
 	<item value="640,646" key="UserLibraryLoadSaveDialog.size"/>

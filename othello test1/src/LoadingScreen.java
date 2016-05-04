@@ -33,14 +33,14 @@ public class LoadingScreen extends JFrame implements window {
 		//new Thread(load2).start();
 	}
 	
-	public LoadingScreen(JFrame frame, WindowManager w, gameSetting setting, Cell[][] board) 
+	public LoadingScreen(JFrame frame, WindowManager w, gameSetting setting, Cell[][] board,int i) 
 	{
 		this.wm = w;
 		buildGUI(frame,w);
 		EventQueue.invokeLater(new Runnable(){
 			public void run(){
 			
-				loadGame(setting,board);
+				loadGame(setting,board,i);
 			}
 			
 		});
@@ -86,7 +86,7 @@ public class LoadingScreen extends JFrame implements window {
 		});
 	}
 	
-	private void loadGame(gameSetting setting, Cell[][] board)
+	private void loadGame(gameSetting setting, Cell[][] board,int player)
 	{
 		System.out.println("Loading game");
 		
@@ -96,7 +96,7 @@ public class LoadingScreen extends JFrame implements window {
 				
 					Runnable rnbl = new Runnable(){
 					public void run(){
-						 new Game(setting,wm,board);
+						 new Game(setting,wm,board,player);
 						}
 					};
 					new Thread(rnbl).start();

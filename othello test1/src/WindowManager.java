@@ -138,11 +138,25 @@ public class WindowManager implements ActionListener
 			file = new File("../othello test1/savedgames/save_board.xml");
 			xstream.alias("Cell-array-array",Cell.class);
 			Cell[][] board =(Cell[][]) xstream.fromXML(file);
+			
+			file = new File("../othello test1/savedgames/save_player.xml");
+			int i;
+			try {
+				FileReader fr = new FileReader(file);
+				 i = fr.read();
+				
+				fr.close();
+				this.loading = new LoadingScreen(frame, wm, setting, board, i);
+				this.loading.setFrame(frame);
+				frame.getContentPane().revalidate();
+				frame.getContentPane().repaint();
+				
+			} catch (FileNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
 
-			this.loading = new LoadingScreen(frame, wm, setting, board);
-			this.loading.setFrame(frame);
-			frame.getContentPane().revalidate();
-			frame.getContentPane().repaint();
 			
 					
 		}

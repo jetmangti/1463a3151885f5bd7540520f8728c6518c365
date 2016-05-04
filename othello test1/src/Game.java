@@ -37,6 +37,7 @@ public class Game extends JFrame implements Runnable {
 	private SpriteHolder sprite;
 	private boolean undoEnabled = false;
 	private Game currentGame;
+	private GameController gamecontroller;
 
 	/**
 	 * Launch the application.
@@ -94,18 +95,40 @@ public class Game extends JFrame implements Runnable {
 			fw = new FileWriter(file);
 
 			xml = xstream.toXML(this.board);
-
+			
 			fw.write(xml, 0, xml.length());
 			fw.close();
+			
+		
+			
 
-			System.out.println("Game saved");
+			
 		} catch (Exception e) {
 			System.err.println("Error in XML Write: " + e.getMessage());
 		}
-
+		
+		File file = new File("../othello test1/savedgames/save_player.xml");
+		FileWriter fw;
+		try {
+			fw = new FileWriter(file);
+			
+			if(gamecontroller.getPlayer()){
+				fw.write("0");
+				fw.close();
+			}
+			else{
+				fw.write("1");
+				fw.close();
+			}
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+	
+		System.out.println("Game saved");
 	}
 
-	public Game(gameSetting s, WindowManager w, Cell[][] boardd) {
+	public Game(gameSetting s, WindowManager w, Cell[][] boardd, int playersteam) {
 		
 		
 		this.setting = s;
@@ -117,6 +140,7 @@ public class Game extends JFrame implements Runnable {
 		 * win.setVisible(true); } catch (Exception e) { e.printStackTrace(); }
 		 * } });
 		 */
+		
 
 		// win.setVisible(true);
 		this.currentGame = this;
@@ -143,10 +167,11 @@ public class Game extends JFrame implements Runnable {
 		this.offset = this.offset / 2;
 		this.sprite = new SpriteHolder(cellWidth);
 		Runnable rnbl = new Runnable() {
-			GameController gc = new GameController(undoStck);
+			GameController gc = new GameController(undoStck,playersteam);
 			CellFinder cf = new CellFinder(setting.getSize(), board);
 			JLabel blackScore;
 			JLabel whiteScore;
+			
 			// AIPlay1 ai2 = new AIPlay1(cf,gc, setting.getSize(), 1, board);
 			AIInterface ai;
 			int state = 1;
@@ -215,6 +240,9 @@ public class Game extends JFrame implements Runnable {
 				whiteScore = new JLabel("White :2");
 				whiteScore.setBounds(220, 20, 100, 20);
 				contentPane.add(whiteScore, 1);
+				
+				actualizeScore(whiteScore, blackScore);
+				gamecontroller = gc;
 
 				if (setting.getGameMode() == 0) {
 					if (setting.getAiMode() == 1) {
@@ -439,6 +467,8 @@ public class Game extends JFrame implements Runnable {
 				whiteScore = new JLabel("White :2");
 				whiteScore.setBounds(220, 20, 100, 20);
 				contentPane.add(whiteScore, 1);
+				
+				gamecontroller = gc;
 
 				if (setting.getGameMode() == 0) {
 					if (setting.getAiMode() == 1) {
