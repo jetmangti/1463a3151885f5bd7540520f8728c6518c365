@@ -11,6 +11,7 @@ public class CellFinder
 	private Cell[][] matrix;
 	private int priceCounter = 0;
 	private boolean visibility = true;
+	private int counter=0;
 	
 	public CellFinder(int size, Cell[][] matrix)
 	{
@@ -120,7 +121,7 @@ public class CellFinder
 						case 1: //white
 						{
 							//System.out.println("B");
-							if(temp.getTeam() == Team.BLACK)
+							if(temp.getTeam() != Team.WHITE && temp.getTeam() != Team.EMPTY)
 							{
 								state = 4; //black = fail
 							}
@@ -132,10 +133,11 @@ public class CellFinder
 								success = true;
 								if(this.visibility)
 								{
-									temp.setBackground(Color.green);
+									temp.setBackground(Color.getHSBColor(0.08f,1.0f,1.0f));
 									temp.setEnabled(true);
 								}
 								temp.setPrice(this.priceCounter);
+								this.counter++;
 								break;
 							}
 							else
@@ -180,7 +182,7 @@ public class CellFinder
 						}
 						case 1: //white
 						{
-							if(temp.getTeam() == Team.WHITE)
+							if(temp.getTeam() != Team.BLACK && temp.getTeam() != Team.EMPTY)
 							{
 								state = 4; //black = fail
 							}
@@ -191,11 +193,12 @@ public class CellFinder
 								temp.setContentAreaFilled(true);
 								if(this.visibility)
 								{
-									temp.setBackground(Color.green);
+									temp.setBackground(Color.getHSBColor(0.08f,1.0f,1.0f));
 									temp.setEnabled(true);
 								}
 								temp.setPrice(this.priceCounter);
 								//this.priceCounter = 0;
+								this.counter++;
 								break;
 							}
 							else
@@ -261,6 +264,7 @@ public class CellFinder
 	}
 	public void resetEmptyAll()
 	{
+		this.counter=0;
 		for(Cell cont : lastState)
 		{
 			cont.setBlank();
@@ -276,18 +280,20 @@ public class CellFinder
 			}
 		}
 	}
-	public void recalculateAndMark(int team)
+	public int recalculateAndMark(int team)
 	{
+		this.counter=0;
 		for(int i=0; i < this.size; i++)
 		{
 			for(int j=0; j < this.size; j++)
 			{
-				if(this.matrix[i][j].team != Team.EMPTY && this.matrix[i][j].team.ordinal() != team){
+				if(this.matrix[i][j].team != Team.EMPTY && this.matrix[i][j].team.ordinal() != team && (this.matrix[i][j].team == Team.BLACK || this.matrix[i][j].team == Team.WHITE)){
 					rayCast(i,j,matrix[i][j].team.ordinal());
 				}
 			}
 		}
 		System.out.println("RECALC..");
+		return this.counter;
 	}
 	
 	public void setPadsVisibility(boolean vis)
@@ -313,12 +319,12 @@ public class CellFinder
 				currentx = current.getXPos();
 			    currenty = current.getYPos();
 				
-				if(current.getTeam()==Team.EMPTY){  // if the cell is empty, returns to the original
+				if(current.getTeam()==Team.EMPTY || current.getTeam()==Team.WHITE_FR || current.getTeam()==Team.BLACK_FR){  // if the cell is empty, returns to the original
 					currentx = x;        			// position and continues in a different direction
 					currenty = y;
 					break;
 				}
-				else if(current.getTeamBool()==team) // if the next cell checked contains stone of the current player
+				else if((current.getTeam() == Team.BLACK && team==false) || (current.getTeam() == Team.WHITE && team==true) ) // if the next cell checked contains stone of the current player
 				{
 					
 					if((direction % 2)==1)			//  return back in opposite direction

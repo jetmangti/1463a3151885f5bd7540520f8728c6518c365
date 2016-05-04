@@ -1,12 +1,6 @@
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.io.*;
-
-import com.thoughtworks.xstream.XStream;
 
 import javax.swing.*;
 
@@ -14,6 +8,7 @@ public class WindowManager implements ActionListener
 {
 	private Menu main;
 	private Credits credit;
+	private Stats stat;
 	private NewGame ngame;
 	private JFrame frame;
 	private settings set;
@@ -41,6 +36,15 @@ public class WindowManager implements ActionListener
 	public gameSetting getSettings()
 	{
 		return this.setting;
+	}
+	public void endGame(int teamId, int bStat, int wStat)
+	{
+		this.frame.setVisible(true);
+		this.frame.getContentPane().removeAll();
+		this.stat = new Stats(this.frame,this,teamId,bStat,wStat);
+		this.stat.setFrame(this.frame);
+		this.frame.getContentPane().revalidate();
+		this.frame.getContentPane().repaint();
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) 
@@ -127,38 +131,6 @@ public class WindowManager implements ActionListener
 		else if(e.getActionCommand() == "LoadD")
 		{
 			
-
-			XStream xstream = new XStream();
-			
-			
-			File file = new File("../othello test1/savedgames/save_settings.xml");
-			xstream.alias("gameSetting",gameSetting.class);
-			gameSetting setting = (gameSetting) xstream.fromXML(file);
-			
-			file = new File("../othello test1/savedgames/save_board.xml");
-			xstream.alias("Cell-array-array",Cell.class);
-			Cell[][] board =(Cell[][]) xstream.fromXML(file);
-			
-			file = new File("../othello test1/savedgames/save_player.xml");
-			int i;
-			try {
-				FileReader fr = new FileReader(file);
-				 i = fr.read();
-				
-				fr.close();
-				this.loading = new LoadingScreen(frame, wm, setting, board, i);
-				this.loading.setFrame(frame);
-				frame.getContentPane().revalidate();
-				frame.getContentPane().repaint();
-				
-			} catch (FileNotFoundException e1) {
-				e1.printStackTrace();
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
-
-			
-					
 		}
 		else if(e.getActionCommand() == "SaveD")
 		{
