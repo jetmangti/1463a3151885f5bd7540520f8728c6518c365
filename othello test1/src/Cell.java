@@ -13,7 +13,6 @@ public class Cell extends JButton{
 	private ImageIcon whiteStone;
 	private ImageIcon iceStone;
 	private ImageIcon ghostStone;
-	private boolean isFreezed;
 	private Stack<Runnable> history = new Stack<Runnable>();
 	private int x;
 	private int y;
@@ -26,7 +25,6 @@ public class Cell extends JButton{
 	public Cell(int size,int x, int y, int posX, int posY, SpriteHolder sprites)
 	{
 		super();
-		this.isFreezed = false;
 		if(sprites != null){
 		this.blackStone = sprites.getBlackStone();
 		this.whiteStone = sprites.getWhiteStone();
@@ -47,6 +45,16 @@ public class Cell extends JButton{
 		this.setBounds(posX, posY, size, size);
 		//history.push(new Runnable(){public void run(){setBlank();}});
 	}
+	public void printAll(){
+		System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+		System.out.println("Cell "+x+" "+y+":");
+		System.out.println("Team: "+team+" Lastteam: "+ lastTeam);
+		System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");	
+	}
+	public void setHistory(){
+		this.history = new Stack<Runnable>();
+	}
+	
 	public void resetHistory()
 	{
 		this.history.removeAllElements();
@@ -113,33 +121,7 @@ public class Cell extends JButton{
 	}
 	public void setFreezed()
 	{
-		this.isFreezed=true;
 		this.setIcon(this.iceStone);
-		this.setDisabledIcon(this.iceStone);
-		if(this.team == Team.BLACK)
-		{
-			this.team=Team.BLACK_FR;
-		}
-		else
-		{
-			this.team=Team.WHITE_FR;
-		}
-	}
-	public boolean getFreezed()
-	{
-		return this.isFreezed;
-	}
-	public void unsetFreezed()
-	{
-		this.isFreezed=false;
-		if(this.team == Team.BLACK_FR)
-		{
-			this.setBlack();
-		}
-		else
-		{
-			this.setWhite();
-		}
 	}
 	public void setGhost()
 	{
@@ -199,7 +181,7 @@ public class Cell extends JButton{
 		if(this.team==Team.WHITE){
 			return true;
 		}
-		else 
+		else
 		{
 			return false;
 		}

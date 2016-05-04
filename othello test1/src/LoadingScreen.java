@@ -32,6 +32,19 @@ public class LoadingScreen extends JFrame implements window {
 		});
 		//new Thread(load2).start();
 	}
+	
+	public LoadingScreen(JFrame frame, WindowManager w, gameSetting setting, Cell[][] board) 
+	{
+		this.wm = w;
+		buildGUI(frame,w);
+		EventQueue.invokeLater(new Runnable(){
+			public void run(){
+			
+				loadGame(setting,board);
+			}
+			
+		});
+	}
 
 	private void buildGUI(JFrame form, WindowManager w)
 	{
@@ -72,6 +85,27 @@ public class LoadingScreen extends JFrame implements window {
 			}
 		});
 	}
+	
+	private void loadGame(gameSetting setting, Cell[][] board)
+	{
+		System.out.println("Loading game");
+		
+		game = new Game[setting.getInstancies()];
+		EventQueue.invokeLater(new Runnable(){
+			public void run(){
+				
+					Runnable rnbl = new Runnable(){
+					public void run(){
+						 new Game(setting,wm,board);
+						}
+					};
+					new Thread(rnbl).start();
+				
+			}
+		});
+
+	}
+	
 	@Override
 	public void setFrame(JFrame frame) {
 		frame.setContentPane(pane);

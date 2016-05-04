@@ -154,8 +154,6 @@ public class Menu implements window{
 		btn_loadgame.setContentAreaFilled(false);
 		btn_loadgame.setPressedIcon(btn1_2);
 		btn_loadgame.setRolloverIcon(btn1_1);
-		btn_loadgame.addActionListener(w);
-		btn_loadgame.setActionCommand("LoadD");
 		btn_loadgame.addMouseListener(new MouseAdapter() {
 			  @Override
 			  public void mouseClicked(MouseEvent e) 
@@ -173,6 +171,8 @@ public class Menu implements window{
 				  lg_label.setVisible(false);
 			  }
 			});
+		btn_loadgame.addActionListener(w);
+		btn_loadgame.setActionCommand("LoadD");
 		pane.add(btn_loadgame,1);
 		
 		JButton btn_credits = new JButton(btn2_0);

@@ -85,10 +85,7 @@ public class AIPlay1 implements AIInterface {
 		
 		cf.resetEmpty();
 		cf.setPadsVisibility(false);
-		if(cf.recalculateAndMark(this.team)==0)
-		{
-			return null;
-		}
+		cf.recalculateAndMark(this.team);
 		st = cf.getCellList();
 		if(!st.isEmpty())
 		{

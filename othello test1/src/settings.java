@@ -277,7 +277,6 @@ public class settings extends JFrame implements window
 				set.setGameMode(mode);
 				set.setB_var((int) f_B.getValue());
 				set.setI_var((int) f_I.getValue());
-				set.setMaxFreezed((int) f_stones.getValue());
 				set.setStoneFreezing(freeze.isSelected());
 				set.setSize((int)spinner.getValue());
 				set.setInstancies((int)inst.getValue());

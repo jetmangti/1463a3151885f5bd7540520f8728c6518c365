@@ -5,7 +5,6 @@ public class gameSetting
 	protected boolean stoneFreezing = false;
 	protected int i_var = 0;
 	protected int b_var = 0;
-	protected int maxFreezed = 0;
 	protected int size = 0;
 	protected int instancies = 1;
 	protected int aiMode = 1; //1-1st ai script, 2- 2nd ai script 
@@ -33,15 +32,7 @@ public class gameSetting
 	public void setI_var(int i_var) {
 		this.i_var = i_var;
 	}
-	
-	public int getMaxFreezed() {
-		return this.maxFreezed;
-	}
 
-	public void setMaxFreezed(int i_var) {
-		this.maxFreezed = i_var;
-	}
-	
 	public int getB_var() {
 		return b_var;
 	}
