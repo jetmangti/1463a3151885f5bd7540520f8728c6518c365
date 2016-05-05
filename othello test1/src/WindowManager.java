@@ -1,8 +1,16 @@
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.io.*;
+
+import com.thoughtworks.xstream.XStream;
+
 
 import javax.swing.*;
+
 
 public class WindowManager implements ActionListener
 {
@@ -98,39 +106,38 @@ public class WindowManager implements ActionListener
 			this.loading.setFrame(frame);
 			frame.getContentPane().revalidate();
 			frame.getContentPane().repaint();
-		//	EventQueue.invokeLater( new Runnable(){
-		//		public void run(){
-				/*LoadingScreen ls = new LoadingScreen(frame, wm);
-				ls.setFrame(frame);*/
-		//		frame.getContentPane().revalidate();
-		//		frame.getContentPane().repaint();
-		//		}
-		//	});
-			//new Thread(a).start();
-			//LoadingScreen(this.frame, this);
-			//this.loading.setFrame(this.frame);
-			//this.frame.getContentPane().revalidate();
-			//this.frame.getContentPane().repaint();
-		//}
-
-		///else if(e.getActionCommand() == "GameD")
-		///{
-			///this.set.setLoading();
-			///game = new Game[this.setting.getInstancies()];
 			
-				///	for(int i=0; i<setting.getInstancies(); ++i)
-				///	{
-				///		game[i] = new Game(setting);
-				///		new Thread(game[i]).start();
-				///	}
-				//}
-		//	};
-			//this.main = new Menu(this.frame,this);
-			//this.main.setFrame(this.frame);
 		}
 		else if(e.getActionCommand() == "LoadD")
 		{
+			XStream xstream = new XStream();
 			
+			
+			File file = new File("../othello test1/savedgames/save_settings.xml");
+			xstream.alias("gameSetting",gameSetting.class);
+			gameSetting setting = (gameSetting) xstream.fromXML(file);
+			
+			file = new File("../othello test1/savedgames/save_board.xml");
+			xstream.alias("Cell-array-array",Cell.class);
+			Cell[][] board =(Cell[][]) xstream.fromXML(file);
+			
+			file = new File("../othello test1/savedgames/save_player.xml");
+			int i;
+			try {
+				FileReader fr = new FileReader(file);
+				 i = fr.read();
+				
+				fr.close();
+				this.loading = new LoadingScreen(frame, wm, setting, board, i);
+				this.loading.setFrame(frame);
+				frame.getContentPane().revalidate();
+				frame.getContentPane().repaint();
+				
+			} catch (FileNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
 		}
 		else if(e.getActionCommand() == "SaveD")
 		{

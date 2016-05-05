@@ -47,6 +47,16 @@ public class Cell extends JButton{
 		this.setBounds(posX, posY, size, size);
 		//history.push(new Runnable(){public void run(){setBlank();}});
 	}
+	public void printAll(){
+		System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+		System.out.println("Cell "+x+" "+y+":");
+		System.out.println("Team: "+team+" Lastteam: "+ lastTeam);
+		System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");	
+	}
+	public void setHistory(){
+		this.history = new Stack<Runnable>();
+	}
+	
 	public void resetHistory()
 	{
 		this.history.removeAllElements();
