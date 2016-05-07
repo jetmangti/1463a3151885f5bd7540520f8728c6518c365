@@ -5,14 +5,6 @@ import java.awt.geom.Ellipse2D;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * Utility class used to create not boxy buttons, this class recalculate shape from the image..
- */
 public class RoundButton extends JButton
 {
 	private Shape circle;

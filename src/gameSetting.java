@@ -1,13 +1,4 @@
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-
-/*
- * This is data structure with some getters and setters
- */
 public class gameSetting 
 {
 	protected int gameMode = 0; //0 - AI, 1-Human

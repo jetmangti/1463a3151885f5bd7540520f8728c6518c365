@@ -1,14 +1,5 @@
 import javax.swing.ImageIcon;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * This class represents utility, that holds the sprite data to avoid multiple loadings from the memory
- * it contains some basic image work and resizing..
- */
 public class SpriteHolder 
 {
 	private ImageIcon blackStone;

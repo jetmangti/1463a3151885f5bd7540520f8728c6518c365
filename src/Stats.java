@@ -7,15 +7,6 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.*;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * This class represents stats window, that is possible to see after the game.
- * it contains GUI positioning, widget creating, and placing the widgets to the approp. contentPane..
- */
 public class Stats extends JFrame implements window{
 
 	private JLayeredPane pane;

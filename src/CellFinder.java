@@ -2,39 +2,23 @@ import java.awt.Color;
 import java.util.Stack;
 import imports.Enum;
 import imports.Enum.Team;
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
 public class CellFinder 
 {
 	
-	private Stack<Cell> st = new Stack<Cell>();	//found possible placements storage
-	private Stack<Cell> lastState = new Stack<Cell>(); //last state 
-	private int size; //size
-	private Cell[][] matrix; //board
-	private int priceCounter = 0; 
+	private Stack<Cell> st = new Stack<Cell>();
+	private Stack<Cell> lastState = new Stack<Cell>();
+	private int size;
+	private Cell[][] matrix;
+	private int priceCounter = 0;
 	private boolean visibility = true;
 	private int counter=0;
 	
-	/**
-	 * @param size
-	 * @param matrix
-	 */
-	public CellFinder(int size, Cell[][] matrix) // build the cellfinder object
+	public CellFinder(int size, Cell[][] matrix)
 	{
 		this.size = size;
 		this.matrix = matrix;
 	}
-	/**
-	 * @param x
-	 * @param y
-	 * @param dir
-	 * @return
-	 */
-	private Cell getNextCell(int x, int y, int dir) //get neighbour cell in defined direction
-	//0=y_up 1=y_down 2=x_right 3=x_left 4=x_left_y_up 5=x_right_y_down 6=x_right_y_up 7=x_left_y_down
+	private Cell getNextCell(int x, int y, int dir)
 	{
 		switch(dir)
 		{
@@ -93,17 +77,13 @@ public class CellFinder
 		}
 		return new Cell(-1,-1,0,0,0,null);
 	}
-	/**
-	 * @param x
-	 * @param y
-	 * @param team
-	 */
-	private void rayCast(int x, int y, int team) //function to find the possible placements using raycast method
+	private void rayCast(int x, int y, int team)
 	{
 		Cell temp;
 		this.lastState = (Stack<Cell>) this.st.clone();
 		for(int dir=0; dir < 8; dir++) 	//0=y_up 1=y_down 2=x_right 3=x_left 4=x_left_y_up 5=x_right_y_down 6=x_right_y_up 7=x_left_y_down
 		{
+			//System.out.println(dir);
 			int state = 0;
 			int tempx = x;
 			int tempy = y;
@@ -122,11 +102,11 @@ public class CellFinder
 				}
 				if(team == Team.BLACK.ordinal())
 				{
-					//implementation of fsm for black player
 					switch(state)
 					{
 						case 0:
 						{
+							//System.out.println("A");
 							if(temp.getTeam() == Team.WHITE)
 							{
 								state = 1; // white continue;
@@ -140,12 +120,14 @@ public class CellFinder
 						}
 						case 1: //white
 						{
+							//System.out.println("B");
 							if(temp.getTeam() != Team.WHITE && temp.getTeam() != Team.EMPTY)
 							{
 								state = 4; //black = fail
 							}
 							else if(temp.getTeam() == Team.EMPTY)
 							{
+								//System.out.println("C");
 								this.st.push(temp);
 								temp.setContentAreaFilled(true);
 								success = true;
@@ -169,6 +151,9 @@ public class CellFinder
 						{
 							fail = true;
 							this.priceCounter = 0;
+							//temp.setBackground(Color.RED);
+							//temp.setContentAreaFilled(true);
+							//temp.setEnabled(true);
 							break;
 						}
 						default:
@@ -178,7 +163,8 @@ public class CellFinder
 					}
 				}
 				else
-				{ // version for white player
+				{
+					//System.out.println("WHITE");
 					switch(state)
 					{
 						case 0:
@@ -227,6 +213,9 @@ public class CellFinder
 						{
 							fail = true;
 							this.priceCounter = 0;
+							//temp.setBackground(Color.RED);
+							//temp.setContentAreaFilled(true);
+							//temp.setEnabled(true);
 							break;
 						}
 						default:
@@ -244,7 +233,7 @@ public class CellFinder
 	{
 		this.st.removeAllElements();
 	}
-	public Stack<Cell> getCellList() //returns list (stack) of found possible fields
+	public Stack<Cell> getCellList()
 	{
 		//resetEmpty();
 		for (Cell cont : st)
@@ -263,7 +252,7 @@ public class CellFinder
 		}
 		clearStack();
 	}
-	public void hidePads()	//dont show in gui
+	public void hidePads()
 	{
 		for(Cell cont : st)
 		{
@@ -273,7 +262,7 @@ public class CellFinder
 			//cont.setBlank();
 		}
 	}
-	public void resetEmptyAll()	//reset everything
+	public void resetEmptyAll()
 	{
 		this.counter=0;
 		for(Cell cont : lastState)
@@ -291,11 +280,7 @@ public class CellFinder
 			}
 		}
 	}
-	/**
-	 * @param team
-	 * @return
-	 */
-	public int recalculateAndMark(int team)	//rayCast controller
+	public int recalculateAndMark(int team)
 	{
 		this.counter=0;
 		for(int i=0; i < this.size; i++)
@@ -311,20 +296,12 @@ public class CellFinder
 		return this.counter;
 	}
 	
-	/**
-	 * @param vis
-	 */
 	public void setPadsVisibility(boolean vis)
 	{
 		this.visibility = vis;
 	}
 	
-	/**
-	 * @param x
-	 * @param y
-	 * @param team
-	 */
-	public void turnStones(int x,int y,boolean team) //turn the stones in a line
+	public void turnStones(int x,int y,boolean team)
 	{
 		int reversedDirection, i=0;
 		int currentx = x;

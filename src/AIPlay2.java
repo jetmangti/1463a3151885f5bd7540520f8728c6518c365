@@ -4,24 +4,12 @@ import java.util.Stack;
 
 import imports.Enum.Team;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-public class AIPlay2 implements AIInterface	//AI2 script
+public class AIPlay2 implements AIInterface
 {
 	private int team;
 	private static Cell last;
 	private CellFinder cf;
 	private GameController gc;
-	/**
-	 * @param cf
-	 * @param gc
-	 * @param size
-	 * @param team
-	 * @param matrix
-	 */
 	public AIPlay2(CellFinder cf,GameController gc, int size, int team, Cell[][] matrix)
 	{
 		System.out.println("AI MODE: 2z");
@@ -29,10 +17,7 @@ public class AIPlay2 implements AIInterface	//AI2 script
 		this.cf = cf;
 		this.team = team;
 	}
-	/**
-	 * @return
-	 */
-	public boolean getTeam()	//get team
+	public boolean getTeam()
 	{
 		if(team == 0)
 		{
@@ -43,10 +28,7 @@ public class AIPlay2 implements AIInterface	//AI2 script
 			return false;
 		}
 	}
-	/* (non-Javadoc)
-	 * @see AIInterface#doJob()
-	 */
-	public Cell doJob() //AI routine
+	public Cell doJob()
 	{
 		//gc.changeTeam();
 		Stack<Cell> st;
@@ -60,11 +42,11 @@ public class AIPlay2 implements AIInterface	//AI2 script
 			return null;
 		}
 		st = cf.getCellList();
-		if(!st.isEmpty())	//if there is possible cell placement continue else return blank cell
+		if(!st.isEmpty())
 		{
 			max = st.peek();
 			maxPrice = max.getPrice();
-			for(Cell choice: st)	//find the best solution according to heuristics
+			for(Cell choice: st)
 			{
 				if(choice.getPrice() > maxPrice)
 				{

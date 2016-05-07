@@ -2,15 +2,6 @@ import java.util.Stack;
 
 import imports.Enum.Team;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-
-/*
- * this class controls the game, it holds the information about actual team score, and game mode
- */
 public class GameController 
 {
 	private boolean player; //false = black true = white;

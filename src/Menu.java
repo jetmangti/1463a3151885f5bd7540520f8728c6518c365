@@ -15,15 +15,6 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * This class represents main menu window, that is possible to see after program start
- * it contains GUI positioning, widget creating, and placing the widgets to the approp. contentPane..
- */
 public class Menu implements window{
 
 	 private ImageIcon exitImg = null;

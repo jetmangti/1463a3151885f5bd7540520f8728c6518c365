@@ -6,6 +6,16 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.*;
 
+/*
+ * Martin Hlipala xhlipa00
+ * Adam Bak xbakad00
+ * All rights reserved
+ */
+
+/*
+ * This class represents credits window, that is possible to see after credits button press in game menu
+ * it contains GUI positioning, widget creating, and placing the widgets to the approp. contentPane..
+ */
 public class Credits extends JFrame implements window{
 
 	private JLayeredPane pane;

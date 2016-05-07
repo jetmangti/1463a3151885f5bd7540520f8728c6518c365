@@ -23,14 +23,6 @@ import javax.swing.border.EmptyBorder;
 import imports.Enum.Calc;
 import imports.Enum.Team;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * Core class where all the game is played..
- */
 public class Game extends JFrame implements Runnable{
 
 	private JLayeredPane contentPane;
@@ -63,8 +55,6 @@ public class Game extends JFrame implements Runnable{
 	/** 
 	 * Launch the application.
 	 */
-	
-	///////////////////////UTILITY FUNCTIONS SECTION///////////////////////////////////////
 	private int min(int a, int b)
 	{
 		if(a<b)
@@ -90,7 +80,7 @@ public class Game extends JFrame implements Runnable{
 	}
 	
 	public void saveGame() {
-			//we dont serialize, we use XML
+
 			System.out.println("Saving...");
 
 			try {
@@ -144,7 +134,7 @@ public class Game extends JFrame implements Runnable{
 	}
 
 	
-	private int computeCellSize(int margin)		//compute cell size according to board size ( 8 10 12 )
+	private int computeCellSize(int margin)
 	{
 		int size = 0;
 		size = this.min(win.getWidth(), win.getHeight()-37-this.topOffset)/this.setting.getSize();
@@ -158,7 +148,7 @@ public class Game extends JFrame implements Runnable{
 		}
 		return (size-margin);
 	}
-	public void recordAll()	//save state
+	public void recordAll()
 	{
 		for(int i=0; i<setting.getSize(); i++)
 		{
@@ -170,19 +160,24 @@ public class Game extends JFrame implements Runnable{
 		}
 	}
 	
-	/**
-	 * @param s
-	 * @param w
-	 * @param boardd
-	 * @param playersteam
-	 */
-	public Game(gameSetting s, WindowManager w, Cell[][] boardd, int playersteam) //create gui window used in case the game is being loaded from savefile
+	public Game(gameSetting s, WindowManager w, Cell[][] boardd, int playersteam) 
 	{
 		System.out.println(playersteam);
 		this.wm = w;
 		this.setting = s;
 		win = new JFrame();
 		Stack<Runnable> undoStck = new Stack<Runnable>();
+		/*EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					win.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});*/
+
+		//win.setVisible(true);
 		currentGame = this;
 		this.clickk=0;
 		
@@ -213,7 +208,7 @@ public class Game extends JFrame implements Runnable{
 		this.sprite = new SpriteHolder(cellWidth);
 		this.bRem = ((s.getSize()*s.getSize())/2)-2;
 		this.wRem = ((s.getSize()*s.getSize())/2)-2;
-		Runnable rnbl = new Runnable(){	//new thread for every game instance
+		Runnable rnbl = new Runnable(){
 			GameController gc = new GameController(undoStck,playersteam);
 			CellFinder cf = new CellFinder(setting.getSize(),board);
 			
@@ -228,7 +223,7 @@ public class Game extends JFrame implements Runnable{
 			JButton save = new JButton(btn2_0);
 			JLabel header = new JLabel(img);
 			
-			public void toDo(Cell temp, MouseEvent e)		///routine done when cell button is pressed (player played his turn)
+			public void toDo(Cell temp, MouseEvent e)
 			{
 				recordAll();
 				clickk++;
@@ -262,7 +257,7 @@ public class Game extends JFrame implements Runnable{
 						wRem--;
 					}
 				}
-				else if(setting.getGameMode() != 1) //if the game is in Single player mode, do AI`s turn 
+				else if(setting.getGameMode() != 1)
 				{
 					state = 2;
 					cf.resetEmpty();
@@ -280,7 +275,7 @@ public class Game extends JFrame implements Runnable{
 				}
 				actualizeScore(whiteScore,blackScore);
 			}
-			public void actualizeScore(JLabel whiteLabel, JLabel blackLabel) //score counter
+			public void actualizeScore(JLabel whiteLabel, JLabel blackLabel)
 			{
 				white=0;
 				black=0;
@@ -305,7 +300,7 @@ public class Game extends JFrame implements Runnable{
 				blackRemaining.setText("Black Stones Remaining:"+bRem);
 				
 			}
-			public void run()	// this builds GUI 
+			public void run()
 			{
 				gamecontroller=gc;
 				undo.setPressedIcon(btn1_2);
@@ -351,8 +346,8 @@ public class Game extends JFrame implements Runnable{
 						ai = new AIPlay2(cf,gc, setting.getSize(), 1, board);
 					}
 				}
-				for(int i=0; i<setting.getSize(); ++i)	//create onMousePressed events for every cell...
-				{	
+				for(int i=0; i<setting.getSize(); ++i)
+				{
 					for (int j=0;j<setting.getSize() ;++j)
 					{
 						board[i][j].setHistory();
@@ -385,7 +380,7 @@ public class Game extends JFrame implements Runnable{
 						contentPane.add(board[i][j], 1);
 					}
 				}
-				if(s.stoneFreezing)	//if freezer is enabled, run the (independent)thread for each freezer
+				if(s.stoneFreezing)
 				{
 					Runnable freezer = new Runnable(){
 						public void run()
@@ -424,7 +419,7 @@ public class Game extends JFrame implements Runnable{
 					}
 				}
 				undo.setBounds(810, 300, 200, 50);
-				undo.addMouseListener(new MouseAdapter(){	//undo button event.. for each cell do undo, if its single player do it twice
+				undo.addMouseListener(new MouseAdapter(){
 					@Override
 					public void mouseClicked(MouseEvent e)
 					{
@@ -450,7 +445,7 @@ public class Game extends JFrame implements Runnable{
 								wRem++;
 							}
 							gc.changeTeam();
-							if(setting.getGameMode() == 0)	//singleplayer, so one more time
+							if(setting.getGameMode() == 0)
 							{
 								if(gc.getTeamID()==0)
 								{
@@ -483,7 +478,7 @@ public class Game extends JFrame implements Runnable{
 							//}
 					}
 				}});
-				contentPane.add(undo, 1); //attach button to the content pane
+				contentPane.add(undo, 1);
 				
 				save.setBounds(810, 360 , 200, 50);
 				save.addMouseListener(new MouseAdapter(){
@@ -520,11 +515,7 @@ public class Game extends JFrame implements Runnable{
 	}
 	
 	
-	/**
-	 * @param s
-	 * @param w
-	 */
-	public Game(gameSetting s, WindowManager w)  //the same as the constructor above, but in this case, the game is new game (not loading existing game)
+	public Game(gameSetting s, WindowManager w) 
 	{
 		this.wm = w;
 		this.setting = s;

@@ -12,15 +12,6 @@ import com.thoughtworks.xstream.XStream;
 import javax.swing.*;
 
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * This class represents window manager. This class registers all the windows and forms, and all the communication between these windows
- * is dispatched by this class.. This class also directs which windows or dialogs should be actually loaded and rendered...
- */
 public class WindowManager implements ActionListener
 {
 	private Menu main;
@@ -54,7 +45,7 @@ public class WindowManager implements ActionListener
 	{
 		return this.setting;
 	}
-	public void endGame(int teamId, int bStat, int wStat) //end game creation method
+	public void endGame(int teamId, int bStat, int wStat)
 	{
 		this.frame.setVisible(true);
 		this.frame.getContentPane().removeAll();
@@ -64,16 +55,16 @@ public class WindowManager implements ActionListener
 		this.frame.getContentPane().repaint();
 	}
 	@Override
-	public void actionPerformed(ActionEvent e)  //message callbacks
+	public void actionPerformed(ActionEvent e) 
 	{
 		
-		if(e.getActionCommand() == "MenuD") // in case the message was MenuD do the following...
+		if(e.getActionCommand() == "MenuD")
 		{
 			this.frame.getContentPane().removeAll();
 			this.main = new Menu(this.frame,this);
 			this.main.setFrame(this.frame);
 		}
-		else if(e.getActionCommand() == "CreditsD") //.......................
+		else if(e.getActionCommand() == "CreditsD")
 		{
 			this.frame.getContentPane().removeAll();
 			this.credit = new Credits(this.frame,this);

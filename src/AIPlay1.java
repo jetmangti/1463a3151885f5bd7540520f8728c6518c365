@@ -1,26 +1,22 @@
 import java.awt.Color;
 import java.util.Stack;
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-public class AIPlay1 implements AIInterface { //AI1 script
+
+public class AIPlay1 implements AIInterface {
 
 
-	private int team; //team
-	private static Cell last; //saved cell
-	private CellFinder cf;	//cell finder
-	private GameController gc; //game controller
-	private int [][] tactic; //2D array used to calculate tactics
+	private int team;
+	private static Cell last;
+	private CellFinder cf;
+	private GameController gc;
+	private int [][] tactic;
 	public AIPlay1(CellFinder cf,GameController gc, int size, int team, Cell[][] matrix)
 	{
-		System.out.println("AI MODE: 1");	
+		System.out.println("AI MODE: 1");
 		this.gc = gc;
 		this.cf = cf;
 		this.team = team;
 		tactic = new int[size][size];
-		for(int i=0; i<size; i++) //calculate tactics
+		for(int i=0; i<size; i++)
 		{
 			for(int j=0; j<size; j++)
 			{
@@ -65,7 +61,7 @@ public class AIPlay1 implements AIInterface { //AI1 script
 			System.out.print("\n");
 		}
 	}
-	public boolean getTeam()	//returns actual team playing
+	public boolean getTeam()
 	{
 		if(team == 0)
 		{
@@ -76,11 +72,11 @@ public class AIPlay1 implements AIInterface { //AI1 script
 			return false;
 		}
 	}
-	public int getPriceModifier(int x, int y)	//get price for cell at x y
+	public int getPriceModifier(int x, int y)
 	{
 		return tactic[y][x];
 	}
-	public Cell doJob()	// ai routine
+	public Cell doJob()
 	{
 		//gc.changeTeam();
 		Stack<Cell> st;
@@ -93,12 +89,12 @@ public class AIPlay1 implements AIInterface { //AI1 script
 		{
 			return null;
 		}
-		st = cf.getCellList();	
-		if(!st.isEmpty())	//if there was any possible placement found, continue
+		st = cf.getCellList();
+		if(!st.isEmpty())
 		{
 			max = st.peek();
 			maxPrice = max.getPrice()*this.getPriceModifier(max.getXPos(), max.getYPos());
-			for(Cell choice: st)	//find the best placement possible according to heuristics
+			for(Cell choice: st)
 			{
 				if(choice.getPrice()*this.getPriceModifier(choice.getXPos(), choice.getYPos()) > maxPrice)
 				{
@@ -110,18 +106,20 @@ public class AIPlay1 implements AIInterface { //AI1 script
 			System.out.println("SELECTED: "+max.getPrice()*this.getPriceModifier(max.getXPos(), max.getYPos()));
 			System.out.println("DONE");
 			gc.placeStone(max);
+			//cf.turnStones(max.getXPos(),max.getYPos(),gc.getActualPlayer()); 
+			//gc.changeTeam();
 			if(AIPlay1.last!=null)
 			{
 				AIPlay1.last.setBackground(Color.white);
 			}
 			AIPlay1.last = max;
 			max.setBackground(Color.magenta);
-			return max; //return the best possible turn
+			return max;
 		}
-		else	//else its game end
+		else
 		{
 			System.out.println("EMPTY STACK");
-			return new Cell(-1,-1,-1,-1,-1,null); //no possible turn found
+			return new Cell(-1,-1,-1,-1,-1,null);
 		}
 		//gc.changeTeam();
 		//st = cf.getCellList();

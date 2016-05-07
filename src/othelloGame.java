@@ -1,82 +1,122 @@
-import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.*;
 import java.awt.EventQueue;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.swing.JFrame;
+import javax.imageio.ImageIO;
+import javax.swing.JButton;
+import java.awt.BorderLayout;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.JFormattedTextField;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.RoundRectangle2D;
+import java.awt.event.ActionEvent;
+import java.awt.Window.Type;
+import java.awt.FlowLayout;
 
 import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.BoxLayout;
 import javax.swing.JLayeredPane;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-import javax.swing.border.EmptyBorder;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * This class represents main menu window, that is possible to see after program start
- * it contains GUI positioning, widget creating, and placing the widgets to the approp. contentPane..
- */
-public class Menu implements window{
-
-	 private ImageIcon exitImg = null;
-		private ImageIcon exitImg_click = null;
-		private ImageIcon exitImg_over = null;
-		private ImageIcon btn1_0 = null;
-		private ImageIcon btn1_1 = null;
-		private ImageIcon btn1_2 = null;
-		private ImageIcon btn2_0 = null;
-		private ImageIcon btn2_1 = null;
-		private ImageIcon btn2_2 = null;
-		private ImageIcon btn3_0 = null;
-		private ImageIcon btn3_1 = null;
-		private ImageIcon btn3_2 = null;
-		private ImageIcon ng_lab = null;
-		private ImageIcon lg_lab = null;
-		private ImageIcon cr_lab = null;
-		private ImageIcon img = new ImageIcon(getClass().getResource("data/images/brand.jpg"));
-		private ImageIcon imgFooter = null;
-		private ImageIcon imgbody = null;
-		private int menuXAxisTrim = -2;
-		private int menuYAxisTrim = -7;
-		public JLabel lg_label = null;
-		public JLabel cr_label = null;
-		public JLabel ng_label = null;
-		//private JPanel contentPane;
-		private JLayeredPane pane;
+public class othelloGame {
+ 
+    private ImageIcon exitImg = null;
+	private ImageIcon exitImg_click = null;
+	private ImageIcon exitImg_over = null;
+	private ImageIcon btn1_0 = null;
+	private ImageIcon btn1_1 = null;
+	private ImageIcon btn1_2 = null;
+	private ImageIcon btn2_0 = null;
+	private ImageIcon btn2_1 = null;
+	private ImageIcon btn2_2 = null;
+	private ImageIcon btn3_0 = null;
+	private ImageIcon btn3_1 = null;
+	private ImageIcon btn3_2 = null;
+	private ImageIcon ng_lab = null;
+	private ImageIcon lg_lab = null;
+	private ImageIcon cr_lab = null;
+	private ImageIcon img = new ImageIcon(getClass().getResource("data/images/brand.jpg"));
+	private ImageIcon imgFooter = null;
+	private ImageIcon imgbody = null;
+	private int menuXAxisTrim = -2;
+	private int menuYAxisTrim = -7;
+	public JLabel lg_label = null;
+	public JLabel cr_label = null;
+	public JLabel ng_label = null;
+	private JFrame frmOthello;
 
 	/**
-	 * Create the frame.
+	 * Launch the application.
 	 */
-	
-	public Menu(JFrame form, WindowManager w) {
-		buildMenu(form,w);
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					othelloGame window = new othelloGame();
+					window.frmOthello.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
 	}
-	
-	public void buildMenu(JFrame form, WindowManager w)
+
+	/**
+	 * Create the application.
+	 */
+	public othelloGame() {
+		initialize();
+	}
+	public void setWindowShape(Shape shp)
 	{
+		frmOthello.setShape(shp);
+	}
+	public void loadPane(Container contentPane)
+	{
+		frmOthello.setContentPane(contentPane);
+	}
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	@SuppressWarnings("deprecation")
+	private void initialize() {
+		frmOthello = new JFrame();
+		frmOthello.setForeground(Color.WHITE);
+		frmOthello.setBackground(Color.WHITE);
 		//frmOthello.getContentPane().setBackground(Color.WHITE);
+		frmOthello.setUndecorated(true);
+		frmOthello.setShape(new RoundRectangle2D.Double(0,0,622,388,100,100));
+		frmOthello.setTitle("Othello");
+		frmOthello.setResizable(true);
+		frmOthello.setBounds(100, 100,622, 430);//622 388
+		frmOthello.setLocationRelativeTo(null);
+		frmOthello.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		WindowManager wm = new WindowManager(frmOthello);
 		//frmOthello.getContentPane().setLayout(new BorderLayout(0, 0));
-		pane = new JLayeredPane();
-		//form.setContentPane(pane);
+		/*/JLayeredPane pane = new JLayeredPane();
+		frmOthello.setContentPane(pane);/*/
 		//img = new ImageIcon(getClass().getResource("/resources/images/brand.jpg"));
 		
-		JLabel brandComp = new JLabel(img);
+		/*/JLabel brandComp = new JLabel(img);
 		brandComp.setBounds(0, 0, img.getIconWidth(), img.getIconHeight());
-		pane.add(brandComp,0);
+		pane.add(brandComp,0);/*/
 		
-	imgFooter = new ImageIcon(getClass().getResource("data/images/footer.png"));
+	/*/imgFooter = new ImageIcon(getClass().getResource("data/images/footer.png"));
 		
 		JLabel footerComp = new JLabel(imgFooter);
-		footerComp.setBounds(0, form.getHeight() - imgFooter.getIconHeight(), imgFooter.getIconWidth(), imgFooter.getIconHeight());
-		pane.add(footerComp,1);
+		footerComp.setBounds(0, frmOthello.getHeight() - imgFooter.getIconHeight(), imgFooter.getIconWidth(), imgFooter.getIconHeight());
+		pane.add(footerComp,1);/*/
 		
 		
 		//JLabel lblCreditsAaaaAaa = new JLabel("Credits: aaaa aaa, aaaa aaa");
@@ -86,18 +126,18 @@ public class Menu implements window{
 		panel_2.setBackground(Color.WHITE);
 		pane.add(panel_2,1);*/
 		
-	imgbody = new ImageIcon(getClass().getResource("data/images/body.jpg"));
+	/*/imgbody = new ImageIcon(getClass().getResource("data/images/body.jpg"));
 		
 		JLabel bodyComp = new JLabel(imgbody);
-		bodyComp.setBounds(Math.round(form.getWidth()/2.5f), (img.getIconHeight()/4)*5, imgbody.getIconWidth(), imgbody.getIconHeight());
-		pane.add(bodyComp,3);
+		bodyComp.setBounds(Math.round(frmOthello.getWidth()/2.5f), (img.getIconHeight()/4)*5, imgbody.getIconWidth(), imgbody.getIconHeight());
+		pane.add(bodyComp,3);/*/
 		
 		/*JPanel panel_3 = new JPanel();
 		panel_3.setBackground(Color.WHITE);
 		pane.add(panel_3,30);
 		panel_3.setLayout(null);*/
 		
-		exitImg = new ImageIcon(getClass().getResource("data/buttons/exit3.png"));
+		/*/exitImg = new ImageIcon(getClass().getResource("data/buttons/exit3.png"));
 		exitImg_click = new ImageIcon(getClass().getResource("data/buttons/exit2.png"));
 		exitImg_over = new ImageIcon(getClass().getResource("data/buttons/exit.png"));
 		btn1_0 = new ImageIcon(getClass().getResource("data/buttons/1_0.png"));
@@ -114,8 +154,8 @@ public class Menu implements window{
 		cr_lab = new ImageIcon(getClass().getResource("data/buttons/cr_btn.png"));
 		
 		
-		JButton exit_btn = new RoundButton(exitImg);
-		exit_btn.setBounds(70, form.getHeight()-245, exit_btn.getIcon().getIconWidth(), exit_btn.getIcon().getIconHeight());
+		JButton exit_btn = new JButton(exitImg);
+		exit_btn.setBounds(70, frmOthello.getHeight()-245, exit_btn.getIcon().getIconWidth(), exit_btn.getIcon().getIconHeight());
 		exit_btn.setBorder(BorderFactory.createEmptyBorder());
 		exit_btn.setContentAreaFilled(false);
 		exit_btn.setHorizontalAlignment(SwingConstants.CENTER);
@@ -125,7 +165,7 @@ public class Menu implements window{
 			  @Override
 			  public void mouseClicked(MouseEvent e) 
 			  {
-				  form.dispose();
+			     frmOthello.dispose();
 			  }
 			});
 		pane.add(exit_btn,0);
@@ -140,7 +180,7 @@ public class Menu implements window{
 			  @Override
 			  public void mouseClicked(MouseEvent e) 
 			  {
-				  form.dispose();
+			     frmOthello.dispose();
 			  }
 			  @Override
 			  public void mouseEntered(MouseEvent e)
@@ -153,8 +193,6 @@ public class Menu implements window{
 				  ng_label.setVisible(false);
 			  }
 			});
-		btn_newgame.addActionListener(w);
-		btn_newgame.setActionCommand("NewD");
 		pane.add(btn_newgame,1);
 		
 		JButton btn_loadgame = new JButton(btn1_0);
@@ -163,13 +201,11 @@ public class Menu implements window{
 		btn_loadgame.setContentAreaFilled(false);
 		btn_loadgame.setPressedIcon(btn1_2);
 		btn_loadgame.setRolloverIcon(btn1_1);
-		btn_loadgame.addActionListener(w);
-		btn_loadgame.setActionCommand("LoadD");
 		btn_loadgame.addMouseListener(new MouseAdapter() {
 			  @Override
 			  public void mouseClicked(MouseEvent e) 
 			  {
-				  form.dispose();
+			     frmOthello.dispose();
 			  }
 			  @Override
 			  public void mouseEntered(MouseEvent e)
@@ -194,7 +230,7 @@ public class Menu implements window{
 			  @Override
 			  public void mouseClicked(MouseEvent e) 
 			  {
-				  form.dispose();
+			     frmOthello.dispose();
 			  }
 			  @Override
 			  public void mouseEntered(MouseEvent e)
@@ -207,8 +243,6 @@ public class Menu implements window{
 				  cr_label.setVisible(false);
 			  }
 			});
-		btn_credits.addActionListener(w);
-		btn_credits.setActionCommand("CreditsD");
 		pane.add(btn_credits,1);
 		
 		ng_label = new JLabel(ng_lab);
@@ -224,27 +258,12 @@ public class Menu implements window{
 		cr_label = new JLabel(cr_lab);
 		cr_label.setBounds(exit_btn.bounds().x+120+menuXAxisTrim, exit_btn.bounds().y+150+menuYAxisTrim, cr_lab.getIconWidth(), cr_lab.getIconHeight());
 		cr_label.setVisible(false);
-		pane.add(cr_label, 1);
+		pane.add(cr_label, 1);/*/
 
-	}
+		
 
-	@Override
-	public void setFrame(JFrame form) 
-	{	//form.removeAll();
-		form.setContentPane(this.pane);
-	/*	form.setUndecorated(true);
-		form.setShape(new RoundRectangle2D.Double(0,0,622,388,100,100));*/
-		form.setTitle("Othello");
-		/*form.setResizable(true);
-		form.setBounds(100, 100,622, 430);//622 388
-		form.setLocationRelativeTo(null);
-		form.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);*/
-		form.setForeground(Color.WHITE);
-		form.setBackground(Color.WHITE);
-		/*form.repaint();
-		form.revalidate();
-		form.getContentPane().repaint();
-		form.getContentPane().revalidate();*/
+		
+		
 		
 	}
 }

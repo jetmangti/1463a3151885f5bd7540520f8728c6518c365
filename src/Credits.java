@@ -1,34 +1,21 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import java.awt.Font;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.*;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * This class represents stats window, that is possible to see after the game.
- * it contains GUI positioning, widget creating, and placing the widgets to the approp. contentPane..
- */
-public class Stats extends JFrame implements window{
+public class Credits extends JFrame implements window{
 
 	private JLayeredPane pane;
-	private ImageIcon brand = new ImageIcon(getClass().getResource("data/images/brand.jpg"));
+	private ImageIcon brand = new ImageIcon(getClass().getResource("data/images/cr_brand.jpg"));
 	private ImageIcon footer = new ImageIcon(getClass().getResource("data/images/footer.png"));
 	private ImageIcon body = new ImageIcon(getClass().getResource("data/images/credits.png"));
-	private ImageIcon bck0 = new ImageIcon(getClass().getResource("data/buttons/exit.png"));
-	private ImageIcon bck1 = new ImageIcon(getClass().getResource("data/buttons/exit3.png"));
-	private ImageIcon bck2 = new ImageIcon(getClass().getResource("data/buttons/exit2.png"));
+	private ImageIcon bck0 = new ImageIcon(getClass().getResource("data/buttons/back.png"));
+	private ImageIcon bck1 = new ImageIcon(getClass().getResource("data/buttons/back3.png"));
+	private ImageIcon bck2 = new ImageIcon(getClass().getResource("data/buttons/back_click.png"));
 	private ImageIcon decoration = new ImageIcon(getClass().getResource("data/buttons/circle.png"));
-	private int teamId;
-	private int bScore;
-	private int wScore; 
 	/*private ImageIcon btn1_0 = new ImageIcon(getClass().getResource("data/images/btn4_1.jpg"));
 	private ImageIcon btn1_1 = new ImageIcon(getClass().getResource("data/images/btn4_2.jpg"));
 	private ImageIcon btn1_2 = new ImageIcon(getClass().getResource("data/images/btn4_3.jpg"));
@@ -37,10 +24,7 @@ public class Stats extends JFrame implements window{
 	private ImageIcon btn2_2 = new ImageIcon(getClass().getResource("data/images/btn5_3.jpg"));*/
 	
 	
-	public Stats(JFrame frame, WindowManager w, int teamId, int bScore, int wScore) {
-		this.teamId=teamId;
-		this.wScore=wScore;
-		this.bScore=bScore;
+	public Credits(JFrame frame, WindowManager w) {
 		buildGUI(frame,w);
 	}
 
@@ -55,30 +39,10 @@ public class Stats extends JFrame implements window{
 		foot.setBounds(0, form.getHeight() - footer.getIconHeight(), footer.getIconWidth(), footer.getIconHeight());
 		pane.add(foot,  0);
 		
+		JLabel bdy = new JLabel(body);
+		bdy.setBounds(Math.round(form.getWidth()/2.5f)-70, (brand.getIconHeight()/4)*5, body.getIconWidth(), body.getIconHeight());
+		pane.add(bdy,  0);
 		
-		JLabel winner = new JLabel();
-		Font f = new Font("DEFAULTFONT",Font.BOLD, 50);
-		winner.setFont(f);
-		if(bScore > wScore)
-		{
-			winner.setText("Black won!");
-		}
-		else if( bScore < wScore)
-		{
-			winner.setText("White won!");
-		}
-		else
-		{
-			winner.setText("Draw!");
-		}
-		winner.setBounds(260,130,500,90);
-		pane.add(winner, 1);
-		
-		JLabel status = new JLabel("Black: "+this.bScore+" VS White: "+this.wScore);
-		Font f2 = new Font("DEFAULTFONT",Font.BOLD, 20);
-		status.setFont(f2);
-		status.setBounds(280,220,500,90);
-		pane.add(status, 1);
 		
 		JButton button_back = new RoundButton(bck0);
 		button_back.setRolloverIcon(bck1);

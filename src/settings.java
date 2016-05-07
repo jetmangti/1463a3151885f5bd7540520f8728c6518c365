@@ -22,16 +22,6 @@ import javax.swing.SpinnerListModel;
 import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * This class represents settings window, that is possible to see when setting up the game
- * it contains GUI positioning, widget creating, and placing the widgets to the approp. contentPane..
- * It also creates the gameSetting object, and stores the filled data to the structure...
- */
 public class settings extends JFrame implements window 
 {
 

@@ -9,15 +9,6 @@ import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.SwingUtilities;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
-/*
- * This class represents loading window, that is possible to see when game loading occurs
- * it contains GUI positioning, widget creating, and placing the widgets to the approp. contentPane..
- */
 public class LoadingScreen extends JFrame implements window {
 	
 	private JLayeredPane pane;

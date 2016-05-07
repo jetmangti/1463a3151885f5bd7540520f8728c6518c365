@@ -7,11 +7,6 @@ import javax.swing.ImageIcon;
 import java.awt.Image;
 import java.util.Stack;
 
-/*
- * Martin Hlipala xhlipa00
- * Adam Bak xbakad00
- * All rights reserved
- */
 public class Cell extends JButton{
 	
 	private ImageIcon blackStone;
@@ -27,16 +22,8 @@ public class Cell extends JButton{
 	Team team;
 	//private boolean team; //false = black, true = white
 	
-	/**
-	 * @param size
-	 * @param x
-	 * @param y
-	 * @param posX
-	 * @param posY
-	 * @param sprites
-	 */
 	@SuppressWarnings("deprecation")
-	public Cell(int size,int x, int y, int posX, int posY, SpriteHolder sprites) //build cell object
+	public Cell(int size,int x, int y, int posX, int posY, SpriteHolder sprites)
 	{
 		super();
 		this.isFreezed = false;
@@ -48,6 +35,11 @@ public class Cell extends JButton{
 		}
 		this.x = x;
 		this.y = y;
+		/*blackStone = new ImageIcon(getClass().getResource("data/sprites/black.png"));
+		whiteStone = new ImageIcon(getClass().getResource("data/sprites/white.png"));
+		freezedStone = new ImageIcon(getClass().getResource("data/sprites/freezed.png"));
+		blank = new ImageIcon(getClass().getResource("data/sprites/blank.png"));*/
+		//this.setIcon(this.whiteStone);
 		this.setContentAreaFilled(false);
 		//this.enable(false);
 		this.setEnabled(false);
@@ -61,15 +53,15 @@ public class Cell extends JButton{
 		System.out.println("Team: "+team+" Lastteam: "+ lastTeam);
 		System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");	
 	}
-	public void setHistory(){//...
+	public void setHistory(){
 		this.history = new Stack<Runnable>();
 	}
 	
-	public void resetHistory() //...
+	public void resetHistory()
 	{
 		this.history.removeAllElements();
 	}
-	public void recordStatus() //record actual state and save it to the stack
+	public void recordStatus()
 	{
 		if(this.team == Team.BLACK)
 			history.push(new Runnable(){public void run(){setBlack();}});
@@ -78,24 +70,58 @@ public class Cell extends JButton{
 		else
 			history.push(new Runnable(){public void run(){setBlank();}});
 	}
-	public void setWhite() //set white stone
+	public void setWhite()
 	{
-		
+		/*switch(this.team)
+		{
+			case BLACK:
+			{
+				history.push(new Runnable(){public void run(){setBlack();}});
+				break;
+			}
+			case EMPTY:
+			{
+				history.push(new Runnable(){public void run(){setBlank();}});
+				break;
+			}
+			default:
+			{
+				history.push(new Runnable(){public void run(){setWhite();}});
+				break;
+			}
+		}*/
 		this.setIcon(this.whiteStone);
 		this.setDisabledIcon(this.whiteStone);
 		this.team = Team.WHITE;
 		this.setEnabled(false);
 		//history.push(new Runnable(){public void run(){setWhite();}});
 	}
-	public void setBlack() //set black stone
+	public void setBlack()
 	{
-
+		/*switch(this.team)
+		{
+			case WHITE:
+			{
+				history.push(new Runnable(){public void run(){setWhite();}});
+				break;
+			}
+			case EMPTY:
+			{
+				history.push(new Runnable(){public void run(){setBlank();}});
+				break;
+			}
+			default:
+			{
+				history.push(new Runnable(){public void run(){setBlack();}});
+				break;
+			}
+		}*/
 		this.setIcon(this.blackStone);
 		this.setDisabledIcon(this.blackStone);
 		this.team = Team.BLACK;
 		this.setEnabled(false);
 	}
-	public void setFreezed() //freeze stone
+	public void setFreezed()
 	{
 		this.isFreezed=true;
 		this.setIcon(this.iceStone);
@@ -109,11 +135,11 @@ public class Cell extends JButton{
 			this.team=Team.WHITE_FR;
 		}
 	}
-	public boolean getFreezed() //is stone freezed ?
+	public boolean getFreezed()
 	{
 		return this.isFreezed;
 	}
-	public void unsetFreezed() //defreeze stone
+	public void unsetFreezed()
 	{
 		this.isFreezed=false;
 		if(this.team == Team.BLACK_FR)
@@ -125,19 +151,37 @@ public class Cell extends JButton{
 			this.setWhite();
 		}
 	}
-	public void setGhost() //not used
+	public void setGhost()
 	{
 		this.setIcon(this.ghostStone);
 	}
-	public void setBlank() //set cell as empty
+	public void setBlank()
 	{
+		/*switch(this.team)
+		{
+			case BLACK:
+			{
+				history.push(new Runnable(){public void run(){setBlack();}});
+				break;
+			}
+			case WHITE:
+			{
+				history.push(new Runnable(){public void run(){setWhite();}});
+				break;
+			}
+			default:
+			{
+				history.push(new Runnable(){public void run(){setBlank();}});
+				break;
+			}
+		}*/
 		this.setIcon(null);
 		this.setContentAreaFilled(false);
 		this.setEnabled(false);
 		this.team = Team.EMPTY;
 		//history.push(new Runnable(){public void run(){setBlank();}});
 	}
-	public void undo()	//undo, pop the last state and execute it
+	public void undo()
 	{
 		if(!this.history.isEmpty())
 		{
@@ -145,9 +189,6 @@ public class Cell extends JButton{
 		}
 		//history.pop();
 	}
-	/**
-	 * @param team
-	 */
 	public void swapTeam(boolean team)
 	{
 		if(team)
